@@ -1,0 +1,178 @@
+{
+  "config_versao": "1.0",
+  "conservacao": [
+    {
+      "delta_linhas": 0,
+      "delta_valor": 0.0,
+      "descricao": "staging (todas as linhas)",
+      "linhas": 872257,
+      "motivo": "base bruta tipada",
+      "passo": "E0",
+      "valor": 87368466271.0
+    },
+    {
+      "delta_linhas": -311319,
+      "delta_valor": -74770856620.04,
+      "descricao": "remove serviço (TIPO DO ITEM ≠ Material)",
+      "linhas": 311319,
+      "motivo": "escopo = material (G1/Q1)",
+      "passo": "E1",
+      "valor": 74770856620.04
+    },
+    {
+      "delta_linhas": -4,
+      "delta_valor": 0.0,
+      "descricao": "remove rodapé (sem AFM/APS e sem tipo)",
+      "linhas": 4,
+      "motivo": "4 linhas de observação no fim da planilha 2025",
+      "passo": "E2",
+      "valor": 0.0
+    },
+    {
+      "delta_linhas": 0,
+      "delta_valor": 0.0,
+      "descricao": "remove material sem data",
+      "linhas": 0,
+      "motivo": "eixo temporal obrigatório",
+      "passo": "E3",
+      "valor": 0.0
+    },
+    {
+      "delta_linhas": 0,
+      "delta_valor": 0.0,
+      "descricao": "escopo tratado",
+      "linhas": 560934,
+      "motivo": "entrada da análise",
+      "passo": "E4",
+      "valor": 12597609650.96
+    }
+  ],
+  "convencao_deflacao": "inicio_ano",
+  "deflatores": {
+    "2021": 1.33135,
+    "2022": 1.209658,
+    "2023": 1.143452,
+    "2024": 1.092958,
+    "2025": 1.0426
+  },
+  "estatisticas": {
+    "canal": [
+      {
+        "canal": "registro_precos",
+        "linhas": 338724,
+        "valor_real": 8564678326.81
+      },
+      {
+        "canal": "licitacao",
+        "linhas": 63324,
+        "valor_real": 1952617874.92
+      },
+      {
+        "canal": "adesao_rp",
+        "linhas": 1479,
+        "valor_real": 1786562034.9
+      },
+      {
+        "canal": "dispensa_tradicional",
+        "linhas": 42295,
+        "valor_real": 1205938953.39
+      },
+      {
+        "canal": "contratacao_direta",
+        "linhas": 3864,
+        "valor_real": 556714369.04
+      },
+      {
+        "canal": "dispensa_eletronica",
+        "linhas": 108158,
+        "valor_real": 270684233.74
+      },
+      {
+        "canal": "alteracao",
+        "linhas": 1481,
+        "valor_real": 106275839.34
+      },
+      {
+        "canal": "credenciamento",
+        "linhas": 1531,
+        "valor_real": 27552733.02
+      },
+      {
+        "canal": "outros",
+        "linhas": 78,
+        "valor_real": 1965522.97
+      }
+    ],
+    "linhas": 560934,
+    "nulos_e_flags": {
+      "canal_outros": 78,
+      "data_nula": 0,
+      "familia_nula": 0,
+      "item_key_nula": 0,
+      "pandemia": 6944,
+      "pessoa_fisica": 5,
+      "prazo_invalido": 633,
+      "preco_outlier": 15563,
+      "regulados": 203083,
+      "valor_real_nulo": 0
+    },
+    "por_ano": [
+      {
+        "afms": 53395,
+        "ano": 2021,
+        "fornecedores": 1847,
+        "linhas": 73263,
+        "valor_nominal": 1999740528.41,
+        "valor_real": 2662353969.43
+      },
+      {
+        "afms": 81103,
+        "ano": 2022,
+        "fornecedores": 2334,
+        "linhas": 113033,
+        "valor_nominal": 2308241623.95,
+        "valor_real": 2792183185.59
+      },
+      {
+        "afms": 94541,
+        "ano": 2023,
+        "fornecedores": 2613,
+        "linhas": 126263,
+        "valor_nominal": 2256950625.8,
+        "valor_real": 2580715200.39
+      },
+      {
+        "afms": 95246,
+        "ano": 2024,
+        "fornecedores": 2516,
+        "linhas": 121468,
+        "valor_nominal": 2940344318.21,
+        "valor_real": 3213671608.92
+      },
+      {
+        "afms": 97756,
+        "ano": 2025,
+        "fornecedores": 2486,
+        "linhas": 126907,
+        "valor_nominal": 3092332554.59,
+        "valor_real": 3224065923.8
+      }
+    ]
+  },
+  "gerado_em": "2026-11-12T19:56:56.011449+00:00",
+  "parquet": {
+    "caminho": "data\\treated\\compras_tratadas.parquet",
+    "linhas": 560934,
+    "sha256": "97697cc7e9b9052c2f360f0421f5a0604ef9a3ae72ad2c1405c77cc2ba6c49e1",
+    "tamanho_mb": 68.65
+  },
+  "reconciliacao": {
+    "diferenca_abs": 0.0,
+    "diferenca_rel": 0.0,
+    "soma_bruta_material": 12597609650.96,
+    "soma_tratado": 12597609650.96,
+    "soma_valor_real": 14472989888.13,
+    "status": "OK",
+    "tolerancia": 0.001
+  }
+}

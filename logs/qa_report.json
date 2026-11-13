@@ -1,0 +1,160 @@
+{
+  "arquivo": "C:\\Users\\Micro\\source\\repos\\PL\\nicho-bahia\\output\\painel_decisao.html",
+  "checks": [
+    {
+      "descricao": "zero erros de console",
+      "evidencia": "0 erros de console, 0 pageerror",
+      "id": "A6",
+      "status": "OK"
+    },
+    {
+      "descricao": "≥ 12 gráficos renderizam",
+      "evidencia": "18 gráficos com canvas",
+      "id": "A7",
+      "status": "OK"
+    },
+    {
+      "descricao": "todo gráfico tem dados (nenhum vazio)",
+      "evidencia": "sem dados: nenhum",
+      "id": "A7c",
+      "status": "OK"
+    },
+    {
+      "descricao": "secretaria e região são exclusivas",
+      "evidencia": "sec='' reg='2'",
+      "id": "A7d",
+      "status": "OK"
+    },
+    {
+      "descricao": "filtro 'ano' é funcional",
+      "evidencia": "20 itens / 17 gráficos alterados",
+      "id": "A7b-ano",
+      "status": "OK"
+    },
+    {
+      "descricao": "filtro 'secretaria' é funcional",
+      "evidencia": "12 itens / 9 gráficos alterados",
+      "id": "A7b-secretaria",
+      "status": "OK"
+    },
+    {
+      "descricao": "filtro 'região' é funcional",
+      "evidencia": "9 itens / 6 gráficos alterados",
+      "id": "A7b-região",
+      "status": "OK"
+    },
+    {
+      "descricao": "filtro 'família' é funcional",
+      "evidencia": "16 itens / 13 gráficos alterados",
+      "id": "A7b-família",
+      "status": "OK"
+    },
+    {
+      "descricao": "toggle nominal/real altera valores",
+      "evidencia": "real=[1190135, 2749154] nom=[893931, 2272670]",
+      "id": "A8",
+      "status": "OK"
+    },
+    {
+      "descricao": "aba Método completa",
+      "evidencia": "33 premissas / 5 filtros",
+      "id": "A9",
+      "status": "OK"
+    },
+    {
+      "descricao": "zero requisições externas",
+      "evidencia": "0 externas",
+      "id": "A10",
+      "status": "OK"
+    },
+    {
+      "descricao": "arquivo ≤ 15 MB",
+      "evidencia": "2.69 MB",
+      "id": "A10b",
+      "status": "OK"
+    }
+  ],
+  "console": [],
+  "gerado_em": "2026-11-13T12:22:47.827680+00:00",
+  "metodo": {
+    "assump": 33,
+    "dict": 31,
+    "filtros": 5,
+    "recon": "Reconciliação: bruto material R$ 12.597.609.651 ·\n    tratado R$ 12.597.609.651 · diferença R$ 0\n    (0,000000%, tolerância 0,10%)\n    OK\n    Deflação: convenção inicio_ano — 2021: 1.3314 · 2022: 1.2097 · 2023: 1.1435 · 2024: 1.0930 · 2025: 1.0426"
+  },
+  "n_graficos": 18,
+  "pageerrors": [],
+  "reatividade_filtros": {
+    "ano": {
+      "graficos": [
+        "c_cagr",
+        "c_cal",
+        "c_canal",
+        "c_conc",
+        "c_cv",
+        "c_desc",
+        "c_ent",
+        "c_forn",
+        "c_heat",
+        "c_mun",
+        "c_orgaos",
+        "c_prazo",
+        "c_preco",
+        "c_regiao",
+        "c_serie",
+        "c_ticket",
+        "c_treemap"
+      ],
+      "itens": 20
+    },
+    "família": {
+      "graficos": [
+        "c_cagr",
+        "c_cal",
+        "c_canal",
+        "c_ent",
+        "c_forn",
+        "c_heat",
+        "c_mun",
+        "c_orgaos",
+        "c_preco",
+        "c_regiao",
+        "c_sens",
+        "c_serie",
+        "c_treemap"
+      ],
+      "itens": 16
+    },
+    "região": {
+      "graficos": [
+        "c_cagr",
+        "c_orgaos",
+        "c_regiao",
+        "c_sens",
+        "c_serie",
+        "c_treemap"
+      ],
+      "itens": 9
+    },
+    "secretaria": {
+      "graficos": [
+        "c_cagr",
+        "c_canal",
+        "c_conc",
+        "c_ent",
+        "c_orgaos",
+        "c_regiao",
+        "c_sens",
+        "c_serie",
+        "c_treemap"
+      ],
+      "itens": 12
+    }
+  },
+  "requisicoes": {
+    "externas": [],
+    "total": 1
+  },
+  "status": "VERDE",
+  "tamanho_mb": 2.69
+}

@@ -1,0 +1,189 @@
+{
+  "estabilidade_media_top10": 0.914,
+  "evitar": [
+    {
+      "familia_catalogo": "65.02 - MEDICAMENTOS E CORRELATOS",
+      "pct_valor_total": 12.27,
+      "valor_real": 1776438994.17
+    },
+    {
+      "familia_catalogo": "65.01 - MEDICAMENTOS PARA ACAO JUDICIAL",
+      "pct_valor_total": 11.87,
+      "valor_real": 1718329670.64
+    },
+    {
+      "familia_catalogo": "65.05 - DROGAS, PRODUTOS BIOLOGICOS E REAGENTES",
+      "pct_valor_total": 2.83,
+      "valor_real": 410004903.28
+    },
+    {
+      "familia_catalogo": "13.05 - MUNICOES E EXPLOSIVOS",
+      "pct_valor_total": 0.7,
+      "valor_real": 100880251.08
+    },
+    {
+      "familia_catalogo": "65.50 - ORTESES, PROTESES E MATERIAIS ESPECIAIS - OPME",
+      "pct_valor_total": 0.48,
+      "valor_real": 69882491.43
+    },
+    {
+      "familia_catalogo": "91.30 - COMBUSTIVEIS PROPELENTES LIQUIDOS A BASE DE PETROLEO",
+      "pct_valor_total": 0.23,
+      "valor_real": 33079862.49
+    },
+    {
+      "familia_catalogo": "89.05 - CARNES, AVES E PEIXES",
+      "pct_valor_total": 0.09,
+      "valor_real": 12915698.77
+    },
+    {
+      "familia_catalogo": "65.03 - MEDICAMENTOS VETERINARIOS",
+      "pct_valor_total": 0.02,
+      "valor_real": 2662214.18
+    },
+    {
+      "familia_catalogo": "28.05 - MOTORES A GASOLINA EXCETO OS DE AERONAVES E COMPONENTES",
+      "pct_valor_total": 0.02,
+      "valor_real": 2221226.86
+    },
+    {
+      "familia_catalogo": "89.10 - OVOS E LATICINIOS",
+      "pct_valor_total": 0.01,
+      "valor_real": 1648173.73
+    },
+    {
+      "familia_catalogo": "89.20 - PRODUTOS DE PANIFICACAO E CEREAIS",
+      "pct_valor_total": 0.01,
+      "valor_real": 1425599.82
+    },
+    {
+      "familia_catalogo": "49.30 - EQUIPAMENTOS PARA FORNECIMENTO DE COMBUSTIVEL E LUBRIFICACAO",
+      "pct_valor_total": 0.0,
+      "valor_real": 88196.34
+    },
+    {
+      "familia_catalogo": "79.30 - COMPOSTOS E PREPARADOS PARA LIMPEZA E POLIMENTO",
+      "pct_valor_total": 0.0,
+      "valor_real": 78295.99
+    },
+    {
+      "familia_catalogo": "68.10 - PRODUTOS QUIMICOS",
+      "pct_valor_total": 0.0,
+      "valor_real": 56012.15
+    },
+    {
+      "familia_catalogo": "55.10 - TABUAS E ARTIGOS CORRELATOS A BASE DE MADEIRA",
+      "pct_valor_total": 0.0,
+      "valor_real": 39576.88
+    },
+    {
+      "familia_catalogo": "89.25 - ACUCAR, CONFEITOS, CASTANHAS, NOZES E AMENDOIM",
+      "pct_valor_total": 0.0,
+      "valor_real": 24342.8
+    },
+    {
+      "familia_catalogo": "47.30 - ACESSORIOS E FERRAGENS ESPECIAIS DE MANGUEIRAS, CANOS E TUBOS",
+      "pct_valor_total": 0.0,
+      "valor_real": 11620.75
+    },
+    {
+      "familia_catalogo": "29.15 - COMPONENTES DO SISTEMA DE COMBUSTIVEL DE MOTORES DE AERONAVES",
+      "pct_valor_total": 0.0,
+      "valor_real": 5115.35
+    },
+    {
+      "familia_catalogo": "42.10 - EQUIPAMENTOS PARA COMBATE A INCENDIO",
+      "pct_valor_total": 0.0,
+      "valor_real": 2013.34
+    },
+    {
+      "familia_catalogo": "73.50 - LOUCAS E ARTIGOS DE MESA",
+      "pct_valor_total": 0.0,
+      "valor_real": 266.27
+    }
+  ],
+  "gerado_em": "2026-11-12T19:57:24.800353+00:00",
+  "n_elegiveis": 155,
+  "n_familias": 348,
+  "pesos": {
+    "crescimento": 15.0,
+    "demanda": 20.0,
+    "estabilidade_preco": 10.0,
+    "fit_dispensa": 15.0,
+    "fragmentacao": 15.0,
+    "logistica": 10.0,
+    "recorrencia": 15.0
+  },
+  "top10": [
+    {
+      "estabilidade_top10": 1.0,
+      "familia": "89.55 - CAFE, CHA E CHOCOLATE",
+      "rank": 1,
+      "score": 75.01,
+      "valor_2024_2025": 4015281.8099999996
+    },
+    {
+      "estabilidade_top10": 1.0,
+      "familia": "41.10 - EQUIPAMENTOS PARA REFRIGERACAO",
+      "rank": 2,
+      "score": 72.75,
+      "valor_2024_2025": 17630401.7
+    },
+    {
+      "estabilidade_top10": 1.0,
+      "familia": "75.10 - ARTIGOS DE ESCRITORIO",
+      "rank": 3,
+      "score": 72.74,
+      "valor_2024_2025": 3300031.2750000004
+    },
+    {
+      "estabilidade_top10": 1.0,
+      "familia": "41.20 - EQUIPAMENTOS DE AR CONDICIONADO",
+      "rank": 4,
+      "score": 71.06,
+      "valor_2024_2025": 61879387.605000004
+    },
+    {
+      "estabilidade_top10": 1.0,
+      "familia": "84.15 - VESTUARIO PARA FINS ESPECIAIS",
+      "rank": 5,
+      "score": 69.37,
+      "valor_2024_2025": 30081795.505000003
+    },
+    {
+      "estabilidade_top10": 1.0,
+      "familia": "65.15 - INSTRUMENTOS, EQUIPAMENTOS E SUPRIMENTOS MEDICOS E CIRURGICOS",
+      "rank": 6,
+      "score": 69.12,
+      "valor_2024_2025": 285748569.05
+    },
+    {
+      "estabilidade_top10": 1.0,
+      "familia": "89.20 - PRODUTOS DE PANIFICACAO E CEREAIS",
+      "rank": 7,
+      "score": 68.69,
+      "valor_2024_2025": 1221262.3599999999
+    },
+    {
+      "estabilidade_top10": 0.929,
+      "familia": "80.40 - ADESIVOS",
+      "rank": 8,
+      "score": 67.54,
+      "valor_2024_2025": 309116.535
+    },
+    {
+      "estabilidade_top10": 0.5,
+      "familia": "65.04 - PECAS E ACESSORIOS PARA EQUIP., INSTALACOES HOSP. E PARA LABORATORIOS",
+      "rank": 9,
+      "score": 66.95,
+      "valor_2024_2025": 2460379.095
+    },
+    {
+      "estabilidade_top10": 0.714,
+      "familia": "85.40 - ARTIGOS DE PAPEL PARA HIGIENE",
+      "rank": 10,
+      "score": 66.74,
+      "valor_2024_2025": 15104241.7
+    }
+  ]
+}

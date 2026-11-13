@@ -1,0 +1,717 @@
+{
+ "SIMPAS_VOLUME_DE_COMPRAS_ANO_2025 1 (1).xlsx": {
+  "sheet": "VOLUME_DE_COMPRAS_GERAL20260112",
+  "n_cols": 77,
+  "n_rows_dados": 198086,
+  "header": [
+   "COD. SECRETARIA",
+   "SECRETARIA",
+   "UNIDADE",
+   "UO FIPLAN",
+   "UG FIPLAN",
+   "TIPO FORNECIMENTO",
+   "GRUPO LICITAÇÃO",
+   "GRUPO CATÁLOGO",
+   "FAMILIA CATÁLOGO",
+   "CÓDIGO",
+   "Nome Básico",
+   "ITEM",
+   "TIPO ITEM (ESPECIFICO/COMUM)",
+   "UM",
+   "TIPO DO ITEM",
+   "QTD CONTRATADA",
+   "Tipo_Calculo",
+   "VALOR DETALHE",
+   "VALOR UNITÁRIO",
+   "VALOR TOTAL",
+   "CNPJ",
+   "cnae_codigo",
+   "cnae_descricao",
+   "uf_receita",
+   "razao_social",
+   "nome_fantasia",
+   "FORNECEDOR",
+   "CATEGORIA",
+   "SITUAÇÃO FORNECEDOR",
+   "UF FORNECEDOR",
+   "FORMA DE CONTRATAÇÃO",
+   "Nº LICITAÇÃO",
+   "Requisição de Material - RM/Requisição de Serviços -RS",
+   "Dotacao",
+   "AFM/APS",
+   "AFM/APS_TIPO ITEM",
+   "DATA GERAÇÃO da AFM/APS ",
+   "Assinatura da AFM/APS",
+   "Código Local de Entrega/Execução da AFM/APS ",
+   "Endereço Local de Entrega/Execução da AFM/APS ",
+   "Bairro Local de Entrega/Execução da AFM/APS ",
+   "Município Local de Entrega/Execução da AFM/APS ",
+   "UF Local de Entrega/Execução da AFM/APS ",
+   "SRD (FIPLAN)",
+   "LID (FIPLAN)",
+   "PCE - Pedido de Cotação Eletrônica",
+   "VALOR ESTIMADO",
+   "Regiao_Principal_Município",
+   "Digitalização de Contrato",
+   "CLASSIFICAÇÃO FAMÍLIA",
+   "REGIAO_Registro_Precos",
+   "MARCAÇÃO COVID-19",
+   "LIBERAÇÃO COVID-19",
+   "MARCAÇÃO VACINA COVID-19",
+   "LIBERAÇÃO VACINA COVID-19",
+   "Situação do Fornecedor na Geração LID",
+   "MODULO SERVIÇOS TERCEIRIZADOS",
+   "INSTRUMENTO",
+   "Contrato_Emergencial_Cgst",
+   "Situacao_Contrato_Cgst",
+   "UNIDADE LICITANTE",
+   "TIPO DA REQUISIÇÃO",
+   "DELEGAÇÃO AUTOMATICA",
+   "ANO GERAÇÃO da AFM/APS ",
+   "MES GERAÇÃO da AFM/APS ",
+   "Região do Local de Entrega",
+   "Nº  PROCESSO",
+   "Nº CONTRATO",
+   "PRAZO DE ENTREGA",
+   "ORGAO GERENCIADOR DO Registro de Preços",
+   "RESSUPRIMENTO",
+   "ORGAO GERENCIADOR DO RP",
+   "DATA FIM CONTRATO",
+   "ANO FIM CONTRATO",
+   "Aviso/Edital PNCP",
+   "Ata RP PNCP",
+   "Contratos PNCP"
+  ],
+  "header_vazios": [],
+  "header_duplicados": [],
+  "probes_tipos": {
+   "COD. SECRETARIA": [
+    "float:1.0",
+    "float:1.0",
+    "float:2.0"
+   ],
+   "QTD CONTRATADA": [
+    "float:30.0",
+    "float:250.0",
+    "float:4.0"
+   ],
+   "VALOR DETALHE": [
+    "str:''",
+    "str:''",
+    "str:''"
+   ],
+   "VALOR UNITÁRIO": [
+    "float:180.26",
+    "float:184.52",
+    "float:621.0"
+   ],
+   "VALOR TOTAL": [
+    "float:5407.8",
+    "float:46130.0",
+    "float:2484.0"
+   ],
+   "CNPJ": [
+    "str:'05.913.471/0001-04'",
+    "str:'05.913.471/0001-04'",
+    "str:'30.755.240/0001-67'"
+   ],
+   "DATA GERAÇÃO da AFM/APS ": [
+    "date:datetime.date(2025, 6, 6)",
+    "date:datetime.date(2025, 6, 6)",
+    "date:datetime.date(2025, 6, 13)"
+   ],
+   "Assinatura da AFM/APS": [
+    "str:''",
+    "str:''",
+    "str:''"
+   ],
+   "VALOR ESTIMADO": [
+    "float:180.26",
+    "float:184.52",
+    "float:621.0"
+   ],
+   "ANO GERAÇÃO da AFM/APS": [
+    "float:2025.0",
+    "float:2025.0",
+    "float:2025.0"
+   ],
+   "MES GERAÇÃO da AFM/APS": [
+    "float:6.0",
+    "float:6.0",
+    "float:6.0"
+   ]
+  }
+ },
+ "SIMPAS_VOLUME_DE_COMPRAS_GERAL_2021.xlsx": {
+  "sheet": "VOLUME_DE_COMPRAS_GERAL20260807",
+  "n_cols": 77,
+  "n_rows_dados": 90058,
+  "header": [
+   "COD. SECRETARIA",
+   "SECRETARIA",
+   "UNIDADE",
+   "UO FIPLAN",
+   "UG FIPLAN",
+   "TIPO FORNECIMENTO",
+   "GRUPO LICITAÇÃO",
+   "GRUPO CATÁLOGO",
+   "FAMILIA CATÁLOGO",
+   "CÓDIGO",
+   "Nome Básico",
+   "ITEM",
+   "TIPO ITEM (ESPECIFICO/COMUM)",
+   "UM",
+   "TIPO DO ITEM",
+   "QTD CONTRATADA",
+   "Tipo_Calculo",
+   "VALOR DETALHE",
+   "VALOR UNITÁRIO",
+   "",
+   "CNPJ",
+   "cnae_codigo",
+   "cnae_descricao",
+   "uf_receita",
+   "razao_social",
+   "nome_fantasia",
+   "CATEGORIA",
+   "SITUAÇÃO FORNECEDOR",
+   "UF FORNECEDOR",
+   "FORMA DE CONTRATAÇÃO",
+   "Nº LICITAÇÃO",
+   "Requisição de Material - RM/Requisição de Serviços -RS",
+   "Dotacao",
+   "AFM/APS",
+   "AFM/APS_TIPO ITEM",
+   "DATA GERAÇÃO da AFM/APS ",
+   "",
+   "Código Local de Entrega/Execução da AFM/APS ",
+   "Endereço Local de Entrega/Execução da AFM/APS ",
+   "Bairro Local de Entrega/Execução da AFM/APS ",
+   "Município Local de Entrega/Execução da AFM/APS ",
+   "UF Local de Entrega/Execução da AFM/APS ",
+   "SRD (FIPLAN)",
+   "LID (FIPLAN)",
+   "PCE - Pedido de Cotação Eletrônica",
+   "VALOR ESTIMADO",
+   "Regiao_Principal_Município",
+   "Digitalização de Contrato",
+   "CLASSIFICAÇÃO FAMÍLIA",
+   "REGIAO_Registro_Precos",
+   "MARCAÇÃO COVID-19",
+   "LIBERAÇÃO COVID-19",
+   "MARCAÇÃO VACINA COVID-19",
+   "LIBERAÇÃO VACINA COVID-19",
+   "Situação do Fornecedor na Geração LID",
+   "MODULO SERVIÇOS TERCEIRIZADOS",
+   "INSTRUMENTO",
+   "Contrato_Emergencial_Cgst",
+   "Situacao_Contrato_Cgst",
+   "UNIDADE LICITANTE",
+   "TIPO DA REQUISIÇÃO",
+   "DELEGAÇÃO AUTOMATICA",
+   "ANO GERAÇÃO da AFM/APS ",
+   "MES GERAÇÃO da AFM/APS ",
+   "Região do Local de Entrega",
+   "Nº  PROCESSO",
+   "Nº CONTRATO",
+   "PRAZO DE ENTREGA",
+   "ORGAO GERENCIADOR DO Registro de Preços",
+   "RESSUPRIMENTO",
+   "",
+   "DATA FIM CONTRATO",
+   "ANO FIM CONTRATO",
+   "Aviso/Edital PNCP",
+   "Ata RP PNCP",
+   "Contratos PNCP",
+   ""
+  ],
+  "header_vazios": [
+   19,
+   36,
+   70,
+   76
+  ],
+  "header_duplicados": [],
+  "probes_tipos": {
+   "COD. SECRETARIA": [
+    "float:2.0",
+    "float:2.0",
+    "float:2.0"
+   ],
+   "QTD CONTRATADA": [
+    "float:20.0",
+    "float:50.0",
+    "float:50.0"
+   ],
+   "VALOR DETALHE": [
+    "str:''",
+    "str:''",
+    "str:''"
+   ],
+   "VALOR UNITÁRIO": [
+    "float:26.0",
+    "float:3.96",
+    "float:3.96"
+   ],
+   "VALOR TOTAL": "AUSENTE",
+   "CNPJ": [
+    "str:'07.571.925/0001-31'",
+    "str:'28.213.610/0001-92'",
+    "str:'28.213.610/0001-92'"
+   ],
+   "DATA GERAÇÃO da AFM/APS ": [
+    "date:datetime.date(2021, 10, 28)",
+    "date:datetime.date(2021, 1, 25)",
+    "date:datetime.date(2021, 2, 9)"
+   ],
+   "Assinatura da AFM/APS": "AUSENTE",
+   "VALOR ESTIMADO": [
+    "float:26.0",
+    "float:3.96",
+    "float:3.96"
+   ],
+   "ANO GERAÇÃO da AFM/APS": [
+    "float:2021.0",
+    "float:2021.0",
+    "float:2021.0"
+   ],
+   "MES GERAÇÃO da AFM/APS": [
+    "float:10.0",
+    "float:1.0",
+    "float:2.0"
+   ]
+  }
+ },
+ "SIMPAS_VOLUME_DE_COMPRAS_GERAL_2022.xlsx": {
+  "sheet": "VOLUME_DE_COMPRAS_GERAL20260807",
+  "n_cols": 78,
+  "n_rows_dados": 177068,
+  "header": [
+   "COD. SECRETARIA",
+   "SECRETARIA",
+   "UNIDADE",
+   "UO FIPLAN",
+   "UG FIPLAN",
+   "TIPO FORNECIMENTO",
+   "GRUPO LICITAÇÃO",
+   "GRUPO CATÁLOGO",
+   "FAMILIA CATÁLOGO",
+   "CÓDIGO",
+   "Nome Básico",
+   "ITEM",
+   "TIPO ITEM (ESPECIFICO/COMUM)",
+   "UM",
+   "TIPO DO ITEM",
+   "QTD CONTRATADA",
+   "Tipo_Calculo",
+   "VALOR DETALHE",
+   "VALOR UNITÁRIO",
+   "VALOR TOTAL",
+   "CNPJ",
+   "cnae_codigo",
+   "cnae_descricao",
+   "uf_receita",
+   "razao_social",
+   "nome_fantasia",
+   "FORNECEDOR",
+   "CATEGORIA",
+   "SITUAÇÃO FORNECEDOR",
+   "UF FORNECEDOR",
+   "FORMA DE CONTRATAÇÃO",
+   "Nº LICITAÇÃO",
+   "Requisição de Material - RM/Requisição de Serviços -RS",
+   "Dotacao",
+   "AFM/APS",
+   "AFM/APS_TIPO ITEM",
+   "DATA GERAÇÃO da AFM/APS ",
+   "Assinatura da AFM/APS",
+   "Código Local de Entrega/Execução da AFM/APS ",
+   "Endereço Local de Entrega/Execução da AFM/APS ",
+   "Bairro Local de Entrega/Execução da AFM/APS ",
+   "Município Local de Entrega/Execução da AFM/APS ",
+   "UF Local de Entrega/Execução da AFM/APS ",
+   "SRD (FIPLAN)",
+   "LID (FIPLAN)",
+   "PCE - Pedido de Cotação Eletrônica",
+   "VALOR ESTIMADO",
+   "Regiao_Principal_Município",
+   "Digitalização de Contrato",
+   "CLASSIFICAÇÃO FAMÍLIA",
+   "REGIAO_Registro_Precos",
+   "MARCAÇÃO COVID-19",
+   "LIBERAÇÃO COVID-19",
+   "MARCAÇÃO VACINA COVID-19",
+   "LIBERAÇÃO VACINA COVID-19",
+   "Situação do Fornecedor na Geração LID",
+   "MODULO SERVIÇOS TERCEIRIZADOS",
+   "INSTRUMENTO",
+   "Contrato_Emergencial_Cgst",
+   "Situacao_Contrato_Cgst",
+   "UNIDADE LICITANTE",
+   "TIPO DA REQUISIÇÃO",
+   "DELEGAÇÃO AUTOMATICA",
+   "ANO GERAÇÃO da AFM/APS ",
+   "MES GERAÇÃO da AFM/APS ",
+   "Região do Local de Entrega",
+   "Nº  PROCESSO",
+   "Nº CONTRATO",
+   "PRAZO DE ENTREGA",
+   "ORGAO GERENCIADOR DO Registro de Preços",
+   "RESSUPRIMENTO",
+   "ORGAO GERENCIADOR DO RP",
+   "DATA FIM CONTRATO",
+   "ANO FIM CONTRATO",
+   "Aviso/Edital PNCP",
+   "Ata RP PNCP",
+   "Contratos PNCP",
+   ""
+  ],
+  "header_vazios": [
+   77
+  ],
+  "header_duplicados": [],
+  "probes_tipos": {
+   "COD. SECRETARIA": [
+    "float:1.0",
+    "float:1.0",
+    "float:1.0"
+   ],
+   "QTD CONTRATADA": [
+    "float:30.0",
+    "float:50.0",
+    "float:1.0"
+   ],
+   "VALOR DETALHE": [
+    "str:''",
+    "str:''",
+    "str:''"
+   ],
+   "VALOR UNITÁRIO": [
+    "float:58.8",
+    "float:6.86",
+    "float:616.0"
+   ],
+   "VALOR TOTAL": [
+    "float:1764.0",
+    "float:343.0",
+    "float:616.0"
+   ],
+   "CNPJ": [
+    "str:'20.784.313/0001-95'",
+    "str:'30.508.137/0001-12'",
+    "str:'21.746.899/0001-66'"
+   ],
+   "DATA GERAÇÃO da AFM/APS ": [
+    "date:datetime.date(2022, 8, 26)",
+    "date:datetime.date(2022, 5, 18)",
+    "date:datetime.date(2022, 8, 29)"
+   ],
+   "Assinatura da AFM/APS": [
+    "str:''",
+    "date:datetime.date(2022, 5, 26)",
+    "str:''"
+   ],
+   "VALOR ESTIMADO": [
+    "float:58.8",
+    "float:6.86",
+    "float:616.0"
+   ],
+   "ANO GERAÇÃO da AFM/APS": [
+    "float:2022.0",
+    "float:2022.0",
+    "float:2022.0"
+   ],
+   "MES GERAÇÃO da AFM/APS": [
+    "float:8.0",
+    "float:5.0",
+    "float:8.0"
+   ]
+  }
+ },
+ "SIMPAS_VOLUME_DE_COMPRAS_GERAL_2023 1.xlsx": {
+  "sheet": "in",
+  "n_cols": 77,
+  "n_rows_dados": 217918,
+  "header": [
+   "COD. SECRETARIA",
+   "SECRETARIA",
+   "UNIDADE",
+   "UO FIPLAN",
+   "UG FIPLAN",
+   "TIPO FORNECIMENTO",
+   "GRUPO LICITAÇÃO",
+   "GRUPO CATÁLOGO",
+   "FAMILIA CATÁLOGO",
+   "CÓDIGO",
+   "Nome Básico",
+   "ITEM",
+   "TIPO ITEM (ESPECIFICO/COMUM)",
+   "UM",
+   "TIPO DO ITEM",
+   "QTD CONTRATADA",
+   "Tipo_Calculo",
+   "VALOR DETALHE",
+   "VALOR UNITÁRIO",
+   "VALOR TOTAL",
+   "CNPJ",
+   "cnae_codigo",
+   "cnae_descricao",
+   "uf_receita",
+   "razao_social",
+   "nome_fantasia",
+   "FORNECEDOR",
+   "CATEGORIA",
+   "SITUAÇÃO FORNECEDOR",
+   "UF FORNECEDOR",
+   "FORMA DE CONTRATAÇÃO",
+   "Nº LICITAÇÃO",
+   "Requisição de Material - RM/Requisição de Serviços -RS",
+   "Dotacao",
+   "AFM/APS",
+   "AFM/APS_TIPO ITEM",
+   "DATA GERAÇÃO da AFM/APS ",
+   "Assinatura da AFM/APS",
+   "Código Local de Entrega/Execução da AFM/APS ",
+   "Endereço Local de Entrega/Execução da AFM/APS ",
+   "Bairro Local de Entrega/Execução da AFM/APS ",
+   "Município Local de Entrega/Execução da AFM/APS ",
+   "UF Local de Entrega/Execução da AFM/APS ",
+   "SRD (FIPLAN)",
+   "LID (FIPLAN)",
+   "PCE - Pedido de Cotação Eletrônica",
+   "VALOR ESTIMADO",
+   "Regiao_Principal_Município",
+   "Digitalização de Contrato",
+   "CLASSIFICAÇÃO FAMÍLIA",
+   "REGIAO_Registro_Precos",
+   "MARCAÇÃO COVID-19",
+   "LIBERAÇÃO COVID-19",
+   "MARCAÇÃO VACINA COVID-19",
+   "LIBERAÇÃO VACINA COVID-19",
+   "Situação do Fornecedor na Geração LID",
+   "MODULO SERVIÇOS TERCEIRIZADOS",
+   "INSTRUMENTO",
+   "Contrato_Emergencial_Cgst",
+   "Situacao_Contrato_Cgst",
+   "UNIDADE LICITANTE",
+   "TIPO DA REQUISIÇÃO",
+   "DELEGAÇÃO AUTOMATICA",
+   "ANO GERAÇÃO da AFM/APS ",
+   "MES GERAÇÃO da AFM/APS ",
+   "Região do Local de Entrega",
+   "Nº  PROCESSO",
+   "Nº CONTRATO",
+   "PRAZO DE ENTREGA",
+   "ORGAO GERENCIADOR DO Registro de Preços",
+   "RESSUPRIMENTO",
+   "ORGAO GERENCIADOR DO RP",
+   "DATA FIM CONTRATO",
+   "ANO FIM CONTRATO",
+   "Aviso/Edital PNCP",
+   "Ata RP PNCP",
+   "Contratos PNCP"
+  ],
+  "header_vazios": [],
+  "header_duplicados": [],
+  "probes_tipos": {
+   "COD. SECRETARIA": [
+    "float:1.0",
+    "float:1.0",
+    "float:1.0"
+   ],
+   "QTD CONTRATADA": [
+    "float:200.0",
+    "float:300.0",
+    "float:40.49"
+   ],
+   "VALOR DETALHE": [
+    "str:''",
+    "str:''",
+    "str:''"
+   ],
+   "VALOR UNITÁRIO": [
+    "float:66.66",
+    "float:72.98",
+    "float:38.5"
+   ],
+   "VALOR TOTAL": [
+    "float:13332.0",
+    "float:21894.0",
+    "float:1558.86"
+   ],
+   "CNPJ": [
+    "str:'05.913.471/0001-04'",
+    "str:'05.913.471/0001-04'",
+    "str:'05.913.471/0001-04'"
+   ],
+   "DATA GERAÇÃO da AFM/APS ": [
+    "date:datetime.date(2023, 6, 12)",
+    "date:datetime.date(2023, 6, 12)",
+    "date:datetime.date(2023, 10, 9)"
+   ],
+   "Assinatura da AFM/APS": [
+    "date:datetime.date(2023, 6, 19)",
+    "date:datetime.date(2023, 6, 19)",
+    "date:datetime.date(2023, 10, 9)"
+   ],
+   "VALOR ESTIMADO": [
+    "float:66.66",
+    "float:72.98",
+    "float:38.5"
+   ],
+   "ANO GERAÇÃO da AFM/APS": [
+    "float:2023.0",
+    "float:2023.0",
+    "float:2023.0"
+   ],
+   "MES GERAÇÃO da AFM/APS": [
+    "float:6.0",
+    "float:6.0",
+    "float:10.0"
+   ]
+  }
+ },
+ "SIMPAS_VOLUME_DE_COMPRAS_GERAL_2024 2.xlsx": {
+  "sheet": "in",
+  "n_cols": 77,
+  "n_rows_dados": 189127,
+  "header": [
+   "COD. SECRETARIA",
+   "SECRETARIA",
+   "UNIDADE",
+   "UO FIPLAN",
+   "UG FIPLAN",
+   "TIPO FORNECIMENTO",
+   "GRUPO LICITAÇÃO",
+   "GRUPO CATÁLOGO",
+   "FAMILIA CATÁLOGO",
+   "CÓDIGO",
+   "Nome Básico",
+   "ITEM",
+   "TIPO ITEM (ESPECIFICO/COMUM)",
+   "UM",
+   "TIPO DO ITEM",
+   "QTD CONTRATADA",
+   "Tipo_Calculo",
+   "VALOR DETALHE",
+   "VALOR UNITÁRIO",
+   "VALOR TOTAL",
+   "CNPJ",
+   "cnae_codigo",
+   "cnae_descricao",
+   "uf_receita",
+   "razao_social",
+   "nome_fantasia",
+   "FORNECEDOR",
+   "CATEGORIA",
+   "SITUAÇÃO FORNECEDOR",
+   "UF FORNECEDOR",
+   "FORMA DE CONTRATAÇÃO",
+   "Nº LICITAÇÃO",
+   "Requisição de Material - RM/Requisição de Serviços -RS",
+   "Dotacao",
+   "AFM/APS",
+   "AFM/APS_TIPO ITEM",
+   "DATA GERAÇÃO da AFM/APS ",
+   "Assinatura da AFM/APS",
+   "Código Local de Entrega/Execução da AFM/APS ",
+   "Endereço Local de Entrega/Execução da AFM/APS ",
+   "Bairro Local de Entrega/Execução da AFM/APS ",
+   "Município Local de Entrega/Execução da AFM/APS ",
+   "UF Local de Entrega/Execução da AFM/APS ",
+   "SRD (FIPLAN)",
+   "LID (FIPLAN)",
+   "PCE - Pedido de Cotação Eletrônica",
+   "VALOR ESTIMADO",
+   "Regiao_Principal_Município",
+   "Digitalização de Contrato",
+   "CLASSIFICAÇÃO FAMÍLIA",
+   "REGIAO_Registro_Precos",
+   "MARCAÇÃO COVID-19",
+   "LIBERAÇÃO COVID-19",
+   "MARCAÇÃO VACINA COVID-19",
+   "LIBERAÇÃO VACINA COVID-19",
+   "Situação do Fornecedor na Geração LID",
+   "MODULO SERVIÇOS TERCEIRIZADOS",
+   "INSTRUMENTO",
+   "Contrato_Emergencial_Cgst",
+   "Situacao_Contrato_Cgst",
+   "UNIDADE LICITANTE",
+   "TIPO DA REQUISIÇÃO",
+   "DELEGAÇÃO AUTOMATICA",
+   "ANO GERAÇÃO da AFM/APS ",
+   "MES GERAÇÃO da AFM/APS ",
+   "Região do Local de Entrega",
+   "Nº  PROCESSO",
+   "Nº CONTRATO",
+   "PRAZO DE ENTREGA",
+   "ORGAO GERENCIADOR DO Registro de Preços",
+   "RESSUPRIMENTO",
+   "ORGAO GERENCIADOR DO RP",
+   "DATA FIM CONTRATO",
+   "ANO FIM CONTRATO",
+   "Aviso/Edital PNCP",
+   "Ata RP PNCP",
+   "Contratos PNCP"
+  ],
+  "header_vazios": [],
+  "header_duplicados": [],
+  "probes_tipos": {
+   "COD. SECRETARIA": [
+    "float:1.0",
+    "float:1.0",
+    "float:1.0"
+   ],
+   "QTD CONTRATADA": [
+    "float:2000.0",
+    "float:200.0",
+    "float:200.0"
+   ],
+   "VALOR DETALHE": [
+    "str:''",
+    "str:''",
+    "str:''"
+   ],
+   "VALOR UNITÁRIO": [
+    "float:20.41",
+    "float:2.98",
+    "float:2.75"
+   ],
+   "VALOR TOTAL": [
+    "float:40820.0",
+    "float:596.0",
+    "float:550.0"
+   ],
+   "CNPJ": [
+    "str:'29.954.862/0001-35'",
+    "str:'26.507.653/0001-55'",
+    "str:'26.507.653/0001-55'"
+   ],
+   "DATA GERAÇÃO da AFM/APS ": [
+    "date:datetime.date(2024, 4, 17)",
+    "date:datetime.date(2024, 6, 13)",
+    "date:datetime.date(2024, 6, 13)"
+   ],
+   "Assinatura da AFM/APS": [
+    "date:datetime.date(2024, 4, 22)",
+    "date:datetime.date(2024, 6, 27)",
+    "date:datetime.date(2024, 6, 27)"
+   ],
+   "VALOR ESTIMADO": [
+    "float:20.41",
+    "float:2.98",
+    "float:2.75"
+   ],
+   "ANO GERAÇÃO da AFM/APS": [
+    "float:2024.0",
+    "float:2024.0",
+    "float:2024.0"
+   ],
+   "MES GERAÇÃO da AFM/APS": [
+    "float:4.0",
+    "float:6.0",
+    "float:6.0"
+   ]
+  }
+ }
+}

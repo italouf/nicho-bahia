@@ -1,0 +1,41 @@
+{
+  "abas": 8,
+  "gates": {
+    "G3": "VERDE",
+    "G4": "VERDE"
+  },
+  "gerado_em": "2026-11-12T20:01:54.931705+00:00",
+  "graficos": {
+    "c_cagr": "A03",
+    "c_cal": "A05",
+    "c_canal": "A07",
+    "c_conc": "A11",
+    "c_cv": "A17",
+    "c_desc": "A18",
+    "c_ent": "A14",
+    "c_forn": "A15",
+    "c_heat": "A05",
+    "c_mun": "A21",
+    "c_orgaos": "A06",
+    "c_prazo": "A20",
+    "c_preco": "A16",
+    "c_regiao": "A19",
+    "c_sens": "A13",
+    "c_serie": "A01",
+    "c_ticket": "A08",
+    "c_treemap": "A02"
+  },
+  "html": {
+    "arquivo": "output\\painel_decisao.html",
+    "echarts_kb": 1006.0,
+    "mb": 2.69
+  },
+  "n_graficos": 18,
+  "offline": true,
+  "panel_data": {
+    "arquivo": "data\\aggregates\\panel_data.json",
+    "familias": 348,
+    "mb": 1.65,
+    "n_elegiveis": 155
+  }
+}

@@ -1,0 +1,6 @@
+passo	descricao	linhas	delta_linhas	valor	delta_valor	motivo
+E0	staging (todas as linhas)	872257	0	87368466271.0	0.0	base bruta tipada
+E1	remove serviço (TIPO DO ITEM ≠ Material)	311319	-311319	74770856620.04	-74770856620.04	escopo = material (G1/Q1)
+E2	remove rodapé (sem AFM/APS e sem tipo)	4	-4	0.0	0.0	4 linhas de observação no fim da planilha 2025
+E3	remove material sem data	0	0	0.0	0.0	eixo temporal obrigatório
+E4	escopo tratado	560934	0	12597609650.96	0.0	entrada da análise

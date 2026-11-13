@@ -1,0 +1,3392 @@
+{
+  "anomalias": {
+    "datas": [
+      {
+        "ano": 2021,
+        "ano_fim_fora_faixa": 0,
+        "assin_antes_2019": 0,
+        "assin_antes_geracao": 0,
+        "assin_depois_2026": 0,
+        "prazo_acima_365d": 530
+      },
+      {
+        "ano": 2022,
+        "ano_fim_fora_faixa": 0,
+        "assin_antes_2019": 0,
+        "assin_antes_geracao": 6,
+        "assin_depois_2026": 0,
+        "prazo_acima_365d": 650
+      },
+      {
+        "ano": 2023,
+        "ano_fim_fora_faixa": 0,
+        "assin_antes_2019": 0,
+        "assin_antes_geracao": 71,
+        "assin_depois_2026": 0,
+        "prazo_acima_365d": 766
+      },
+      {
+        "ano": 2024,
+        "ano_fim_fora_faixa": 8,
+        "assin_antes_2019": 8,
+        "assin_antes_geracao": 133,
+        "assin_depois_2026": 0,
+        "prazo_acima_365d": 1013
+      },
+      {
+        "ano": 2025,
+        "ano_fim_fora_faixa": 100,
+        "assin_antes_2019": 125,
+        "assin_antes_geracao": 281,
+        "assin_depois_2026": 0,
+        "prazo_acima_365d": 1899
+      }
+    ],
+    "escala": {
+      "total_acima_100m": 102.0,
+      "total_max": 1418231801.0,
+      "unit_acima_1m": 3700.0,
+      "unit_max": 1418231801.0,
+      "unit_negativo": 2.0
+    },
+    "identificador": [
+      {
+        "distintos": 47,
+        "linhas": 428,
+        "n_digitos": 10
+      },
+      {
+        "distintos": 2618,
+        "linhas": 4665,
+        "n_digitos": 11
+      },
+      {
+        "distintos": 12551,
+        "linhas": 867160,
+        "n_digitos": 14
+      }
+    ],
+    "linhas_nao_dado": {
+      "arquivo": "SIMPAS_VOLUME_DE_COMPRAS_ANO_2025 1 (1).xlsx",
+      "linhas": 4,
+      "primeira_linha": 198083,
+      "ultima_linha": 198086
+    },
+    "nomes_basicos_em_varias_familias": 1242,
+    "regioes": [
+      {
+        "linhas": 414525,
+        "regiao": "Região Metropolitana de Salvador",
+        "valor_total": 81583118354.81
+      },
+      {
+        "linhas": 51399,
+        "regiao": "Região Itapetinga e Vitória da Conquista",
+        "valor_total": 637067845.15
+      },
+      {
+        "linhas": 45015,
+        "regiao": "Região Feira de Santana",
+        "valor_total": 1763370098.28
+      },
+      {
+        "linhas": 42611,
+        "regiao": "Região Alagoinhas e Serrinha",
+        "valor_total": 298796067.89
+      },
+      {
+        "linhas": 39136,
+        "regiao": "Região SAJesus, Amargosa,Valença,SAmaro",
+        "valor_total": 398762112.82
+      },
+      {
+        "linhas": 38305,
+        "regiao": "Região Jequié",
+        "valor_total": 328099463.07
+      },
+      {
+        "linhas": 33540,
+        "regiao": "Região Brumado, Caetité e Guanambi",
+        "valor_total": 199292215.72
+      },
+      {
+        "linhas": 29845,
+        "regiao": "Região Ilhéus e Itabuna",
+        "valor_total": 507089129.73
+      },
+      {
+        "linhas": 28959,
+        "regiao": "Região Ribeira do Pombal e Paulo Afonso",
+        "valor_total": 312838503.11
+      },
+      {
+        "linhas": 27174,
+        "regiao": "Região Juazeiro e Senhor do Bonfim",
+        "valor_total": 263994753.58
+      },
+      {
+        "linhas": 27118,
+        "regiao": "Região Eunápolis e Teixeira de Freitas",
+        "valor_total": 192544607.7
+      },
+      {
+        "linhas": 26982,
+        "regiao": "Região Jacobina, Piritiba e Itaberaba",
+        "valor_total": 347108678.17
+      },
+      {
+        "linhas": 23078,
+        "regiao": "Região Seabra e Irecê",
+        "valor_total": 179220790.56
+      },
+      {
+        "linhas": 20484,
+        "regiao": "Região Barreiras",
+        "valor_total": 165358933.44
+      },
+      {
+        "linhas": 18307,
+        "regiao": "Região B. Jesus Lapa e Macaúbas",
+        "valor_total": 155512373.09
+      },
+      {
+        "linhas": 5413,
+        "regiao": "Região SAEB/SAC Interior",
+        "valor_total": 30996200.71
+      },
+      {
+        "linhas": 267,
+        "regiao": "Região Merenda Escolar (Inativo)",
+        "valor_total": 5100085.07
+      },
+      {
+        "linhas": 95,
+        "regiao": "Região Centro Oeste do Brasil",
+        "valor_total": 196058.1
+      },
+      {
+        "linhas": 4,
+        "regiao": "(nulo)",
+        "valor_total": NaN
+      }
+    ],
+    "uf_entrega": [
+      {
+        "linhas": 871682,
+        "uf": "BA"
+      },
+      {
+        "linhas": 476,
+        "uf": "ba"
+      },
+      {
+        "linhas": 95,
+        "uf": "DF"
+      },
+      {
+        "linhas": 4,
+        "uf": "(nulo)"
+      }
+    ]
+  },
+  "categoricas": {
+    "afm_aps_tipo_item": {
+      "n_distinct": 492933,
+      "truncado": true,
+      "valores": [
+        {
+          "n": 307,
+          "pct": 0.035,
+          "valor": "APS - 19.004.00089/2022"
+        },
+        {
+          "n": 304,
+          "pct": 0.035,
+          "valor": "APS - 19.004.00017/2025"
+        },
+        {
+          "n": 284,
+          "pct": 0.033,
+          "valor": "APS - 19.004.00097/2022"
+        },
+        {
+          "n": 249,
+          "pct": 0.029,
+          "valor": "AFM - 11.620.00168/2022"
+        },
+        {
+          "n": 200,
+          "pct": 0.023,
+          "valor": "AFM - 11.271.00037/2022"
+        },
+        {
+          "n": 174,
+          "pct": 0.02,
+          "valor": "AFM - 11.630.00456/2022"
+        },
+        {
+          "n": 169,
+          "pct": 0.019,
+          "valor": "AFM - 11.229.00178/2022"
+        },
+        {
+          "n": 166,
+          "pct": 0.019,
+          "valor": "AFM - 11.241.00067/2023"
+        },
+        {
+          "n": 160,
+          "pct": 0.018,
+          "valor": "AFM - 11.620.00237/2022"
+        },
+        {
+          "n": 159,
+          "pct": 0.018,
+          "valor": "AFM - 11.630.00428/2022"
+        },
+        {
+          "n": 145,
+          "pct": 0.017,
+          "valor": "AFM - 11.620.00029/2022"
+        },
+        {
+          "n": 136,
+          "pct": 0.016,
+          "valor": "APS - 11.630.00169/2025"
+        },
+        {
+          "n": 135,
+          "pct": 0.015,
+          "valor": "APS - 19.004.00025/2024"
+        },
+        {
+          "n": 135,
+          "pct": 0.015,
+          "valor": "APS - 19.004.00085/2025"
+        },
+        {
+          "n": 134,
+          "pct": 0.015,
+          "valor": "AFM - 22.710.00232/2024"
+        },
+        {
+          "n": 134,
+          "pct": 0.015,
+          "valor": "AFM - 22.710.00233/2024"
+        },
+        {
+          "n": 131,
+          "pct": 0.015,
+          "valor": "APS - 70.245.00002/2021"
+        },
+        {
+          "n": 127,
+          "pct": 0.015,
+          "valor": "APS - 11.630.00135/2022"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "AFM - 11.620.00239/2022"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "AFM - 20.062.00031/2021"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "APS - 19.004.00040/2022"
+        },
+        {
+          "n": 124,
+          "pct": 0.014,
+          "valor": "APS - 11.630.00202/2024"
+        },
+        {
+          "n": 123,
+          "pct": 0.014,
+          "valor": "APS - 19.004.00090/2022"
+        },
+        {
+          "n": 123,
+          "pct": 0.014,
+          "valor": "APS - 70.245.00005/2024"
+        },
+        {
+          "n": 122,
+          "pct": 0.014,
+          "valor": "AFM - 20.062.00003/2023"
+        }
+      ]
+    },
+    "categoria": {
+      "n_distinct": 7,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 316347,
+          "pct": 36.268,
+          "valor": "NO"
+        },
+        {
+          "n": 299522,
+          "pct": 34.339,
+          "valor": "EPP"
+        },
+        {
+          "n": 238048,
+          "pct": 27.291,
+          "valor": "ME"
+        },
+        {
+          "n": 16331,
+          "pct": 1.872,
+          "valor": "MEI"
+        },
+        {
+          "n": 1596,
+          "pct": 0.183,
+          "valor": "AF"
+        },
+        {
+          "n": 340,
+          "pct": 0.039,
+          "valor": "ES"
+        },
+        {
+          "n": 68,
+          "pct": 0.008,
+          "valor": "EC"
+        },
+        {
+          "n": 5,
+          "pct": 0.001,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "classificacao_familia": {
+      "n_distinct": 3,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 848150,
+          "pct": 97.236,
+          "valor": "Outros"
+        },
+        {
+          "n": 19327,
+          "pct": 2.216,
+          "valor": "TIC"
+        },
+        {
+          "n": 4776,
+          "pct": 0.548,
+          "valor": "Serviços Terceirizados"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "contrato_emergencial_cgst": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 560935,
+          "pct": 64.308,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 311157,
+          "pct": 35.673,
+          "valor": "Não"
+        },
+        {
+          "n": 165,
+          "pct": 0.019,
+          "valor": "Sim"
+        }
+      ]
+    },
+    "delegacao_automatica": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 719276,
+          "pct": 82.461,
+          "valor": "Não"
+        },
+        {
+          "n": 152977,
+          "pct": 17.538,
+          "valor": "SIM"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "digitalizacao_contrato": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 486816,
+          "pct": 55.811,
+          "valor": "Não"
+        },
+        {
+          "n": 385437,
+          "pct": 44.188,
+          "valor": "Sim"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "forma_contratacao": {
+      "n_distinct": 23,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 354223,
+          "pct": 40.61,
+          "valor": "Registro de Preços"
+        },
+        {
+          "n": 216612,
+          "pct": 24.834,
+          "valor": "N - Credenciamento"
+        },
+        {
+          "n": 114388,
+          "pct": 13.114,
+          "valor": "E - Dispensa Eletrônica"
+        },
+        {
+          "n": 78833,
+          "pct": 9.038,
+          "valor": "C - Licitação"
+        },
+        {
+          "n": 68702,
+          "pct": 7.876,
+          "valor": "D - Dispensa Tradicional"
+        },
+        {
+          "n": 17145,
+          "pct": 1.966,
+          "valor": "T - Termo Aditivo"
+        },
+        {
+          "n": 17126,
+          "pct": 1.963,
+          "valor": "I - Inexigibilidade"
+        },
+        {
+          "n": 1963,
+          "pct": 0.225,
+          "valor": "W - Adesão Registro de Preços"
+        },
+        {
+          "n": 935,
+          "pct": 0.107,
+          "valor": "Y - Licitação Lei Fed 13.303/16"
+        },
+        {
+          "n": 724,
+          "pct": 0.083,
+          "valor": "Q - Contratação Direta"
+        },
+        {
+          "n": 649,
+          "pct": 0.074,
+          "valor": "U - Apostila"
+        },
+        {
+          "n": 451,
+          "pct": 0.052,
+          "valor": "R - Concurso"
+        },
+        {
+          "n": 208,
+          "pct": 0.024,
+          "valor": "S - Shopping"
+        },
+        {
+          "n": 146,
+          "pct": 0.017,
+          "valor": "L - Alteração de Fornecedor"
+        },
+        {
+          "n": 84,
+          "pct": 0.01,
+          "valor": "P - Comparação de Preço"
+        },
+        {
+          "n": 23,
+          "pct": 0.003,
+          "valor": "G - Seleção de Consultores Individuais (SCI)"
+        },
+        {
+          "n": 10,
+          "pct": 0.001,
+          "valor": "M - Manifestação de Interesse"
+        },
+        {
+          "n": 9,
+          "pct": 0.001,
+          "valor": "O - Seleção Baseada nas Qualificações do Consultor (SQC)"
+        },
+        {
+          "n": 8,
+          "pct": 0.001,
+          "valor": "H - Seleção Baseada na Qualidade (SBQ)"
+        },
+        {
+          "n": 7,
+          "pct": 0.001,
+          "valor": "B - Seleção Baseada na Qualidade e Custo (SBQC)"
+        },
+        {
+          "n": 5,
+          "pct": 0.001,
+          "valor": "F - RDC"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 1,
+          "pct": 0.0,
+          "valor": "J - Seleção com Orçamento Fixo (SOF)"
+        },
+        {
+          "n": 1,
+          "pct": 0.0,
+          "valor": "V - Convênio"
+        }
+      ]
+    },
+    "instrumento": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 602878,
+          "pct": 69.117,
+          "valor": "Não"
+        },
+        {
+          "n": 269375,
+          "pct": 30.883,
+          "valor": "Sim"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "liberacao_covid": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 872009,
+          "pct": 99.972,
+          "valor": "Não"
+        },
+        {
+          "n": 244,
+          "pct": 0.028,
+          "valor": "Sim"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "liberacao_vacina_covid": {
+      "n_distinct": 1,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 872253,
+          "pct": 100.0,
+          "valor": "Não"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "lid_fiplan": {
+      "n_distinct": 353591,
+      "truncado": true,
+      "valores": [
+        {
+          "n": 325077,
+          "pct": 37.268,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 307,
+          "pct": 0.035,
+          "valor": "19.601.0003.22.0001307-8"
+        },
+        {
+          "n": 304,
+          "pct": 0.035,
+          "valor": "19.601.0003.25.0000273-1"
+        },
+        {
+          "n": 284,
+          "pct": 0.033,
+          "valor": "19.601.0003.22.0001566-6"
+        },
+        {
+          "n": 268,
+          "pct": 0.031,
+          "valor": "22.202.0001.24.0000297-4"
+        },
+        {
+          "n": 249,
+          "pct": 0.029,
+          "valor": "11.302.0001.22.0000389-5"
+        },
+        {
+          "n": 200,
+          "pct": 0.023,
+          "valor": "11.301.0024.22.0000044-7"
+        },
+        {
+          "n": 177,
+          "pct": 0.02,
+          "valor": "11.303.0001.22.0000756-8"
+        },
+        {
+          "n": 174,
+          "pct": 0.02,
+          "valor": "11.303.0001.22.0000816-5"
+        },
+        {
+          "n": 169,
+          "pct": 0.019,
+          "valor": "11.301.0004.23.0000023-8"
+        },
+        {
+          "n": 166,
+          "pct": 0.019,
+          "valor": "11.301.0016.23.0000087-5"
+        },
+        {
+          "n": 160,
+          "pct": 0.018,
+          "valor": "11.302.0001.22.0000581-2"
+        },
+        {
+          "n": 145,
+          "pct": 0.017,
+          "valor": "11.302.0001.22.0000046-2"
+        },
+        {
+          "n": 136,
+          "pct": 0.016,
+          "valor": "11.303.0001.25.0000446-9"
+        },
+        {
+          "n": 135,
+          "pct": 0.015,
+          "valor": "19.601.0003.24.0000631-5"
+        },
+        {
+          "n": 135,
+          "pct": 0.015,
+          "valor": "19.601.0003.25.0001192-7"
+        },
+        {
+          "n": 127,
+          "pct": 0.015,
+          "valor": "11.303.0001.22.0000424-0"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "11.302.0001.22.0000583-9"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "19.601.0003.22.0000674-8"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "20.801.0010.21.0000045-1"
+        },
+        {
+          "n": 124,
+          "pct": 0.014,
+          "valor": "11.303.0001.24.0000591-4"
+        },
+        {
+          "n": 123,
+          "pct": 0.014,
+          "valor": "19.601.0003.22.0001378-7"
+        },
+        {
+          "n": 122,
+          "pct": 0.014,
+          "valor": "20.801.0010.23.0000010-1"
+        },
+        {
+          "n": 118,
+          "pct": 0.014,
+          "valor": "11.303.0001.24.0000562-0"
+        },
+        {
+          "n": 115,
+          "pct": 0.013,
+          "valor": "11.302.0001.24.0000147-8"
+        }
+      ]
+    },
+    "marcacao_covid": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 865892,
+          "pct": 99.27,
+          "valor": "Não"
+        },
+        {
+          "n": 6361,
+          "pct": 0.729,
+          "valor": "Sim"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "marcacao_vacina_covid": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 870818,
+          "pct": 99.835,
+          "valor": "Não"
+        },
+        {
+          "n": 1435,
+          "pct": 0.165,
+          "valor": "Sim"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "modulo_servicos_terceirizados": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 869169,
+          "pct": 99.646,
+          "valor": "Não"
+        },
+        {
+          "n": 3084,
+          "pct": 0.354,
+          "valor": "Sim"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "pce_pedido_cotacao": {
+      "n_distinct": 53488,
+      "truncado": true,
+      "valores": [
+        {
+          "n": 757870,
+          "pct": 86.886,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 130,
+          "pct": 0.015,
+          "valor": "1127320250010"
+        },
+        {
+          "n": 118,
+          "pct": 0.014,
+          "valor": "2007220230006"
+        },
+        {
+          "n": 117,
+          "pct": 0.013,
+          "valor": "2007220240002"
+        },
+        {
+          "n": 112,
+          "pct": 0.013,
+          "valor": "2007220240039"
+        },
+        {
+          "n": 104,
+          "pct": 0.012,
+          "valor": "1123020240030"
+        },
+        {
+          "n": 97,
+          "pct": 0.011,
+          "valor": "2007220240046"
+        },
+        {
+          "n": 94,
+          "pct": 0.011,
+          "valor": "2007220250038"
+        },
+        {
+          "n": 89,
+          "pct": 0.01,
+          "valor": "2023120230027"
+        },
+        {
+          "n": 85,
+          "pct": 0.01,
+          "valor": "2006620230008"
+        },
+        {
+          "n": 82,
+          "pct": 0.009,
+          "valor": "2001920250011"
+        },
+        {
+          "n": 79,
+          "pct": 0.009,
+          "valor": "1123020240036"
+        },
+        {
+          "n": 79,
+          "pct": 0.009,
+          "valor": "2010020240009"
+        },
+        {
+          "n": 79,
+          "pct": 0.009,
+          "valor": "2078020250004"
+        },
+        {
+          "n": 77,
+          "pct": 0.009,
+          "valor": "2006320230009"
+        },
+        {
+          "n": 75,
+          "pct": 0.009,
+          "valor": "2078920240002"
+        },
+        {
+          "n": 72,
+          "pct": 0.008,
+          "valor": "2017020240002"
+        },
+        {
+          "n": 72,
+          "pct": 0.008,
+          "valor": "2022320250025"
+        },
+        {
+          "n": 71,
+          "pct": 0.008,
+          "valor": "1123220250022"
+        },
+        {
+          "n": 71,
+          "pct": 0.008,
+          "valor": "2007220230017"
+        },
+        {
+          "n": 71,
+          "pct": 0.008,
+          "valor": "2023120240003"
+        },
+        {
+          "n": 70,
+          "pct": 0.008,
+          "valor": "1123320240057"
+        },
+        {
+          "n": 69,
+          "pct": 0.008,
+          "valor": "1123620240121"
+        },
+        {
+          "n": 69,
+          "pct": 0.008,
+          "valor": "2007220220004"
+        },
+        {
+          "n": 69,
+          "pct": 0.008,
+          "valor": "2007220220033"
+        }
+      ]
+    },
+    "prazo_entrega": {
+      "n_distinct": 521,
+      "truncado": true,
+      "valores": [
+        {
+          "n": 187152,
+          "pct": 21.456,
+          "valor": "15"
+        },
+        {
+          "n": 170872,
+          "pct": 19.59,
+          "valor": "30"
+        },
+        {
+          "n": 106189,
+          "pct": 12.174,
+          "valor": "7"
+        },
+        {
+          "n": 58281,
+          "pct": 6.682,
+          "valor": "365"
+        },
+        {
+          "n": 48181,
+          "pct": 5.524,
+          "valor": "10"
+        },
+        {
+          "n": 34289,
+          "pct": 3.931,
+          "valor": "270"
+        },
+        {
+          "n": 33233,
+          "pct": 3.81,
+          "valor": "90"
+        },
+        {
+          "n": 28830,
+          "pct": 3.305,
+          "valor": "240"
+        },
+        {
+          "n": 27202,
+          "pct": 3.119,
+          "valor": "5"
+        },
+        {
+          "n": 25323,
+          "pct": 2.903,
+          "valor": "60"
+        },
+        {
+          "n": 25200,
+          "pct": 2.889,
+          "valor": "210"
+        },
+        {
+          "n": 23985,
+          "pct": 2.75,
+          "valor": "180"
+        },
+        {
+          "n": 13706,
+          "pct": 1.571,
+          "valor": "150"
+        },
+        {
+          "n": 12993,
+          "pct": 1.49,
+          "valor": "120"
+        },
+        {
+          "n": 11203,
+          "pct": 1.284,
+          "valor": "300"
+        },
+        {
+          "n": 9671,
+          "pct": 1.109,
+          "valor": "8"
+        },
+        {
+          "n": 9481,
+          "pct": 1.087,
+          "valor": "20"
+        },
+        {
+          "n": 4916,
+          "pct": 0.564,
+          "valor": "12"
+        },
+        {
+          "n": 4806,
+          "pct": 0.551,
+          "valor": "3"
+        },
+        {
+          "n": 3651,
+          "pct": 0.419,
+          "valor": "40"
+        },
+        {
+          "n": 3408,
+          "pct": 0.391,
+          "valor": "1"
+        },
+        {
+          "n": 2809,
+          "pct": 0.322,
+          "valor": "45"
+        },
+        {
+          "n": 2652,
+          "pct": 0.304,
+          "valor": "360"
+        },
+        {
+          "n": 2076,
+          "pct": 0.238,
+          "valor": "1095"
+        },
+        {
+          "n": 2056,
+          "pct": 0.236,
+          "valor": "330"
+        }
+      ]
+    },
+    "ressuprimento": {
+      "n_distinct": 3,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 872239,
+          "pct": 99.998,
+          "valor": "Não"
+        },
+        {
+          "n": 11,
+          "pct": 0.001,
+          "valor": "19.004 - FUNDO ESTADUAL DE SAUDE - DIRETORIA GERAL"
+        },
+        {
+          "n": 5,
+          "pct": 0.001,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 2,
+          "pct": 0.0,
+          "valor": "09.021 - SUPERINTENDENCIA DE RECURSOS LOGISTICOS"
+        }
+      ]
+    },
+    "situacao_contrato_cgst": {
+      "n_distinct": 6,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 869173,
+          "pct": 99.646,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 1488,
+          "pct": 0.171,
+          "valor": "Vencido"
+        },
+        {
+          "n": 724,
+          "pct": 0.083,
+          "valor": "Aditado"
+        },
+        {
+          "n": 494,
+          "pct": 0.057,
+          "valor": "Vigente"
+        },
+        {
+          "n": 343,
+          "pct": 0.039,
+          "valor": "Encerrado"
+        },
+        {
+          "n": 23,
+          "pct": 0.003,
+          "valor": "Apostilado"
+        },
+        {
+          "n": 12,
+          "pct": 0.001,
+          "valor": "Cancelado"
+        }
+      ]
+    },
+    "situacao_fornecedor": {
+      "n_distinct": 11,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 431913,
+          "pct": 49.517,
+          "valor": "1 - Ativo"
+        },
+        {
+          "n": 256422,
+          "pct": 29.398,
+          "valor": "2 - Ativo com ocorrência"
+        },
+        {
+          "n": 57937,
+          "pct": 6.642,
+          "valor": "6 - Cancelado"
+        },
+        {
+          "n": 50478,
+          "pct": 5.787,
+          "valor": "7 - Candidato"
+        },
+        {
+          "n": 19203,
+          "pct": 2.202,
+          "valor": "12 - Cancelado com Ocorrência"
+        },
+        {
+          "n": 18547,
+          "pct": 2.126,
+          "valor": "4 - Suspenso determinado"
+        },
+        {
+          "n": 13425,
+          "pct": 1.539,
+          "valor": "3 - Vencido"
+        },
+        {
+          "n": 11061,
+          "pct": 1.268,
+          "valor": "5 - Suspenso indeterminado"
+        },
+        {
+          "n": 8907,
+          "pct": 1.021,
+          "valor": "13 - Candidato com Ocorrência"
+        },
+        {
+          "n": 4240,
+          "pct": 0.486,
+          "valor": "8 - Vencido com Ocorrência"
+        },
+        {
+          "n": 120,
+          "pct": 0.014,
+          "valor": "10 - Solicitado"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "srd_fiplan": {
+      "n_distinct": 353603,
+      "truncado": true,
+      "valores": [
+        {
+          "n": 325064,
+          "pct": 37.267,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 307,
+          "pct": 0.035,
+          "valor": "19.601.0003.22.0001567-9"
+        },
+        {
+          "n": 304,
+          "pct": 0.035,
+          "valor": "19.601.0003.25.0000350-3"
+        },
+        {
+          "n": 284,
+          "pct": 0.033,
+          "valor": "19.601.0003.22.0000988-1"
+        },
+        {
+          "n": 268,
+          "pct": 0.031,
+          "valor": "22.202.0001.24.0000292-8"
+        },
+        {
+          "n": 249,
+          "pct": 0.029,
+          "valor": "11.302.0001.22.0000057-2"
+        },
+        {
+          "n": 200,
+          "pct": 0.023,
+          "valor": "11.301.0024.22.0000054-9"
+        },
+        {
+          "n": 177,
+          "pct": 0.02,
+          "valor": "11.303.0001.22.0000752-1"
+        },
+        {
+          "n": 174,
+          "pct": 0.02,
+          "valor": "11.303.0001.22.0000860-7"
+        },
+        {
+          "n": 169,
+          "pct": 0.019,
+          "valor": "11.301.0004.23.0000032-1"
+        },
+        {
+          "n": 166,
+          "pct": 0.019,
+          "valor": "11.301.0016.23.0000073-8"
+        },
+        {
+          "n": 160,
+          "pct": 0.018,
+          "valor": "11.302.0001.22.0000611-2"
+        },
+        {
+          "n": 145,
+          "pct": 0.017,
+          "valor": "11.302.0001.22.0000084-1"
+        },
+        {
+          "n": 136,
+          "pct": 0.016,
+          "valor": "11.303.0001.25.0000525-7"
+        },
+        {
+          "n": 135,
+          "pct": 0.015,
+          "valor": "19.601.0003.24.0000762-6"
+        },
+        {
+          "n": 135,
+          "pct": 0.015,
+          "valor": "19.601.0003.25.0001464-5"
+        },
+        {
+          "n": 127,
+          "pct": 0.015,
+          "valor": "11.303.0001.22.0000484-9"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "11.302.0001.22.0000615-5"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "19.601.0003.22.0000835-4"
+        },
+        {
+          "n": 125,
+          "pct": 0.014,
+          "valor": "20.801.0010.21.0000051-0"
+        },
+        {
+          "n": 124,
+          "pct": 0.014,
+          "valor": "11.303.0001.24.0000679-6"
+        },
+        {
+          "n": 123,
+          "pct": 0.014,
+          "valor": "19.601.0003.22.0001645-4"
+        },
+        {
+          "n": 122,
+          "pct": 0.014,
+          "valor": "20.801.0010.23.0000008-2"
+        },
+        {
+          "n": 118,
+          "pct": 0.014,
+          "valor": "11.303.0001.24.0000426-2"
+        },
+        {
+          "n": 115,
+          "pct": 0.013,
+          "valor": "11.302.0001.24.0000214-2"
+        }
+      ]
+    },
+    "tipo_calculo": {
+      "n_distinct": 3,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 713360,
+          "pct": 81.783,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 156997,
+          "pct": 17.999,
+          "valor": "Multiplicação"
+        },
+        {
+          "n": 1325,
+          "pct": 0.152,
+          "valor": "Valor Final do Item"
+        },
+        {
+          "n": 575,
+          "pct": 0.066,
+          "valor": "Diárias"
+        }
+      ]
+    },
+    "tipo_da_requisicao": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 560931,
+          "pct": 64.308,
+          "valor": "RM"
+        },
+        {
+          "n": 311322,
+          "pct": 35.692,
+          "valor": "RS"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "tipo_do_item": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 560934,
+          "pct": 64.308,
+          "valor": "Material"
+        },
+        {
+          "n": 311319,
+          "pct": 35.691,
+          "valor": "Serviço"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "tipo_fornecimento": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 560931,
+          "pct": 64.308,
+          "valor": "AFM"
+        },
+        {
+          "n": 311322,
+          "pct": 35.692,
+          "valor": "APS"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "tipo_item_especifico_comum": {
+      "n_distinct": 2,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 541419,
+          "pct": 62.071,
+          "valor": "ESPECIFICO"
+        },
+        {
+          "n": 330834,
+          "pct": 37.929,
+          "valor": "COMUM"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    },
+    "uf_fornecedor": {
+      "n_distinct": 29,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 708057,
+          "pct": 81.175,
+          "valor": "BA"
+        },
+        {
+          "n": 39121,
+          "pct": 4.485,
+          "valor": "SP"
+        },
+        {
+          "n": 26919,
+          "pct": 3.086,
+          "valor": "MG"
+        },
+        {
+          "n": 16928,
+          "pct": 1.941,
+          "valor": "PR"
+        },
+        {
+          "n": 13341,
+          "pct": 1.529,
+          "valor": "PE"
+        },
+        {
+          "n": 9457,
+          "pct": 1.084,
+          "valor": "DF"
+        },
+        {
+          "n": 9301,
+          "pct": 1.066,
+          "valor": "GO"
+        },
+        {
+          "n": 9225,
+          "pct": 1.058,
+          "valor": "CE"
+        },
+        {
+          "n": 9031,
+          "pct": 1.035,
+          "valor": "ES"
+        },
+        {
+          "n": 6946,
+          "pct": 0.796,
+          "valor": "SC"
+        },
+        {
+          "n": 6358,
+          "pct": 0.729,
+          "valor": "RS"
+        },
+        {
+          "n": 5732,
+          "pct": 0.657,
+          "valor": "RJ"
+        },
+        {
+          "n": 3529,
+          "pct": 0.405,
+          "valor": "SE"
+        },
+        {
+          "n": 2841,
+          "pct": 0.326,
+          "valor": "AL"
+        },
+        {
+          "n": 1703,
+          "pct": 0.195,
+          "valor": "RN"
+        },
+        {
+          "n": 1028,
+          "pct": 0.118,
+          "valor": "PB"
+        },
+        {
+          "n": 638,
+          "pct": 0.073,
+          "valor": "AM"
+        },
+        {
+          "n": 553,
+          "pct": 0.063,
+          "valor": "TO"
+        },
+        {
+          "n": 497,
+          "pct": 0.057,
+          "valor": "MS"
+        },
+        {
+          "n": 329,
+          "pct": 0.038,
+          "valor": "EE"
+        },
+        {
+          "n": 303,
+          "pct": 0.035,
+          "valor": "MT"
+        },
+        {
+          "n": 203,
+          "pct": 0.023,
+          "valor": "<NULL>"
+        },
+        {
+          "n": 80,
+          "pct": 0.009,
+          "valor": "RO"
+        },
+        {
+          "n": 72,
+          "pct": 0.008,
+          "valor": "MA"
+        },
+        {
+          "n": 36,
+          "pct": 0.004,
+          "valor": "PI"
+        },
+        {
+          "n": 18,
+          "pct": 0.002,
+          "valor": "PA"
+        },
+        {
+          "n": 6,
+          "pct": 0.001,
+          "valor": "Ba"
+        },
+        {
+          "n": 2,
+          "pct": 0.0,
+          "valor": "AP"
+        },
+        {
+          "n": 2,
+          "pct": 0.0,
+          "valor": "RR"
+        },
+        {
+          "n": 1,
+          "pct": 0.0,
+          "valor": "AC"
+        }
+      ]
+    },
+    "uf_local_entrega": {
+      "n_distinct": 3,
+      "truncado": false,
+      "valores": [
+        {
+          "n": 871682,
+          "pct": 99.934,
+          "valor": "BA"
+        },
+        {
+          "n": 476,
+          "pct": 0.055,
+          "valor": "ba"
+        },
+        {
+          "n": 95,
+          "pct": 0.011,
+          "valor": "DF"
+        },
+        {
+          "n": 4,
+          "pct": 0.0,
+          "valor": "<NULL>"
+        }
+      ]
+    }
+  },
+  "chave": {
+    "candidatos": {
+      "afm_aps + afm_aps_tipo_item + codigo + item": {
+        "chaves_distintas": 871768,
+        "colunas": [
+          "afm_aps",
+          "afm_aps_tipo_item",
+          "codigo",
+          "item"
+        ],
+        "duplicatas_pct": 0.0561,
+        "excedente": 489,
+        "linhas": 872257,
+        "unicidade_pct": 99.9439
+      },
+      "afm_aps + codigo + item": {
+        "chaves_distintas": 871768,
+        "colunas": [
+          "afm_aps",
+          "codigo",
+          "item"
+        ],
+        "duplicatas_pct": 0.0561,
+        "excedente": 489,
+        "linhas": 872257,
+        "unicidade_pct": 99.9439
+      },
+      "afm_aps + codigo + item + data_geracao": {
+        "chaves_distintas": 871768,
+        "colunas": [
+          "afm_aps",
+          "codigo",
+          "item",
+          "data_geracao_afm_aps"
+        ],
+        "duplicatas_pct": 0.0561,
+        "excedente": 489,
+        "linhas": 872257,
+        "unicidade_pct": 99.9439
+      },
+      "afm_aps + codigo + item + valor_unitario": {
+        "chaves_distintas": 871771,
+        "colunas": [
+          "afm_aps",
+          "codigo",
+          "item",
+          "valor_unitario"
+        ],
+        "duplicatas_pct": 0.0557,
+        "excedente": 486,
+        "linhas": 872257,
+        "unicidade_pct": 99.9443
+      }
+    },
+    "exemplos_duplicata_chave_completa": [
+      {
+        "afm_aps": NaN,
+        "codigo": NaN,
+        "data": "NaT",
+        "n": 4
+      },
+      {
+        "afm_aps": "19.076.00053/2024",
+        "codigo": "65.15.19.00106980-2",
+        "data": "2024-01-22 00:00:00",
+        "n": 2
+      },
+      {
+        "afm_aps": "19.076.00066/2024",
+        "codigo": "65.30.19.00125395-6",
+        "data": "2024-01-22 00:00:00",
+        "n": 2
+      }
+    ],
+    "n_linhas": 872257,
+    "sobreposicao_entre_arquivos": {
+      "chaves": 871768,
+      "chaves_em_varios_arquivos": 0,
+      "linhas_em_chaves_repetidas": 0
+    }
+  },
+  "cnpj": {
+    "amostra_dv": 2000,
+    "amostra_dv_validos": 2000,
+    "cnpjs_distintos": 15216,
+    "n_com_14_digitos": 12551,
+    "pct_14_digitos": 82.486,
+    "pct_com_mascara": 100.0,
+    "pct_dv_ok_amostra": 100.0
+  },
+  "coerencia": {
+    "completas": 872251.0,
+    "estimado_igual_total": 46126.0,
+    "estimado_igual_unitario": 749599.0,
+    "estimado_nulo": 4.0,
+    "incoerentes": 34449.0,
+    "linhas": 872257.0,
+    "n_com_estimado": 872253,
+    "pct_estimado_igual_total": 5.288,
+    "pct_estimado_igual_unitario": 85.938,
+    "pct_incoerentes_entre_completas": 3.9494,
+    "qtd_negativa": 0.0,
+    "qtd_nula": 4.0,
+    "razao_unitario_sobre_estimado": {
+      "p10": 0.8935,
+      "p50": 1.0,
+      "p90": 1.0
+    },
+    "soma_desvio_abs": 60756146299.02,
+    "total_negativo": 0.0,
+    "total_nulo": 4.0,
+    "total_zero": 18.0,
+    "unit_negativo": 2.0,
+    "unit_nulo": 6.0
+  },
+  "colunas": [
+    {
+      "coluna": "cod_secretaria",
+      "max": "72",
+      "min": "1",
+      "n_distinct": 41,
+      "n_negativos": 0,
+      "n_null": 4,
+      "n_zeros": 0,
+      "pct_null": 0.0,
+      "tipo_staging": "int"
+    },
+    {
+      "coluna": "secretaria",
+      "n_distinct": 41,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "unidade",
+      "n_distinct": 1917,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "uo_fiplan",
+      "n_distinct": 97,
+      "n_null": 306568,
+      "pct_null": 35.147,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "ug_fiplan",
+      "n_distinct": 400,
+      "n_null": 308972,
+      "pct_null": 35.422,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "tipo_fornecimento",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "grupo_licitacao",
+      "n_distinct": 147,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "grupo_catalogo",
+      "n_distinct": 78,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "familia_catalogo",
+      "n_distinct": 726,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "codigo",
+      "n_distinct": 52876,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "nome_basico",
+      "n_distinct": 6360,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "item",
+      "n_distinct": 52600,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "tipo_item_especifico_comum",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "um",
+      "n_distinct": 53,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "tipo_do_item",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "qtd_contratada",
+      "max": "103174400.0",
+      "min": "0.04",
+      "n_distinct": 14542,
+      "n_negativos": 0,
+      "n_null": 4,
+      "n_zeros": 0,
+      "pct_null": 0.0,
+      "tipo_staging": "num"
+    },
+    {
+      "coluna": "tipo_calculo",
+      "n_distinct": 3,
+      "n_null": 713360,
+      "pct_null": 81.783,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "valor_detalhe",
+      "max": "130767819.84",
+      "min": "1.0",
+      "n_distinct": 989,
+      "n_negativos": 0,
+      "n_null": 713360,
+      "n_zeros": 0,
+      "pct_null": 81.783,
+      "tipo_staging": "num"
+    },
+    {
+      "coluna": "valor_unitario",
+      "max": "1418231801.0",
+      "min": "-70.0",
+      "n_distinct": 68381,
+      "n_negativos": 2,
+      "n_null": 6,
+      "n_zeros": 125,
+      "pct_null": 0.001,
+      "tipo_staging": "num"
+    },
+    {
+      "coluna": "valor_total",
+      "max": "1418231801.0",
+      "min": "0.0",
+      "n_distinct": 156729,
+      "n_negativos": 0,
+      "n_null": 4,
+      "n_zeros": 18,
+      "pct_null": 0.0,
+      "tipo_staging": "num"
+    },
+    {
+      "coluna": "cnpj",
+      "n_distinct": 15216,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "cnae_codigo",
+      "max": "9900800",
+      "min": "111302",
+      "n_distinct": 681,
+      "n_negativos": 0,
+      "n_null": 5097,
+      "n_zeros": 0,
+      "pct_null": 0.584,
+      "tipo_staging": "int"
+    },
+    {
+      "coluna": "cnae_descricao",
+      "n_distinct": 672,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "uf_receita",
+      "n_distinct": 28,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "razao_social",
+      "n_distinct": 14514,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "nome_fantasia",
+      "n_distinct": 9143,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "fornecedor",
+      "n_distinct": 13974,
+      "n_null": 90062,
+      "pct_null": 10.325,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "categoria",
+      "n_distinct": 7,
+      "n_null": 5,
+      "pct_null": 0.001,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "situacao_fornecedor",
+      "n_distinct": 11,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "uf_fornecedor",
+      "n_distinct": 29,
+      "n_null": 203,
+      "pct_null": 0.023,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "forma_contratacao",
+      "n_distinct": 23,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "n_licitacao",
+      "n_distinct": 17123,
+      "n_null": 438694,
+      "pct_null": 50.294,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "requisicao_rm_rs",
+      "n_distinct": 454382,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "dotacao",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "afm_aps",
+      "n_distinct": 449967,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "afm_aps_tipo_item",
+      "n_distinct": 492933,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "data_geracao_afm_aps",
+      "max": "2025-12-30 00:00:00",
+      "min": "2021-01-04 00:00:00",
+      "n_distinct": 1552,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "date"
+    },
+    {
+      "coluna": "assinatura_afm_aps",
+      "max": "2026-05-29 00:00:00",
+      "min": "1900-01-01 00:00:00",
+      "n_distinct": 1796,
+      "n_null": 385405,
+      "pct_null": 44.185,
+      "tipo_staging": "date"
+    },
+    {
+      "coluna": "cod_local_entrega",
+      "n_distinct": 6774,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "endereco_local_entrega",
+      "n_distinct": 5700,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "bairro_local_entrega",
+      "n_distinct": 521,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "municipio_local_entrega",
+      "n_distinct": 418,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "uf_local_entrega",
+      "n_distinct": 3,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "srd_fiplan",
+      "n_distinct": 353603,
+      "n_null": 325064,
+      "pct_null": 37.267,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "lid_fiplan",
+      "n_distinct": 353591,
+      "n_null": 325077,
+      "pct_null": 37.268,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "pce_pedido_cotacao",
+      "n_distinct": 53488,
+      "n_null": 757870,
+      "pct_null": 86.886,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "valor_estimado",
+      "max": "1418231801.0",
+      "min": "-1.91",
+      "n_distinct": 65474,
+      "n_negativos": 1,
+      "n_null": 4,
+      "n_zeros": 121,
+      "pct_null": 0.0,
+      "tipo_staging": "num"
+    },
+    {
+      "coluna": "regiao_principal_municipio",
+      "n_distinct": 18,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "digitalizacao_contrato",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "classificacao_familia",
+      "n_distinct": 3,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "regiao_registro_precos",
+      "n_distinct": 30,
+      "n_null": 518034,
+      "pct_null": 59.39,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "marcacao_covid",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "liberacao_covid",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "marcacao_vacina_covid",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "liberacao_vacina_covid",
+      "n_distinct": 1,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "situacao_fornecedor_lid",
+      "n_distinct": 14,
+      "n_null": 870120,
+      "pct_null": 99.755,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "modulo_servicos_terceirizados",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "instrumento",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "contrato_emergencial_cgst",
+      "n_distinct": 2,
+      "n_null": 560935,
+      "pct_null": 64.308,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "situacao_contrato_cgst",
+      "n_distinct": 6,
+      "n_null": 869173,
+      "pct_null": 99.646,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "unidade_licitante",
+      "n_distinct": 232,
+      "n_null": 438694,
+      "pct_null": 50.294,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "tipo_da_requisicao",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "delegacao_automatica",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "ano_geracao_afm_aps",
+      "max": "2025",
+      "min": "2021",
+      "n_distinct": 5,
+      "n_negativos": 0,
+      "n_null": 4,
+      "n_zeros": 0,
+      "pct_null": 0.0,
+      "tipo_staging": "int"
+    },
+    {
+      "coluna": "mes_geracao_afm_aps",
+      "max": "12",
+      "min": "1",
+      "n_distinct": 12,
+      "n_negativos": 0,
+      "n_null": 4,
+      "n_zeros": 0,
+      "pct_null": 0.0,
+      "tipo_staging": "int"
+    },
+    {
+      "coluna": "regiao_local_entrega",
+      "n_distinct": 18,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "n_processo",
+      "n_distinct": 277449,
+      "n_null": 153181,
+      "pct_null": 17.561,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "n_contrato",
+      "n_distinct": 18694,
+      "n_null": 569273,
+      "pct_null": 65.264,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "prazo_entrega",
+      "n_distinct": 521,
+      "n_null": 18,
+      "pct_null": 0.002,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "orgao_gerenciador_registro_precos",
+      "n_distinct": 53,
+      "n_null": 518033,
+      "pct_null": 59.39,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "ressuprimento",
+      "n_distinct": 3,
+      "n_null": 5,
+      "pct_null": 0.001,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "orgao_gerenciador_rp",
+      "n_distinct": 51,
+      "n_null": 518033,
+      "pct_null": 59.39,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "data_fim_contrato",
+      "max": "2039-09-10 00:00:00",
+      "min": "1900-01-08 00:00:00",
+      "n_distinct": 2494,
+      "n_null": 385418,
+      "pct_null": 44.186,
+      "tipo_staging": "date"
+    },
+    {
+      "coluna": "ano_fim_contrato",
+      "max": "2039",
+      "min": "1900",
+      "n_distinct": 17,
+      "n_negativos": 0,
+      "n_null": 385418,
+      "n_zeros": 0,
+      "pct_null": 44.186,
+      "tipo_staging": "int"
+    },
+    {
+      "coluna": "aviso_edital_pncp",
+      "n_distinct": 4,
+      "n_null": 5,
+      "pct_null": 0.001,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "ata_rp_pncp",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    },
+    {
+      "coluna": "contratos_pncp",
+      "n_distinct": 2,
+      "n_null": 4,
+      "pct_null": 0.0,
+      "tipo_staging": "text"
+    }
+  ],
+  "cruzamentos": {
+    "canal_forma_contratacao": [
+      {
+        "com_pce": 0,
+        "forma_contratacao": "Registro de Preços",
+        "linhas": 354223,
+        "pct_pce": 0.0,
+        "ticket_mediano": 1150.0,
+        "ticket_medio": 28597.79,
+        "valor_total": 10129994132.37
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "N - Credenciamento",
+        "linhas": 216612,
+        "pct_pce": 0.0,
+        "ticket_mediano": 1472.63,
+        "ticket_medio": 18109.25,
+        "valor_total": 3922681222.89
+      },
+      {
+        "com_pce": 114387,
+        "forma_contratacao": "E - Dispensa Eletrônica",
+        "linhas": 114388,
+        "pct_pce": 100.0,
+        "ticket_mediano": 600.0,
+        "ticket_medio": 2328.69,
+        "valor_total": 266374539.7
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "C - Licitação",
+        "linhas": 78833,
+        "pct_pce": 0.0,
+        "ticket_mediano": 1574.7,
+        "ticket_medio": 346273.31,
+        "valor_total": 27297763904.54
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "D - Dispensa Tradicional",
+        "linhas": 68702,
+        "pct_pce": 0.0,
+        "ticket_mediano": 1760.0,
+        "ticket_medio": 150460.97,
+        "valor_total": 10336969488.62
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "T - Termo Aditivo",
+        "linhas": 17145,
+        "pct_pce": 0.0,
+        "ticket_mediano": 12396.0,
+        "ticket_medio": 516560.35,
+        "valor_total": 8856427241.76
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "I - Inexigibilidade",
+        "linhas": 17126,
+        "pct_pce": 0.0,
+        "ticket_mediano": 50000.0,
+        "ticket_medio": 376801.04,
+        "valor_total": 6453094612.46
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "W - Adesão Registro de Preços",
+        "linhas": 1963,
+        "pct_pce": 0.0,
+        "ticket_mediano": 70000.0,
+        "ticket_medio": 972285.3,
+        "valor_total": 1908596045.51
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "Y - Licitação Lei Fed 13.303/16",
+        "linhas": 935,
+        "pct_pce": 0.0,
+        "ticket_mediano": 822133.21,
+        "ticket_medio": 16647859.89,
+        "valor_total": 15565748994.86
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "Q - Contratação Direta",
+        "linhas": 724,
+        "pct_pce": 0.0,
+        "ticket_mediano": 23988.0,
+        "ticket_medio": 1369855.46,
+        "valor_total": 991775350.63
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "U - Apostila",
+        "linhas": 649,
+        "pct_pce": 0.0,
+        "ticket_mediano": 3912.41,
+        "ticket_medio": 201819.85,
+        "valor_total": 130981080.15
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "R - Concurso",
+        "linhas": 451,
+        "pct_pce": 0.0,
+        "ticket_mediano": 15000.0,
+        "ticket_medio": 22493.13,
+        "valor_total": 10144400.0
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "S - Shopping",
+        "linhas": 208,
+        "pct_pce": 0.0,
+        "ticket_mediano": 11790.0,
+        "ticket_medio": 56697.95,
+        "valor_total": 11793174.27
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "L - Alteração de Fornecedor",
+        "linhas": 146,
+        "pct_pce": 0.0,
+        "ticket_mediano": 19070.0,
+        "ticket_medio": 8529207.68,
+        "valor_total": 1245264321.69
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "P - Comparação de Preço",
+        "linhas": 84,
+        "pct_pce": 0.0,
+        "ticket_mediano": 1000.0,
+        "ticket_medio": 732534.96,
+        "valor_total": 61532936.34
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "G - Seleção de Consultores Individuais (SCI)",
+        "linhas": 23,
+        "pct_pce": 0.0,
+        "ticket_mediano": 831600.0,
+        "ticket_medio": 684126.78,
+        "valor_total": 15734916.03
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "M - Manifestação de Interesse",
+        "linhas": 10,
+        "pct_pce": 0.0,
+        "ticket_mediano": 325500.0,
+        "ticket_medio": 615290.07,
+        "valor_total": 6152900.73
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "O - Seleção Baseada nas Qualificações do Consultor (SQC)",
+        "linhas": 9,
+        "pct_pce": 0.0,
+        "ticket_mediano": 772012.0,
+        "ticket_medio": 1415345.72,
+        "valor_total": 12738111.51
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "H - Seleção Baseada na Qualidade (SBQ)",
+        "linhas": 8,
+        "pct_pce": 0.0,
+        "ticket_mediano": 962232.0,
+        "ticket_medio": 1024250.02,
+        "valor_total": 8194000.17
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "B - Seleção Baseada na Qualidade e Custo (SBQC)",
+        "linhas": 7,
+        "pct_pce": 0.0,
+        "ticket_mediano": 1261529.68,
+        "ticket_medio": 6211489.61,
+        "valor_total": 43480427.24
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "F - RDC",
+        "linhas": 5,
+        "pct_pce": 0.0,
+        "ticket_mediano": 15746370.3,
+        "ticket_medio": 18280382.95,
+        "valor_total": 91401914.74
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": NaN,
+        "linhas": 4,
+        "pct_pce": 0.0,
+        "ticket_mediano": NaN,
+        "ticket_medio": NaN,
+        "valor_total": NaN
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "V - Convênio",
+        "linhas": 1,
+        "pct_pce": 0.0,
+        "ticket_mediano": 80584.99,
+        "ticket_medio": 80584.99,
+        "valor_total": 80584.99
+      },
+      {
+        "com_pce": 0,
+        "forma_contratacao": "J - Seleção com Orçamento Fixo (SOF)",
+        "linhas": 1,
+        "pct_pce": 0.0,
+        "ticket_mediano": 1541969.8,
+        "ticket_medio": 1541969.8,
+        "valor_total": 1541969.8
+      }
+    ],
+    "escopo_tipo_fornecimento_x_tipo_item": [
+      {
+        "linhas": 560930,
+        "tipo_do_item": "Material",
+        "tipo_fornecimento": "AFM",
+        "valor_total": 12597491113.12
+      },
+      {
+        "linhas": 311318,
+        "tipo_do_item": "Serviço",
+        "tipo_fornecimento": "APS",
+        "valor_total": 74770730214.88
+      },
+      {
+        "linhas": 4,
+        "tipo_do_item": NaN,
+        "tipo_fornecimento": NaN,
+        "valor_total": NaN
+      },
+      {
+        "linhas": 4,
+        "tipo_do_item": "Material",
+        "tipo_fornecimento": "APS",
+        "valor_total": 118537.84
+      },
+      {
+        "linhas": 1,
+        "tipo_do_item": "Serviço",
+        "tipo_fornecimento": "AFM",
+        "valor_total": 126405.16
+      }
+    ],
+    "flags_covid": [
+      {
+        "contrato_emergencial_cgst": NaN,
+        "liberacao_covid": "Não",
+        "linhas": 553987,
+        "marcacao_covid": "Não",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 12402837087.29
+      },
+      {
+        "contrato_emergencial_cgst": "Não",
+        "liberacao_covid": "Não",
+        "linhas": 310286,
+        "marcacao_covid": "Não",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 73455288553.93
+      },
+      {
+        "contrato_emergencial_cgst": NaN,
+        "liberacao_covid": "Não",
+        "linhas": 5675,
+        "marcacao_covid": "Sim",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 160218877.32
+      },
+      {
+        "contrato_emergencial_cgst": NaN,
+        "liberacao_covid": "Não",
+        "linhas": 1118,
+        "marcacao_covid": "Não",
+        "marcacao_vacina_covid": "Sim",
+        "valor_total": 16238896.77
+      },
+      {
+        "contrato_emergencial_cgst": "Não",
+        "liberacao_covid": "Não",
+        "linhas": 461,
+        "marcacao_covid": "Sim",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 725230618.11
+      },
+      {
+        "contrato_emergencial_cgst": "Não",
+        "liberacao_covid": "Não",
+        "linhas": 317,
+        "marcacao_covid": "Não",
+        "marcacao_vacina_covid": "Sim",
+        "valor_total": 217051482.73
+      },
+      {
+        "contrato_emergencial_cgst": "Sim",
+        "liberacao_covid": "Não",
+        "linhas": 165,
+        "marcacao_covid": "Não",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 56018186.14
+      },
+      {
+        "contrato_emergencial_cgst": NaN,
+        "liberacao_covid": "Sim",
+        "linhas": 145,
+        "marcacao_covid": "Sim",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 18303818.9
+      },
+      {
+        "contrato_emergencial_cgst": "Não",
+        "liberacao_covid": "Sim",
+        "linhas": 80,
+        "marcacao_covid": "Sim",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 305185500.98
+      },
+      {
+        "contrato_emergencial_cgst": "Não",
+        "liberacao_covid": "Sim",
+        "linhas": 13,
+        "marcacao_covid": "Não",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 12074410.83
+      },
+      {
+        "contrato_emergencial_cgst": NaN,
+        "liberacao_covid": "Sim",
+        "linhas": 6,
+        "marcacao_covid": "Não",
+        "marcacao_vacina_covid": "Não",
+        "valor_total": 18838.0
+      },
+      {
+        "contrato_emergencial_cgst": NaN,
+        "liberacao_covid": NaN,
+        "linhas": 4,
+        "marcacao_covid": NaN,
+        "marcacao_vacina_covid": NaN,
+        "valor_total": NaN
+      }
+    ],
+    "orgao_gerenciador": {
+      "com_registro": 354224,
+      "com_rp": 354224,
+      "divergentes": 14,
+      "linhas": 872257
+    },
+    "srd_lid": [
+      {
+        "forma_contratacao": "N - Credenciamento",
+        "lid_fiplan": NaN,
+        "linhas": 199984,
+        "srd_fiplan": NaN
+      },
+      {
+        "forma_contratacao": "Registro de Preços",
+        "lid_fiplan": NaN,
+        "linhas": 106656,
+        "srd_fiplan": NaN
+      },
+      {
+        "forma_contratacao": "T - Termo Aditivo",
+        "lid_fiplan": NaN,
+        "linhas": 17133,
+        "srd_fiplan": NaN
+      },
+      {
+        "forma_contratacao": "U - Apostila",
+        "lid_fiplan": NaN,
+        "linhas": 646,
+        "srd_fiplan": NaN
+      },
+      {
+        "forma_contratacao": "I - Inexigibilidade",
+        "lid_fiplan": NaN,
+        "linhas": 441,
+        "srd_fiplan": NaN
+      },
+      {
+        "forma_contratacao": "C - Licitação",
+        "lid_fiplan": "19.601.0003.22.0001307-8",
+        "linhas": 307,
+        "srd_fiplan": "19.601.0003.22.0001567-9"
+      },
+      {
+        "forma_contratacao": "D - Dispensa Tradicional",
+        "lid_fiplan": "19.601.0003.25.0000273-1",
+        "linhas": 304,
+        "srd_fiplan": "19.601.0003.25.0000350-3"
+      },
+      {
+        "forma_contratacao": "C - Licitação",
+        "lid_fiplan": "19.601.0003.22.0001566-6",
+        "linhas": 284,
+        "srd_fiplan": "19.601.0003.22.0000988-1"
+      },
+      {
+        "forma_contratacao": "C - Licitação",
+        "lid_fiplan": "22.202.0001.24.0000297-4",
+        "linhas": 268,
+        "srd_fiplan": "22.202.0001.24.0000292-8"
+      },
+      {
+        "forma_contratacao": "C - Licitação",
+        "lid_fiplan": "11.302.0001.22.0000389-5",
+        "linhas": 249,
+        "srd_fiplan": "11.302.0001.22.0000057-2"
+      },
+      {
+        "forma_contratacao": "C - Licitação",
+        "lid_fiplan": "11.301.0024.22.0000044-7",
+        "linhas": 200,
+        "srd_fiplan": "11.301.0024.22.0000054-9"
+      },
+      {
+        "forma_contratacao": "C - Licitação",
+        "lid_fiplan": "11.303.0001.22.0000756-8",
+        "linhas": 177,
+        "srd_fiplan": "11.303.0001.22.0000752-1"
+      },
+      {
+        "forma_contratacao": "C - Licitação",
+        "lid_fiplan": "11.303.0001.22.0000816-5",
+        "linhas": 174,
+        "srd_fiplan": "11.303.0001.22.0000860-7"
+      },
+      {
+        "forma_contratacao": "C - Licitação",
+        "lid_fiplan": "11.301.0004.23.0000023-8",
+        "linhas": 169,
+        "srd_fiplan": "11.301.0004.23.0000032-1"
+      },
+      {
+        "forma_contratacao": "E - Dispensa Eletrônica",
+        "lid_fiplan": NaN,
+        "linhas": 167,
+        "srd_fiplan": NaN
+      }
+    ]
+  },
+  "entidades": {
+    "afm_aps": 449967,
+    "cnpj": 15216,
+    "codigo": 52876,
+    "familia_catalogo": 726,
+    "grupo_catalogo": 78,
+    "item": 52600,
+    "municipio_local_entrega": 418,
+    "n_contrato": 18694,
+    "n_licitacao": 17123,
+    "nome_basico": 6360,
+    "orgao_gerenciador_registro_precos": 53,
+    "orgao_gerenciador_rp": 51,
+    "razao_social": 14514,
+    "regiao_local_entrega": 18,
+    "secretaria": 41,
+    "ug_fiplan": 400,
+    "unidade": 1917,
+    "uo_fiplan": 97
+  },
+  "generated_at": "2026-11-12T17:46:22.724580+00:00",
+  "hierarquia": {
+    "grupos": [
+      {
+        "familias": 26,
+        "grupo_catalogo": "07 - OBRAS E CONSTRUCOES",
+        "linhas": 3826,
+        "nomes_basicos": 131,
+        "valor_total": 29629538373.07
+      },
+      {
+        "familias": 76,
+        "grupo_catalogo": "02 - SERVICOS TECNICOS E ESPECIALIZADOS",
+        "linhas": 13190,
+        "nomes_basicos": 630,
+        "valor_total": 22210713762.17
+      },
+      {
+        "familias": 81,
+        "grupo_catalogo": "01 - SERVICOS GERAIS E ADMINISTRATIVOS",
+        "linhas": 244989,
+        "nomes_basicos": 526,
+        "valor_total": 14022815015.67
+      },
+      {
+        "familias": 18,
+        "grupo_catalogo": "65 - EQUIPAMENTOS E ARTIGOS DE USO MEDICO, DENTARIO E VETERINARIO",
+        "linhas": 268292,
+        "nomes_basicos": 1574,
+        "valor_total": 5564295434.72
+      },
+      {
+        "familias": 20,
+        "grupo_catalogo": "09 - SERVICOS MEDICOS E ODONTOLOGICOS",
+        "linhas": 1037,
+        "nomes_basicos": 67,
+        "valor_total": 2462108783.76
+      },
+      {
+        "familias": 55,
+        "grupo_catalogo": "04 - SERVICOS DE MANUTENCAO E ASSISTENCIA TECNICA",
+        "linhas": 25048,
+        "nomes_basicos": 678,
+        "valor_total": 2351308975.93
+      },
+      {
+        "familias": 28,
+        "grupo_catalogo": "03 - SERVICOS DE SUPORTE A ADMINISTRACAO DE PREDIOS E AREAS PUBLICAS",
+        "linhas": 10559,
+        "nomes_basicos": 433,
+        "valor_total": 2210814212.44
+      },
+      {
+        "familias": 4,
+        "grupo_catalogo": "23 - VEICULOS",
+        "linhas": 682,
+        "nomes_basicos": 29,
+        "valor_total": 1897960664.41
+      },
+      {
+        "familias": 40,
+        "grupo_catalogo": "08 - INSTALACOES E MONTAGENS",
+        "linhas": 8371,
+        "nomes_basicos": 376,
+        "valor_total": 1085090409.58
+      },
+      {
+        "familias": 18,
+        "grupo_catalogo": "70 - EQUIP. DE PROCSS. AUTOM. DE DADOS DE USO GERAL, PROG. SUPR. E EQUIP DE SUPORTE",
+        "linhas": 13344,
+        "nomes_basicos": 331,
+        "valor_total": 912812118.45
+      },
+      {
+        "familias": 11,
+        "grupo_catalogo": "05 - SERVICOS DE TRANSPORTES",
+        "linhas": 2367,
+        "nomes_basicos": 20,
+        "valor_total": 542775688.1
+      },
+      {
+        "familias": 4,
+        "grupo_catalogo": "71 - MOBILIARIOS",
+        "linhas": 9115,
+        "nomes_basicos": 65,
+        "valor_total": 520164008.28
+      },
+      {
+        "familias": 1,
+        "grupo_catalogo": "24 - TRATORES",
+        "linhas": 200,
+        "nomes_basicos": 3,
+        "valor_total": 394402833.33
+      },
+      {
+        "familias": 4,
+        "grupo_catalogo": "41 - EQUIPAMENTOS DE REFRIGERACAO, CIRCULACAO E CONDICIONAMENTO DE AR",
+        "linhas": 7414,
+        "nomes_basicos": 44,
+        "valor_total": 294868772.1
+      },
+      {
+        "familias": 16,
+        "grupo_catalogo": "66 - INSTRUMENTOS E EQUIPAMENTOS DE LABORATORIO",
+        "linhas": 9069,
+        "nomes_basicos": 304,
+        "valor_total": 277236958.66
+      },
+      {
+        "familias": 30,
+        "grupo_catalogo": "06 - ESTUDOS E PROJETOS",
+        "linhas": 1932,
+        "nomes_basicos": 37,
+        "valor_total": 255691399.32
+      },
+      {
+        "familias": 15,
+        "grupo_catalogo": "84 - VESTUARIOS E EQUIPAMENTOS INDIVIDUAIS E INSIGNIAS",
+        "linhas": 6164,
+        "nomes_basicos": 108,
+        "valor_total": 237479174.26
+      },
+      {
+        "familias": 8,
+        "grupo_catalogo": "56 - MATERIAIS PARA CONSTRUCAO",
+        "linhas": 4976,
+        "nomes_basicos": 79,
+        "valor_total": 221080991.46
+      },
+      {
+        "familias": 5,
+        "grupo_catalogo": "76 - LIVROS, MAPAS E OUTRAS PUBLICACOES",
+        "linhas": 6190,
+        "nomes_basicos": 51,
+        "valor_total": 200765524.9
+      },
+      {
+        "familias": 6,
+        "grupo_catalogo": "37 - MAQUINARIA E EQUIPAMENTOS AGRICOLAS",
+        "linhas": 2051,
+        "nomes_basicos": 166,
+        "valor_total": 191356343.54
+      },
+      {
+        "familias": 14,
+        "grupo_catalogo": "89 - ALIMENTOS",
+        "linhas": 28552,
+        "nomes_basicos": 167,
+        "valor_total": 172385357.51
+      },
+      {
+        "familias": 3,
+        "grupo_catalogo": "47 - CANOS, TUBOS, MANGUEIRAS E ACESSORIOS",
+        "linhas": 6117,
+        "nomes_basicos": 38,
+        "valor_total": 126778584.44
+      },
+      {
+        "familias": 3,
+        "grupo_catalogo": "85 - ARTIGOS PARA HIGIENE PESSOAL",
+        "linhas": 12331,
+        "nomes_basicos": 56,
+        "valor_total": 126107461.15
+      },
+      {
+        "familias": 1,
+        "grupo_catalogo": "15 - AERONAVES SEUS COMPONENTES ESTRUTURAIS",
+        "linhas": 88,
+        "nomes_basicos": 3,
+        "valor_total": 112744263.83
+      },
+      {
+        "familias": 3,
+        "grupo_catalogo": "78 - EQUIPAMENTOS PARA RECREACAO E DESPORTO",
+        "linhas": 5064,
+        "nomes_basicos": 190,
+        "valor_total": 102328090.4
+      },
+      {
+        "familias": 1,
+        "grupo_catalogo": "13 - MUNICOES E EXPLOSIVOS",
+        "linhas": 218,
+        "nomes_basicos": 16,
+        "valor_total": 89982810.89
+      },
+      {
+        "familias": 4,
+        "grupo_catalogo": "42 - EQUIPAMENTOS PARA COMBATE A INCENDIO, RESGATE E SEGURANCA",
+        "linhas": 3634,
+        "nomes_basicos": 126,
+        "valor_total": 87761736.73
+      },
+      {
+        "familias": 3,
+        "grupo_catalogo": "10 - ARMAMENTOS",
+        "linhas": 71,
+        "nomes_basicos": 14,
+        "valor_total": 72002749.56
+      },
+      {
+        "familias": 4,
+        "grupo_catalogo": "75 - UTENSILIOS DE ESCRITORIO E MATERIAL DE EXPEDIENTE",
+        "linhas": 42869,
+        "nomes_basicos": 115,
+        "valor_total": 71562389.84
+      },
+      {
+        "familias": 6,
+        "grupo_catalogo": "81 - RECIPIENTES E MATERIAIS DE ACONDICIONAMENTO E EMBALAGEM",
+        "linhas": 9672,
+        "nomes_basicos": 24,
+        "valor_total": 68231382.82
+      }
+    ],
+    "n_grupos": 79
+  },
+  "material": {
+    "canal": [
+      {
+        "cnpjs": 1767,
+        "forma_contratacao": "Registro de Preços",
+        "linhas": 338724,
+        "pct_linhas": 60.39,
+        "ticket_mediano": 1086.0,
+        "valor_total": 7449649360.54
+      },
+      {
+        "cnpjs": 2206,
+        "forma_contratacao": "C - Licitação",
+        "linhas": 63102,
+        "pct_linhas": 11.25,
+        "ticket_mediano": 939.4,
+        "valor_total": 1638131200.0
+      },
+      {
+        "cnpjs": 282,
+        "forma_contratacao": "W - Adesão Registro de Preços",
+        "linhas": 1479,
+        "pct_linhas": 0.26,
+        "ticket_mediano": 73500.0,
+        "valor_total": 1552892045.94
+      },
+      {
+        "cnpjs": 2234,
+        "forma_contratacao": "D - Dispensa Tradicional",
+        "linhas": 42295,
+        "pct_linhas": 7.54,
+        "ticket_mediano": 980.0,
+        "valor_total": 1060780114.36
+      },
+      {
+        "cnpjs": 174,
+        "forma_contratacao": "I - Inexigibilidade",
+        "linhas": 3562,
+        "pct_linhas": 0.64,
+        "ticket_mediano": 2100.08,
+        "valor_total": 462338363.86
+      },
+      {
+        "cnpjs": 2248,
+        "forma_contratacao": "E - Dispensa Eletrônica",
+        "linhas": 108158,
+        "pct_linhas": 19.28,
+        "ticket_mediano": 576.8,
+        "valor_total": 239519403.76
+      },
+      {
+        "cnpjs": 171,
+        "forma_contratacao": "T - Termo Aditivo",
+        "linhas": 1399,
+        "pct_linhas": 0.25,
+        "ticket_mediano": 2310.0,
+        "valor_total": 94587920.21
+      },
+      {
+        "cnpjs": 44,
+        "forma_contratacao": "Q - Contratação Direta",
+        "linhas": 232,
+        "pct_linhas": 0.04,
+        "ticket_mediano": 9540.0,
+        "valor_total": 40145355.66
+      },
+      {
+        "cnpjs": 25,
+        "forma_contratacao": "Y - Licitação Lei Fed 13.303/16",
+        "linhas": 222,
+        "pct_linhas": 0.04,
+        "ticket_mediano": 3268.38,
+        "valor_total": 32652870.69
+      },
+      {
+        "cnpjs": 13,
+        "forma_contratacao": "N - Credenciamento",
+        "linhas": 1531,
+        "pct_linhas": 0.27,
+        "ticket_mediano": 7700.0,
+        "valor_total": 23882405.0
+      },
+      {
+        "cnpjs": 6,
+        "forma_contratacao": "S - Shopping",
+        "linhas": 78,
+        "pct_linhas": 0.01,
+        "ticket_mediano": 11199.32,
+        "valor_total": 1700541.08
+      },
+      {
+        "cnpjs": 9,
+        "forma_contratacao": "L - Alteração de Fornecedor",
+        "linhas": 82,
+        "pct_linhas": 0.01,
+        "ticket_mediano": 15150.5,
+        "valor_total": 1168780.86
+      },
+      {
+        "cnpjs": 2,
+        "forma_contratacao": "P - Comparação de Preço",
+        "linhas": 70,
+        "pct_linhas": 0.01,
+        "ticket_mediano": 595.0,
+        "valor_total": 161289.0
+      }
+    ],
+    "coerencia": {
+      "incoerentes": 0.0,
+      "linhas": 560934.0,
+      "soma_qtd_x_unit": 12597609774.41,
+      "soma_total": 12597609650.96
+    },
+    "coerencia_servico": {
+      "incoerentes": 34449,
+      "linhas": 311317
+    },
+    "por_ano": [
+      {
+        "afms": 53395,
+        "ano": 2021,
+        "cnpjs": 1847,
+        "familias": 283,
+        "linhas": 73263,
+        "ticket_mediano_linha": 924.0,
+        "valor_total": 1999740528.41
+      },
+      {
+        "afms": 81103,
+        "ano": 2022,
+        "cnpjs": 2334,
+        "familias": 305,
+        "linhas": 113033,
+        "ticket_mediano_linha": 899.0,
+        "valor_total": 2308241623.95
+      },
+      {
+        "afms": 94541,
+        "ano": 2023,
+        "cnpjs": 2613,
+        "familias": 318,
+        "linhas": 126263,
+        "ticket_mediano_linha": 864.0,
+        "valor_total": 2256950625.8
+      },
+      {
+        "afms": 95246,
+        "ano": 2024,
+        "cnpjs": 2516,
+        "familias": 315,
+        "linhas": 121468,
+        "ticket_mediano_linha": 1016.0,
+        "valor_total": 2940344318.21
+      },
+      {
+        "afms": 97756,
+        "ano": 2025,
+        "cnpjs": 2486,
+        "familias": 317,
+        "linhas": 126907,
+        "ticket_mediano_linha": 1053.0,
+        "valor_total": 3092332554.59
+      }
+    ],
+    "ticket_por_afm": {
+      "afms": 422041.0,
+      "afms_ate_teto": 406634.0,
+      "p50": 1330.2,
+      "p75": 5220.0,
+      "pct_afms_ate_teto": 96.35
+    }
+  },
+  "numericas_disfarcadas": {
+    "cnae_codigo": {
+      "max": 9900800.0,
+      "min": 111302.0,
+      "numericos": 867160,
+      "pct_numerico": 100.0,
+      "preenchidos": 867160
+    },
+    "cod_local_entrega": {
+      "max": 722370001.0,
+      "min": 10010001.0,
+      "numericos": 872253,
+      "pct_numerico": 100.0,
+      "preenchidos": 872253
+    },
+    "n_processo": {
+      "max": null,
+      "min": null,
+      "numericos": 0,
+      "pct_numerico": 0.0,
+      "preenchidos": 719076
+    },
+    "prazo_entrega": {
+      "max": 36000.0,
+      "min": 1.0,
+      "numericos": 872239,
+      "pct_numerico": 100.0,
+      "preenchidos": 872239
+    }
+  },
+  "por_arquivo": [
+    {
+      "afms": 55311,
+      "ano_arquivo": 2021,
+      "cnpjs": 4463,
+      "data_nula": 0,
+      "linhas": 90058,
+      "total_nulo": 0,
+      "valor_total": 11597672979.19
+    },
+    {
+      "afms": 86094,
+      "ano_arquivo": 2022,
+      "cnpjs": 6095,
+      "data_nula": 0,
+      "linhas": 177068,
+      "total_nulo": 0,
+      "valor_total": 19081152418.79
+    },
+    {
+      "afms": 100695,
+      "ano_arquivo": 2023,
+      "cnpjs": 6897,
+      "data_nula": 0,
+      "linhas": 217918,
+      "total_nulo": 0,
+      "valor_total": 12154881363.15
+    },
+    {
+      "afms": 102472,
+      "ano_arquivo": 2024,
+      "cnpjs": 6845,
+      "data_nula": 0,
+      "linhas": 189127,
+      "total_nulo": 0,
+      "valor_total": 24557777346.53
+    },
+    {
+      "afms": 105395,
+      "ano_arquivo": 2025,
+      "cnpjs": 7361,
+      "data_nula": 4,
+      "linhas": 198086,
+      "total_nulo": 4,
+      "valor_total": 19976982163.34
+    }
+  ],
+  "temporal": {
+    "aderencia": {
+      "ano_divergente": 0,
+      "com_ambos": 872253,
+      "mes_divergente": 0,
+      "sem_data": 4,
+      "sem_data_com_ano": 0
+    },
+    "limites": {
+      "assin_max": "2026-05-29 00:00:00",
+      "assin_min": "1900-01-01 00:00:00",
+      "data_max": "2025-12-30 00:00:00",
+      "data_min": "2021-01-04 00:00:00",
+      "fim_max": "2039-09-10 00:00:00",
+      "fim_min": "1900-01-08 00:00:00"
+    },
+    "matriz_arquivo_x_ano": [
+      {
+        "ano_arquivo": 2021,
+        "ano_dado": 2021,
+        "linhas": 90058
+      },
+      {
+        "ano_arquivo": 2022,
+        "ano_dado": 2022,
+        "linhas": 177068
+      },
+      {
+        "ano_arquivo": 2023,
+        "ano_dado": 2023,
+        "linhas": 217918
+      },
+      {
+        "ano_arquivo": 2024,
+        "ano_dado": 2024,
+        "linhas": 189127
+      },
+      {
+        "ano_arquivo": 2025,
+        "ano_dado": 2025,
+        "linhas": 198082
+      },
+      {
+        "ano_arquivo": 2025,
+        "ano_dado": null,
+        "linhas": 4
+      }
+    ],
+    "por_ano": [
+      {
+        "afms": 55311,
+        "ano": 2021,
+        "linhas": 90058,
+        "valor_total": 11597672979.19
+      },
+      {
+        "afms": 86094,
+        "ano": 2022,
+        "linhas": 177068,
+        "valor_total": 19081152418.79
+      },
+      {
+        "afms": 100695,
+        "ano": 2023,
+        "linhas": 217918,
+        "valor_total": 12154881363.15
+      },
+      {
+        "afms": 102472,
+        "ano": 2024,
+        "linhas": 189127,
+        "valor_total": 24557777346.53
+      },
+      {
+        "afms": 105395,
+        "ano": 2025,
+        "linhas": 198082,
+        "valor_total": 19976982163.34
+      },
+      {
+        "afms": 0,
+        "ano": null,
+        "linhas": 4,
+        "valor_total": NaN
+      }
+    ]
+  },
+  "totais": {
+    "afms": 449967.0,
+    "cnpjs": 15216.0,
+    "codigos": 52876.0,
+    "familias": 726.0,
+    "itens": 52600.0,
+    "linhas": 872257.0,
+    "municipios_entrega": 418.0,
+    "nomes_basicos": 6360.0,
+    "secretarias": 41.0,
+    "unidades": 1917.0,
+    "valor_estimado_soma": 85285509979.35,
+    "valor_total_soma": 87368466271.0
+  }
+}

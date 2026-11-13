@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "descricao": "todos os agregados gravados",
+      "esperado": "0 ausentes",
+      "id": "D01",
+      "obtido": "nenhum",
+      "status": "OK"
+    },
+    {
+      "descricao": "score bruto recalculado = gravado",
+      "esperado": "desvio <= 0.02",
+      "id": "D02",
+      "obtido": "max 0.0050",
+      "status": "OK"
+    },
+    {
+      "descricao": "score final = bruto + penalidades (>=0)",
+      "esperado": "desvio <= 0.02",
+      "id": "D03",
+      "obtido": "max 0.0000",
+      "status": "OK"
+    },
+    {
+      "descricao": "rank sequencial 1..n sem empates",
+      "esperado": "1..155",
+      "id": "D04",
+      "obtido": "155 posições",
+      "status": "OK"
+    },
+    {
+      "descricao": "nicho_score.csv == agg_score (top-10)",
+      "esperado": "idênticos",
+      "id": "D05",
+      "obtido": "idênticos",
+      "status": "OK"
+    },
+    {
+      "descricao": "sensibilidade com 14 cenários e rank coerente",
+      "esperado": 14,
+      "id": "D06",
+      "obtido": 14,
+      "status": "OK"
+    },
+    {
+      "descricao": "Σ agg_familia_ano == escopo analítico",
+      "esperado": "<= 0.1%",
+      "id": "D07",
+      "obtido": "0.000000%",
+      "status": "OK"
+    },
+    {
+      "descricao": "lista EVITAR preenchida",
+      "esperado": "> 0 famílias",
+      "id": "D08",
+      "obtido": 20,
+      "status": "OK"
+    },
+    {
+      "descricao": "família majoritariamente regulada fora do ranking",
+      "esperado": "0",
+      "id": "D09",
+      "obtido": 0,
+      "status": "OK"
+    }
+  ],
+  "gate": "G4",
+  "gerado_em": "2026-11-12T19:57:24.993200+00:00",
+  "resumo": {
+    "n_checks": 9,
+    "n_falhas": 0
+  },
+  "status": "VERDE"
+}

@@ -1,0 +1,31 @@
+[project]
+name = "nicho-bahia"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Italo", email = "italo@aluno.ufrb.edu.br" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "charset-normalizer>=3.5.2",
+    "duckdb>=2.0.0",
+    "jinja2>=3.1.6",
+    "numpy>=2.5.4",
+    "openpyxl>=3.1.5",
+    "pandas>=3.1.1",
+    "pandera>=0.36.0",
+    "playwright>=1.65.1",
+    "pyarrow>=26.0.1",
+    "pytest>=9.2.0",
+    "python-calamine>=0.9.1",
+    "pyyaml>=6.0.3",
+    "rapidfuzz>=3.14.6",
+]
+
+[project.scripts]
+nicho-bahia = "nicho_bahia:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"

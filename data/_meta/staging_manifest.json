@@ -1,0 +1,3797 @@
+{
+  "chunk_rows": 50000,
+  "files": [
+    {
+      "coercion_failures": {
+        "ano_fim_contrato": {
+          "coercion_failed": 12,
+          "converted_ok": 74434,
+          "empty_in": 15612,
+          "samples": [
+            "37624:datetime.date(2021, 8, 7)",
+            "37713:datetime.date(2021, 8, 17)",
+            "37800:datetime.date(2021, 8, 5)",
+            "37828:datetime.date(2021, 8, 5)",
+            "37889:datetime.date(2021, 8, 7)"
+          ]
+        },
+        "assinatura_afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 74446,
+          "empty_in": 15612,
+          "samples": []
+        },
+        "aviso_edital_pncp": {
+          "coercion_failed": 0,
+          "converted_ok": 90057,
+          "empty_in": 1,
+          "samples": []
+        },
+        "cnae_codigo": {
+          "coercion_failed": 638,
+          "converted_ok": 89420,
+          "empty_in": 0,
+          "samples": [
+            "702:'Pessoa Física'",
+            "1033:'Pessoa Física'",
+            "1528:'Pessoa Física'",
+            "1529:'Pessoa Física'",
+            "1530:'Pessoa Física'"
+          ]
+        },
+        "contrato_emergencial_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 16794,
+          "empty_in": 73264,
+          "samples": []
+        },
+        "data_fim_contrato": {
+          "coercion_failed": 13,
+          "converted_ok": 74434,
+          "empty_in": 15611,
+          "samples": [
+            "37624:'19.004 - FUNDO ESTADUAL DE SAUDE - DIRETORIA GERAL'",
+            "37713:'19.004 - FUNDO ESTADUAL DE SAUDE - DIRETORIA GERAL'",
+            "37800:'19.004 - FUNDO ESTADUAL DE SAUDE - DIRETORIA GERAL'",
+            "37828:'19.004 - FUNDO ESTADUAL DE SAUDE - DIRETORIA GERAL'",
+            "37889:'19.004 - FUNDO ESTADUAL DE SAUDE - DIRETORIA GERAL'"
+          ]
+        },
+        "fornecedor": {
+          "coercion_failed": 0,
+          "converted_ok": 0,
+          "empty_in": 90058,
+          "samples": []
+        },
+        "lid_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 81259,
+          "empty_in": 8799,
+          "samples": []
+        },
+        "n_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 17755,
+          "empty_in": 72303,
+          "samples": []
+        },
+        "n_licitacao": {
+          "coercion_failed": 0,
+          "converted_ok": 57994,
+          "empty_in": 32064,
+          "samples": []
+        },
+        "orgao_gerenciador_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 43796,
+          "empty_in": 46262,
+          "samples": []
+        },
+        "orgao_gerenciador_rp": {
+          "coercion_failed": 0,
+          "converted_ok": 43796,
+          "empty_in": 46262,
+          "samples": []
+        },
+        "pce_pedido_cotacao": {
+          "coercion_failed": 0,
+          "converted_ok": 13959,
+          "empty_in": 76099,
+          "samples": []
+        },
+        "prazo_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 90045,
+          "empty_in": 13,
+          "samples": []
+        },
+        "regiao_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 43796,
+          "empty_in": 46262,
+          "samples": []
+        },
+        "situacao_contrato_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 483,
+          "empty_in": 89575,
+          "samples": []
+        },
+        "situacao_fornecedor_lid": {
+          "coercion_failed": 0,
+          "converted_ok": 315,
+          "empty_in": 89743,
+          "samples": []
+        },
+        "srd_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 81261,
+          "empty_in": 8797,
+          "samples": []
+        },
+        "tipo_calculo": {
+          "coercion_failed": 0,
+          "converted_ok": 6129,
+          "empty_in": 83929,
+          "samples": []
+        },
+        "uf_fornecedor": {
+          "coercion_failed": 0,
+          "converted_ok": 90026,
+          "empty_in": 32,
+          "samples": []
+        },
+        "ug_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 83652,
+          "empty_in": 6406,
+          "samples": []
+        },
+        "unidade_licitante": {
+          "coercion_failed": 0,
+          "converted_ok": 57994,
+          "empty_in": 32064,
+          "samples": []
+        },
+        "uo_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 83652,
+          "empty_in": 6406,
+          "samples": []
+        },
+        "valor_detalhe": {
+          "coercion_failed": 0,
+          "converted_ok": 6129,
+          "empty_in": 83929,
+          "samples": []
+        }
+      },
+      "dropped_columns": [],
+      "file": "SIMPAS_VOLUME_DE_COMPRAS_GERAL_2021.xlsx",
+      "n_cols_mapped": 76,
+      "n_cols_source": 77,
+      "n_rows": 90058,
+      "output": "data\\_meta\\staging\\raw_2021.parquet",
+      "resolution": [
+        {
+          "canonical": "cod_secretaria",
+          "index": 0,
+          "raw_label": "COD. SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "secretaria",
+          "index": 1,
+          "raw_label": "SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade",
+          "index": 2,
+          "raw_label": "UNIDADE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uo_fiplan",
+          "index": 3,
+          "raw_label": "UO FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ug_fiplan",
+          "index": 4,
+          "raw_label": "UG FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_fornecimento",
+          "index": 5,
+          "raw_label": "TIPO FORNECIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_licitacao",
+          "index": 6,
+          "raw_label": "GRUPO LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_catalogo",
+          "index": 7,
+          "raw_label": "GRUPO CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "familia_catalogo",
+          "index": 8,
+          "raw_label": "FAMILIA CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "codigo",
+          "index": 9,
+          "raw_label": "CÓDIGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_basico",
+          "index": 10,
+          "raw_label": "Nome Básico",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "item",
+          "index": 11,
+          "raw_label": "ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_item_especifico_comum",
+          "index": 12,
+          "raw_label": "TIPO ITEM (ESPECIFICO/COMUM)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "um",
+          "index": 13,
+          "raw_label": "UM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_do_item",
+          "index": 14,
+          "raw_label": "TIPO DO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "qtd_contratada",
+          "index": 15,
+          "raw_label": "QTD CONTRATADA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_calculo",
+          "index": 16,
+          "raw_label": "Tipo_Calculo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_detalhe",
+          "index": 17,
+          "raw_label": "VALOR DETALHE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_unitario",
+          "index": 18,
+          "raw_label": "VALOR UNITÁRIO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_total",
+          "index": 19,
+          "raw_label": "",
+          "resolved_by": "posicional"
+        },
+        {
+          "canonical": "cnpj",
+          "index": 20,
+          "raw_label": "CNPJ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_codigo",
+          "index": 21,
+          "raw_label": "cnae_codigo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_descricao",
+          "index": 22,
+          "raw_label": "cnae_descricao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_receita",
+          "index": 23,
+          "raw_label": "uf_receita",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "razao_social",
+          "index": 24,
+          "raw_label": "razao_social",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_fantasia",
+          "index": 25,
+          "raw_label": "nome_fantasia",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "categoria",
+          "index": 26,
+          "raw_label": "CATEGORIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor",
+          "index": 27,
+          "raw_label": "SITUAÇÃO FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_fornecedor",
+          "index": 28,
+          "raw_label": "UF FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "forma_contratacao",
+          "index": 29,
+          "raw_label": "FORMA DE CONTRATAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_licitacao",
+          "index": 30,
+          "raw_label": "Nº LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "requisicao_rm_rs",
+          "index": 31,
+          "raw_label": "Requisição de Material - RM/Requisição de Serviços -RS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "dotacao",
+          "index": 32,
+          "raw_label": "Dotacao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps",
+          "index": 33,
+          "raw_label": "AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps_tipo_item",
+          "index": 34,
+          "raw_label": "AFM/APS_TIPO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_geracao_afm_aps",
+          "index": 35,
+          "raw_label": "DATA GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "assinatura_afm_aps",
+          "index": 36,
+          "raw_label": "",
+          "resolved_by": "posicional"
+        },
+        {
+          "canonical": "cod_local_entrega",
+          "index": 37,
+          "raw_label": "Código Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "endereco_local_entrega",
+          "index": 38,
+          "raw_label": "Endereço Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "bairro_local_entrega",
+          "index": 39,
+          "raw_label": "Bairro Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "municipio_local_entrega",
+          "index": 40,
+          "raw_label": "Município Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_local_entrega",
+          "index": 41,
+          "raw_label": "UF Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "srd_fiplan",
+          "index": 42,
+          "raw_label": "SRD (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "lid_fiplan",
+          "index": 43,
+          "raw_label": "LID (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "pce_pedido_cotacao",
+          "index": 44,
+          "raw_label": "PCE - Pedido de Cotação Eletrônica",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_estimado",
+          "index": 45,
+          "raw_label": "VALOR ESTIMADO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_principal_municipio",
+          "index": 46,
+          "raw_label": "Regiao_Principal_Município",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "digitalizacao_contrato",
+          "index": 47,
+          "raw_label": "Digitalização de Contrato",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "classificacao_familia",
+          "index": 48,
+          "raw_label": "CLASSIFICAÇÃO FAMÍLIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_registro_precos",
+          "index": 49,
+          "raw_label": "REGIAO_Registro_Precos",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_covid",
+          "index": 50,
+          "raw_label": "MARCAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_covid",
+          "index": 51,
+          "raw_label": "LIBERAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_vacina_covid",
+          "index": 52,
+          "raw_label": "MARCAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_vacina_covid",
+          "index": 53,
+          "raw_label": "LIBERAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor_lid",
+          "index": 54,
+          "raw_label": "Situação do Fornecedor na Geração LID",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "modulo_servicos_terceirizados",
+          "index": 55,
+          "raw_label": "MODULO SERVIÇOS TERCEIRIZADOS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "instrumento",
+          "index": 56,
+          "raw_label": "INSTRUMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contrato_emergencial_cgst",
+          "index": 57,
+          "raw_label": "Contrato_Emergencial_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_contrato_cgst",
+          "index": 58,
+          "raw_label": "Situacao_Contrato_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade_licitante",
+          "index": 59,
+          "raw_label": "UNIDADE LICITANTE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_da_requisicao",
+          "index": 60,
+          "raw_label": "TIPO DA REQUISIÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "delegacao_automatica",
+          "index": 61,
+          "raw_label": "DELEGAÇÃO AUTOMATICA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_geracao_afm_aps",
+          "index": 62,
+          "raw_label": "ANO GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "mes_geracao_afm_aps",
+          "index": 63,
+          "raw_label": "MES GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_local_entrega",
+          "index": 64,
+          "raw_label": "Região do Local de Entrega",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_processo",
+          "index": 65,
+          "raw_label": "Nº  PROCESSO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_contrato",
+          "index": 66,
+          "raw_label": "Nº CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "prazo_entrega",
+          "index": 67,
+          "raw_label": "PRAZO DE ENTREGA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_registro_precos",
+          "index": 68,
+          "raw_label": "ORGAO GERENCIADOR DO Registro de Preços",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ressuprimento",
+          "index": 69,
+          "raw_label": "RESSUPRIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_rp",
+          "index": 70,
+          "raw_label": "",
+          "resolved_by": "posicional"
+        },
+        {
+          "canonical": "data_fim_contrato",
+          "index": 71,
+          "raw_label": "DATA FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_fim_contrato",
+          "index": 72,
+          "raw_label": "ANO FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "aviso_edital_pncp",
+          "index": 73,
+          "raw_label": "Aviso/Edital PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ata_rp_pncp",
+          "index": 74,
+          "raw_label": "Ata RP PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contratos_pncp",
+          "index": 75,
+          "raw_label": "Contratos PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": null,
+          "index": 76,
+          "raw_label": "",
+          "resolved_by": "descartada_vazia"
+        }
+      ],
+      "sha256": "759a405ecdb94d7a772bfaca17d7f4157108a51fb49c5e6da214aff0bc763456",
+      "sheet": "VOLUME_DE_COMPRAS_GERAL20260807",
+      "size_mb": 8.06,
+      "year": 2021
+    },
+    {
+      "coercion_failures": {
+        "ano_fim_contrato": {
+          "coercion_failed": 1,
+          "converted_ok": 104552,
+          "empty_in": 72515,
+          "samples": [
+            "58502:datetime.date(2022, 5, 29)"
+          ]
+        },
+        "assinatura_afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 104553,
+          "empty_in": 72515,
+          "samples": []
+        },
+        "cnae_codigo": {
+          "coercion_failed": 992,
+          "converted_ok": 176076,
+          "empty_in": 0,
+          "samples": [
+            "1938:'Pessoa Física'",
+            "1939:'Pessoa Física'",
+            "1940:'Pessoa Física'",
+            "1941:'Pessoa Física'",
+            "1942:'Pessoa Física'"
+          ]
+        },
+        "contrato_emergencial_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 64035,
+          "empty_in": 113033,
+          "samples": []
+        },
+        "data_fim_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 104552,
+          "empty_in": 72516,
+          "samples": []
+        },
+        "lid_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 116663,
+          "empty_in": 60405,
+          "samples": []
+        },
+        "n_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 58238,
+          "empty_in": 118830,
+          "samples": []
+        },
+        "n_licitacao": {
+          "coercion_failed": 0,
+          "converted_ok": 86635,
+          "empty_in": 90433,
+          "samples": []
+        },
+        "n_processo": {
+          "coercion_failed": 0,
+          "converted_ok": 171199,
+          "empty_in": 5869,
+          "samples": []
+        },
+        "orgao_gerenciador_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 64655,
+          "empty_in": 112413,
+          "samples": []
+        },
+        "orgao_gerenciador_rp": {
+          "coercion_failed": 0,
+          "converted_ok": 64655,
+          "empty_in": 112413,
+          "samples": []
+        },
+        "pce_pedido_cotacao": {
+          "coercion_failed": 0,
+          "converted_ok": 23515,
+          "empty_in": 153553,
+          "samples": []
+        },
+        "prazo_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 177067,
+          "empty_in": 1,
+          "samples": []
+        },
+        "regiao_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 64654,
+          "empty_in": 112414,
+          "samples": []
+        },
+        "ressuprimento": {
+          "coercion_failed": 0,
+          "converted_ok": 177067,
+          "empty_in": 1,
+          "samples": []
+        },
+        "situacao_contrato_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 446,
+          "empty_in": 176622,
+          "samples": []
+        },
+        "situacao_fornecedor_lid": {
+          "coercion_failed": 0,
+          "converted_ok": 504,
+          "empty_in": 176564,
+          "samples": []
+        },
+        "srd_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 116667,
+          "empty_in": 60401,
+          "samples": []
+        },
+        "tipo_calculo": {
+          "coercion_failed": 0,
+          "converted_ok": 19799,
+          "empty_in": 157269,
+          "samples": []
+        },
+        "uf_fornecedor": {
+          "coercion_failed": 0,
+          "converted_ok": 177037,
+          "empty_in": 31,
+          "samples": []
+        },
+        "ug_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 119720,
+          "empty_in": 57348,
+          "samples": []
+        },
+        "unidade_licitante": {
+          "coercion_failed": 0,
+          "converted_ok": 86635,
+          "empty_in": 90433,
+          "samples": []
+        },
+        "uo_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 119720,
+          "empty_in": 57348,
+          "samples": []
+        },
+        "valor_detalhe": {
+          "coercion_failed": 0,
+          "converted_ok": 19799,
+          "empty_in": 157269,
+          "samples": []
+        }
+      },
+      "dropped_columns": [],
+      "file": "SIMPAS_VOLUME_DE_COMPRAS_GERAL_2022.xlsx",
+      "n_cols_mapped": 77,
+      "n_cols_source": 78,
+      "n_rows": 177068,
+      "output": "data\\_meta\\staging\\raw_2022.parquet",
+      "resolution": [
+        {
+          "canonical": "cod_secretaria",
+          "index": 0,
+          "raw_label": "COD. SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "secretaria",
+          "index": 1,
+          "raw_label": "SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade",
+          "index": 2,
+          "raw_label": "UNIDADE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uo_fiplan",
+          "index": 3,
+          "raw_label": "UO FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ug_fiplan",
+          "index": 4,
+          "raw_label": "UG FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_fornecimento",
+          "index": 5,
+          "raw_label": "TIPO FORNECIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_licitacao",
+          "index": 6,
+          "raw_label": "GRUPO LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_catalogo",
+          "index": 7,
+          "raw_label": "GRUPO CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "familia_catalogo",
+          "index": 8,
+          "raw_label": "FAMILIA CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "codigo",
+          "index": 9,
+          "raw_label": "CÓDIGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_basico",
+          "index": 10,
+          "raw_label": "Nome Básico",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "item",
+          "index": 11,
+          "raw_label": "ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_item_especifico_comum",
+          "index": 12,
+          "raw_label": "TIPO ITEM (ESPECIFICO/COMUM)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "um",
+          "index": 13,
+          "raw_label": "UM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_do_item",
+          "index": 14,
+          "raw_label": "TIPO DO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "qtd_contratada",
+          "index": 15,
+          "raw_label": "QTD CONTRATADA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_calculo",
+          "index": 16,
+          "raw_label": "Tipo_Calculo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_detalhe",
+          "index": 17,
+          "raw_label": "VALOR DETALHE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_unitario",
+          "index": 18,
+          "raw_label": "VALOR UNITÁRIO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_total",
+          "index": 19,
+          "raw_label": "VALOR TOTAL",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnpj",
+          "index": 20,
+          "raw_label": "CNPJ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_codigo",
+          "index": 21,
+          "raw_label": "cnae_codigo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_descricao",
+          "index": 22,
+          "raw_label": "cnae_descricao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_receita",
+          "index": 23,
+          "raw_label": "uf_receita",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "razao_social",
+          "index": 24,
+          "raw_label": "razao_social",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_fantasia",
+          "index": 25,
+          "raw_label": "nome_fantasia",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "fornecedor",
+          "index": 26,
+          "raw_label": "FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "categoria",
+          "index": 27,
+          "raw_label": "CATEGORIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor",
+          "index": 28,
+          "raw_label": "SITUAÇÃO FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_fornecedor",
+          "index": 29,
+          "raw_label": "UF FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "forma_contratacao",
+          "index": 30,
+          "raw_label": "FORMA DE CONTRATAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_licitacao",
+          "index": 31,
+          "raw_label": "Nº LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "requisicao_rm_rs",
+          "index": 32,
+          "raw_label": "Requisição de Material - RM/Requisição de Serviços -RS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "dotacao",
+          "index": 33,
+          "raw_label": "Dotacao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps",
+          "index": 34,
+          "raw_label": "AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps_tipo_item",
+          "index": 35,
+          "raw_label": "AFM/APS_TIPO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_geracao_afm_aps",
+          "index": 36,
+          "raw_label": "DATA GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "assinatura_afm_aps",
+          "index": 37,
+          "raw_label": "Assinatura da AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cod_local_entrega",
+          "index": 38,
+          "raw_label": "Código Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "endereco_local_entrega",
+          "index": 39,
+          "raw_label": "Endereço Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "bairro_local_entrega",
+          "index": 40,
+          "raw_label": "Bairro Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "municipio_local_entrega",
+          "index": 41,
+          "raw_label": "Município Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_local_entrega",
+          "index": 42,
+          "raw_label": "UF Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "srd_fiplan",
+          "index": 43,
+          "raw_label": "SRD (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "lid_fiplan",
+          "index": 44,
+          "raw_label": "LID (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "pce_pedido_cotacao",
+          "index": 45,
+          "raw_label": "PCE - Pedido de Cotação Eletrônica",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_estimado",
+          "index": 46,
+          "raw_label": "VALOR ESTIMADO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_principal_municipio",
+          "index": 47,
+          "raw_label": "Regiao_Principal_Município",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "digitalizacao_contrato",
+          "index": 48,
+          "raw_label": "Digitalização de Contrato",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "classificacao_familia",
+          "index": 49,
+          "raw_label": "CLASSIFICAÇÃO FAMÍLIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_registro_precos",
+          "index": 50,
+          "raw_label": "REGIAO_Registro_Precos",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_covid",
+          "index": 51,
+          "raw_label": "MARCAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_covid",
+          "index": 52,
+          "raw_label": "LIBERAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_vacina_covid",
+          "index": 53,
+          "raw_label": "MARCAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_vacina_covid",
+          "index": 54,
+          "raw_label": "LIBERAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor_lid",
+          "index": 55,
+          "raw_label": "Situação do Fornecedor na Geração LID",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "modulo_servicos_terceirizados",
+          "index": 56,
+          "raw_label": "MODULO SERVIÇOS TERCEIRIZADOS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "instrumento",
+          "index": 57,
+          "raw_label": "INSTRUMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contrato_emergencial_cgst",
+          "index": 58,
+          "raw_label": "Contrato_Emergencial_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_contrato_cgst",
+          "index": 59,
+          "raw_label": "Situacao_Contrato_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade_licitante",
+          "index": 60,
+          "raw_label": "UNIDADE LICITANTE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_da_requisicao",
+          "index": 61,
+          "raw_label": "TIPO DA REQUISIÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "delegacao_automatica",
+          "index": 62,
+          "raw_label": "DELEGAÇÃO AUTOMATICA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_geracao_afm_aps",
+          "index": 63,
+          "raw_label": "ANO GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "mes_geracao_afm_aps",
+          "index": 64,
+          "raw_label": "MES GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_local_entrega",
+          "index": 65,
+          "raw_label": "Região do Local de Entrega",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_processo",
+          "index": 66,
+          "raw_label": "Nº  PROCESSO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_contrato",
+          "index": 67,
+          "raw_label": "Nº CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "prazo_entrega",
+          "index": 68,
+          "raw_label": "PRAZO DE ENTREGA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_registro_precos",
+          "index": 69,
+          "raw_label": "ORGAO GERENCIADOR DO Registro de Preços",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ressuprimento",
+          "index": 70,
+          "raw_label": "RESSUPRIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_rp",
+          "index": 71,
+          "raw_label": "ORGAO GERENCIADOR DO RP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_fim_contrato",
+          "index": 72,
+          "raw_label": "DATA FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_fim_contrato",
+          "index": 73,
+          "raw_label": "ANO FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "aviso_edital_pncp",
+          "index": 74,
+          "raw_label": "Aviso/Edital PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ata_rp_pncp",
+          "index": 75,
+          "raw_label": "Ata RP PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contratos_pncp",
+          "index": 76,
+          "raw_label": "Contratos PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": null,
+          "index": 77,
+          "raw_label": "",
+          "resolved_by": "descartada_vazia"
+        }
+      ],
+      "sha256": "598e663190e9af6e7d0c4297327b3380b5d89477d93138d58f7d7972fdfdefac",
+      "sheet": "VOLUME_DE_COMPRAS_GERAL20260807",
+      "size_mb": 13.15,
+      "year": 2022
+    },
+    {
+      "coercion_failures": {
+        "ano_fim_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 112190,
+          "empty_in": 105728,
+          "samples": []
+        },
+        "assinatura_afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 112190,
+          "empty_in": 105728,
+          "samples": []
+        },
+        "cnae_codigo": {
+          "coercion_failed": 1224,
+          "converted_ok": 216694,
+          "empty_in": 0,
+          "samples": [
+            "1612:'Pessoa Física'",
+            "2313:'Pessoa Física'",
+            "2314:'Pessoa Física'",
+            "2315:'Pessoa Física'",
+            "2316:'Pessoa Física'"
+          ]
+        },
+        "contrato_emergencial_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 91655,
+          "empty_in": 126263,
+          "samples": []
+        },
+        "data_fim_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 112190,
+          "empty_in": 105728,
+          "samples": []
+        },
+        "lid_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 124027,
+          "empty_in": 93891,
+          "samples": []
+        },
+        "n_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 92067,
+          "empty_in": 125851,
+          "samples": []
+        },
+        "n_licitacao": {
+          "coercion_failed": 0,
+          "converted_ok": 99209,
+          "empty_in": 118709,
+          "samples": []
+        },
+        "n_processo": {
+          "coercion_failed": 0,
+          "converted_ok": 123826,
+          "empty_in": 94092,
+          "samples": []
+        },
+        "orgao_gerenciador_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 77757,
+          "empty_in": 140161,
+          "samples": []
+        },
+        "orgao_gerenciador_rp": {
+          "coercion_failed": 0,
+          "converted_ok": 77757,
+          "empty_in": 140161,
+          "samples": []
+        },
+        "pce_pedido_cotacao": {
+          "coercion_failed": 0,
+          "converted_ok": 23678,
+          "empty_in": 194240,
+          "samples": []
+        },
+        "regiao_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 77757,
+          "empty_in": 140161,
+          "samples": []
+        },
+        "situacao_contrato_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 692,
+          "empty_in": 217226,
+          "samples": []
+        },
+        "situacao_fornecedor_lid": {
+          "coercion_failed": 0,
+          "converted_ok": 452,
+          "empty_in": 217466,
+          "samples": []
+        },
+        "srd_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 124034,
+          "empty_in": 93884,
+          "samples": []
+        },
+        "tipo_calculo": {
+          "coercion_failed": 0,
+          "converted_ok": 33239,
+          "empty_in": 184679,
+          "samples": []
+        },
+        "uf_fornecedor": {
+          "coercion_failed": 0,
+          "converted_ok": 217871,
+          "empty_in": 47,
+          "samples": []
+        },
+        "ug_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 127309,
+          "empty_in": 90609,
+          "samples": []
+        },
+        "unidade_licitante": {
+          "coercion_failed": 0,
+          "converted_ok": 99209,
+          "empty_in": 118709,
+          "samples": []
+        },
+        "uo_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 127309,
+          "empty_in": 90609,
+          "samples": []
+        },
+        "valor_detalhe": {
+          "coercion_failed": 0,
+          "converted_ok": 33239,
+          "empty_in": 184679,
+          "samples": []
+        }
+      },
+      "dropped_columns": [],
+      "file": "SIMPAS_VOLUME_DE_COMPRAS_GERAL_2023 1.xlsx",
+      "n_cols_mapped": 77,
+      "n_cols_source": 77,
+      "n_rows": 217918,
+      "output": "data\\_meta\\staging\\raw_2023.parquet",
+      "resolution": [
+        {
+          "canonical": "cod_secretaria",
+          "index": 0,
+          "raw_label": "COD. SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "secretaria",
+          "index": 1,
+          "raw_label": "SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade",
+          "index": 2,
+          "raw_label": "UNIDADE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uo_fiplan",
+          "index": 3,
+          "raw_label": "UO FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ug_fiplan",
+          "index": 4,
+          "raw_label": "UG FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_fornecimento",
+          "index": 5,
+          "raw_label": "TIPO FORNECIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_licitacao",
+          "index": 6,
+          "raw_label": "GRUPO LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_catalogo",
+          "index": 7,
+          "raw_label": "GRUPO CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "familia_catalogo",
+          "index": 8,
+          "raw_label": "FAMILIA CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "codigo",
+          "index": 9,
+          "raw_label": "CÓDIGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_basico",
+          "index": 10,
+          "raw_label": "Nome Básico",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "item",
+          "index": 11,
+          "raw_label": "ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_item_especifico_comum",
+          "index": 12,
+          "raw_label": "TIPO ITEM (ESPECIFICO/COMUM)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "um",
+          "index": 13,
+          "raw_label": "UM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_do_item",
+          "index": 14,
+          "raw_label": "TIPO DO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "qtd_contratada",
+          "index": 15,
+          "raw_label": "QTD CONTRATADA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_calculo",
+          "index": 16,
+          "raw_label": "Tipo_Calculo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_detalhe",
+          "index": 17,
+          "raw_label": "VALOR DETALHE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_unitario",
+          "index": 18,
+          "raw_label": "VALOR UNITÁRIO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_total",
+          "index": 19,
+          "raw_label": "VALOR TOTAL",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnpj",
+          "index": 20,
+          "raw_label": "CNPJ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_codigo",
+          "index": 21,
+          "raw_label": "cnae_codigo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_descricao",
+          "index": 22,
+          "raw_label": "cnae_descricao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_receita",
+          "index": 23,
+          "raw_label": "uf_receita",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "razao_social",
+          "index": 24,
+          "raw_label": "razao_social",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_fantasia",
+          "index": 25,
+          "raw_label": "nome_fantasia",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "fornecedor",
+          "index": 26,
+          "raw_label": "FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "categoria",
+          "index": 27,
+          "raw_label": "CATEGORIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor",
+          "index": 28,
+          "raw_label": "SITUAÇÃO FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_fornecedor",
+          "index": 29,
+          "raw_label": "UF FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "forma_contratacao",
+          "index": 30,
+          "raw_label": "FORMA DE CONTRATAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_licitacao",
+          "index": 31,
+          "raw_label": "Nº LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "requisicao_rm_rs",
+          "index": 32,
+          "raw_label": "Requisição de Material - RM/Requisição de Serviços -RS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "dotacao",
+          "index": 33,
+          "raw_label": "Dotacao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps",
+          "index": 34,
+          "raw_label": "AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps_tipo_item",
+          "index": 35,
+          "raw_label": "AFM/APS_TIPO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_geracao_afm_aps",
+          "index": 36,
+          "raw_label": "DATA GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "assinatura_afm_aps",
+          "index": 37,
+          "raw_label": "Assinatura da AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cod_local_entrega",
+          "index": 38,
+          "raw_label": "Código Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "endereco_local_entrega",
+          "index": 39,
+          "raw_label": "Endereço Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "bairro_local_entrega",
+          "index": 40,
+          "raw_label": "Bairro Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "municipio_local_entrega",
+          "index": 41,
+          "raw_label": "Município Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_local_entrega",
+          "index": 42,
+          "raw_label": "UF Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "srd_fiplan",
+          "index": 43,
+          "raw_label": "SRD (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "lid_fiplan",
+          "index": 44,
+          "raw_label": "LID (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "pce_pedido_cotacao",
+          "index": 45,
+          "raw_label": "PCE - Pedido de Cotação Eletrônica",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_estimado",
+          "index": 46,
+          "raw_label": "VALOR ESTIMADO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_principal_municipio",
+          "index": 47,
+          "raw_label": "Regiao_Principal_Município",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "digitalizacao_contrato",
+          "index": 48,
+          "raw_label": "Digitalização de Contrato",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "classificacao_familia",
+          "index": 49,
+          "raw_label": "CLASSIFICAÇÃO FAMÍLIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_registro_precos",
+          "index": 50,
+          "raw_label": "REGIAO_Registro_Precos",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_covid",
+          "index": 51,
+          "raw_label": "MARCAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_covid",
+          "index": 52,
+          "raw_label": "LIBERAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_vacina_covid",
+          "index": 53,
+          "raw_label": "MARCAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_vacina_covid",
+          "index": 54,
+          "raw_label": "LIBERAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor_lid",
+          "index": 55,
+          "raw_label": "Situação do Fornecedor na Geração LID",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "modulo_servicos_terceirizados",
+          "index": 56,
+          "raw_label": "MODULO SERVIÇOS TERCEIRIZADOS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "instrumento",
+          "index": 57,
+          "raw_label": "INSTRUMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contrato_emergencial_cgst",
+          "index": 58,
+          "raw_label": "Contrato_Emergencial_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_contrato_cgst",
+          "index": 59,
+          "raw_label": "Situacao_Contrato_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade_licitante",
+          "index": 60,
+          "raw_label": "UNIDADE LICITANTE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_da_requisicao",
+          "index": 61,
+          "raw_label": "TIPO DA REQUISIÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "delegacao_automatica",
+          "index": 62,
+          "raw_label": "DELEGAÇÃO AUTOMATICA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_geracao_afm_aps",
+          "index": 63,
+          "raw_label": "ANO GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "mes_geracao_afm_aps",
+          "index": 64,
+          "raw_label": "MES GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_local_entrega",
+          "index": 65,
+          "raw_label": "Região do Local de Entrega",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_processo",
+          "index": 66,
+          "raw_label": "Nº  PROCESSO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_contrato",
+          "index": 67,
+          "raw_label": "Nº CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "prazo_entrega",
+          "index": 68,
+          "raw_label": "PRAZO DE ENTREGA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_registro_precos",
+          "index": 69,
+          "raw_label": "ORGAO GERENCIADOR DO Registro de Preços",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ressuprimento",
+          "index": 70,
+          "raw_label": "RESSUPRIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_rp",
+          "index": 71,
+          "raw_label": "ORGAO GERENCIADOR DO RP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_fim_contrato",
+          "index": 72,
+          "raw_label": "DATA FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_fim_contrato",
+          "index": 73,
+          "raw_label": "ANO FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "aviso_edital_pncp",
+          "index": 74,
+          "raw_label": "Aviso/Edital PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ata_rp_pncp",
+          "index": 75,
+          "raw_label": "Ata RP PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contratos_pncp",
+          "index": 76,
+          "raw_label": "Contratos PNCP",
+          "resolved_by": "alias"
+        }
+      ],
+      "sha256": "36c3bfe3af2d5bbfdcc3726e8a808866eb3d058cfdb67464a0b38c4c288f0878",
+      "sheet": "in",
+      "size_mb": 15.35,
+      "year": 2023
+    },
+    {
+      "coercion_failures": {
+        "ano_fim_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 101530,
+          "empty_in": 87597,
+          "samples": []
+        },
+        "assinatura_afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 101530,
+          "empty_in": 87597,
+          "samples": []
+        },
+        "cnae_codigo": {
+          "coercion_failed": 1208,
+          "converted_ok": 187919,
+          "empty_in": 0,
+          "samples": [
+            "1558:'Pessoa Física'",
+            "2011:'Pessoa Física'",
+            "2012:'Pessoa Física'",
+            "2013:'Pessoa Física'",
+            "2014:'Pessoa Física'"
+          ]
+        },
+        "contrato_emergencial_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 67663,
+          "empty_in": 121464,
+          "samples": []
+        },
+        "data_fim_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 101530,
+          "empty_in": 87597,
+          "samples": []
+        },
+        "lid_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 114070,
+          "empty_in": 75057,
+          "samples": []
+        },
+        "n_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 66168,
+          "empty_in": 122959,
+          "samples": []
+        },
+        "n_licitacao": {
+          "coercion_failed": 0,
+          "converted_ok": 94141,
+          "empty_in": 94986,
+          "samples": []
+        },
+        "n_processo": {
+          "coercion_failed": 0,
+          "converted_ok": 135981,
+          "empty_in": 53146,
+          "samples": []
+        },
+        "orgao_gerenciador_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 82887,
+          "empty_in": 106240,
+          "samples": []
+        },
+        "orgao_gerenciador_rp": {
+          "coercion_failed": 0,
+          "converted_ok": 82887,
+          "empty_in": 106240,
+          "samples": []
+        },
+        "pce_pedido_cotacao": {
+          "coercion_failed": 0,
+          "converted_ok": 23676,
+          "empty_in": 165451,
+          "samples": []
+        },
+        "regiao_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 82887,
+          "empty_in": 106240,
+          "samples": []
+        },
+        "situacao_contrato_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 905,
+          "empty_in": 188222,
+          "samples": []
+        },
+        "situacao_fornecedor_lid": {
+          "coercion_failed": 0,
+          "converted_ok": 494,
+          "empty_in": 188633,
+          "samples": []
+        },
+        "srd_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 114071,
+          "empty_in": 75056,
+          "samples": []
+        },
+        "tipo_calculo": {
+          "coercion_failed": 0,
+          "converted_ok": 43665,
+          "empty_in": 145462,
+          "samples": []
+        },
+        "uf_fornecedor": {
+          "coercion_failed": 0,
+          "converted_ok": 189081,
+          "empty_in": 46,
+          "samples": []
+        },
+        "ug_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 116446,
+          "empty_in": 72681,
+          "samples": []
+        },
+        "unidade_licitante": {
+          "coercion_failed": 0,
+          "converted_ok": 94141,
+          "empty_in": 94986,
+          "samples": []
+        },
+        "uo_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 118850,
+          "empty_in": 70277,
+          "samples": []
+        },
+        "valor_detalhe": {
+          "coercion_failed": 0,
+          "converted_ok": 43665,
+          "empty_in": 145462,
+          "samples": []
+        },
+        "valor_unitario": {
+          "coercion_failed": 0,
+          "converted_ok": 189125,
+          "empty_in": 2,
+          "samples": []
+        }
+      },
+      "dropped_columns": [],
+      "file": "SIMPAS_VOLUME_DE_COMPRAS_GERAL_2024 2.xlsx",
+      "n_cols_mapped": 77,
+      "n_cols_source": 77,
+      "n_rows": 189127,
+      "output": "data\\_meta\\staging\\raw_2024.parquet",
+      "resolution": [
+        {
+          "canonical": "cod_secretaria",
+          "index": 0,
+          "raw_label": "COD. SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "secretaria",
+          "index": 1,
+          "raw_label": "SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade",
+          "index": 2,
+          "raw_label": "UNIDADE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uo_fiplan",
+          "index": 3,
+          "raw_label": "UO FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ug_fiplan",
+          "index": 4,
+          "raw_label": "UG FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_fornecimento",
+          "index": 5,
+          "raw_label": "TIPO FORNECIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_licitacao",
+          "index": 6,
+          "raw_label": "GRUPO LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_catalogo",
+          "index": 7,
+          "raw_label": "GRUPO CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "familia_catalogo",
+          "index": 8,
+          "raw_label": "FAMILIA CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "codigo",
+          "index": 9,
+          "raw_label": "CÓDIGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_basico",
+          "index": 10,
+          "raw_label": "Nome Básico",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "item",
+          "index": 11,
+          "raw_label": "ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_item_especifico_comum",
+          "index": 12,
+          "raw_label": "TIPO ITEM (ESPECIFICO/COMUM)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "um",
+          "index": 13,
+          "raw_label": "UM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_do_item",
+          "index": 14,
+          "raw_label": "TIPO DO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "qtd_contratada",
+          "index": 15,
+          "raw_label": "QTD CONTRATADA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_calculo",
+          "index": 16,
+          "raw_label": "Tipo_Calculo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_detalhe",
+          "index": 17,
+          "raw_label": "VALOR DETALHE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_unitario",
+          "index": 18,
+          "raw_label": "VALOR UNITÁRIO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_total",
+          "index": 19,
+          "raw_label": "VALOR TOTAL",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnpj",
+          "index": 20,
+          "raw_label": "CNPJ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_codigo",
+          "index": 21,
+          "raw_label": "cnae_codigo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_descricao",
+          "index": 22,
+          "raw_label": "cnae_descricao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_receita",
+          "index": 23,
+          "raw_label": "uf_receita",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "razao_social",
+          "index": 24,
+          "raw_label": "razao_social",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_fantasia",
+          "index": 25,
+          "raw_label": "nome_fantasia",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "fornecedor",
+          "index": 26,
+          "raw_label": "FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "categoria",
+          "index": 27,
+          "raw_label": "CATEGORIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor",
+          "index": 28,
+          "raw_label": "SITUAÇÃO FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_fornecedor",
+          "index": 29,
+          "raw_label": "UF FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "forma_contratacao",
+          "index": 30,
+          "raw_label": "FORMA DE CONTRATAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_licitacao",
+          "index": 31,
+          "raw_label": "Nº LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "requisicao_rm_rs",
+          "index": 32,
+          "raw_label": "Requisição de Material - RM/Requisição de Serviços -RS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "dotacao",
+          "index": 33,
+          "raw_label": "Dotacao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps",
+          "index": 34,
+          "raw_label": "AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps_tipo_item",
+          "index": 35,
+          "raw_label": "AFM/APS_TIPO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_geracao_afm_aps",
+          "index": 36,
+          "raw_label": "DATA GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "assinatura_afm_aps",
+          "index": 37,
+          "raw_label": "Assinatura da AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cod_local_entrega",
+          "index": 38,
+          "raw_label": "Código Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "endereco_local_entrega",
+          "index": 39,
+          "raw_label": "Endereço Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "bairro_local_entrega",
+          "index": 40,
+          "raw_label": "Bairro Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "municipio_local_entrega",
+          "index": 41,
+          "raw_label": "Município Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_local_entrega",
+          "index": 42,
+          "raw_label": "UF Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "srd_fiplan",
+          "index": 43,
+          "raw_label": "SRD (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "lid_fiplan",
+          "index": 44,
+          "raw_label": "LID (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "pce_pedido_cotacao",
+          "index": 45,
+          "raw_label": "PCE - Pedido de Cotação Eletrônica",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_estimado",
+          "index": 46,
+          "raw_label": "VALOR ESTIMADO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_principal_municipio",
+          "index": 47,
+          "raw_label": "Regiao_Principal_Município",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "digitalizacao_contrato",
+          "index": 48,
+          "raw_label": "Digitalização de Contrato",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "classificacao_familia",
+          "index": 49,
+          "raw_label": "CLASSIFICAÇÃO FAMÍLIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_registro_precos",
+          "index": 50,
+          "raw_label": "REGIAO_Registro_Precos",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_covid",
+          "index": 51,
+          "raw_label": "MARCAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_covid",
+          "index": 52,
+          "raw_label": "LIBERAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_vacina_covid",
+          "index": 53,
+          "raw_label": "MARCAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_vacina_covid",
+          "index": 54,
+          "raw_label": "LIBERAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor_lid",
+          "index": 55,
+          "raw_label": "Situação do Fornecedor na Geração LID",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "modulo_servicos_terceirizados",
+          "index": 56,
+          "raw_label": "MODULO SERVIÇOS TERCEIRIZADOS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "instrumento",
+          "index": 57,
+          "raw_label": "INSTRUMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contrato_emergencial_cgst",
+          "index": 58,
+          "raw_label": "Contrato_Emergencial_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_contrato_cgst",
+          "index": 59,
+          "raw_label": "Situacao_Contrato_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade_licitante",
+          "index": 60,
+          "raw_label": "UNIDADE LICITANTE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_da_requisicao",
+          "index": 61,
+          "raw_label": "TIPO DA REQUISIÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "delegacao_automatica",
+          "index": 62,
+          "raw_label": "DELEGAÇÃO AUTOMATICA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_geracao_afm_aps",
+          "index": 63,
+          "raw_label": "ANO GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "mes_geracao_afm_aps",
+          "index": 64,
+          "raw_label": "MES GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_local_entrega",
+          "index": 65,
+          "raw_label": "Região do Local de Entrega",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_processo",
+          "index": 66,
+          "raw_label": "Nº  PROCESSO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_contrato",
+          "index": 67,
+          "raw_label": "Nº CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "prazo_entrega",
+          "index": 68,
+          "raw_label": "PRAZO DE ENTREGA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_registro_precos",
+          "index": 69,
+          "raw_label": "ORGAO GERENCIADOR DO Registro de Preços",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ressuprimento",
+          "index": 70,
+          "raw_label": "RESSUPRIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_rp",
+          "index": 71,
+          "raw_label": "ORGAO GERENCIADOR DO RP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_fim_contrato",
+          "index": 72,
+          "raw_label": "DATA FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_fim_contrato",
+          "index": 73,
+          "raw_label": "ANO FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "aviso_edital_pncp",
+          "index": 74,
+          "raw_label": "Aviso/Edital PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ata_rp_pncp",
+          "index": 75,
+          "raw_label": "Ata RP PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contratos_pncp",
+          "index": 76,
+          "raw_label": "Contratos PNCP",
+          "resolved_by": "alias"
+        }
+      ],
+      "sha256": "ca21a588e39fd754eab9313ea2abfdbb2a8ad404d13834ab7097723a873cc75e",
+      "sheet": "in",
+      "size_mb": 14.11,
+      "year": 2024
+    },
+    {
+      "coercion_failures": {
+        "afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "afm_aps_tipo_item": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "ano_fim_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 94133,
+          "empty_in": 103953,
+          "samples": []
+        },
+        "ano_geracao_afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "assinatura_afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 94133,
+          "empty_in": 103953,
+          "samples": []
+        },
+        "ata_rp_pncp": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "aviso_edital_pncp": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "bairro_local_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "categoria": {
+          "coercion_failed": 0,
+          "converted_ok": 198081,
+          "empty_in": 5,
+          "samples": []
+        },
+        "classificacao_familia": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "cnae_codigo": {
+          "coercion_failed": 1031,
+          "converted_ok": 197051,
+          "empty_in": 4,
+          "samples": [
+            "1206:'Pessoa Física'",
+            "1218:'Pessoa Física'",
+            "1717:'Pessoa Física'",
+            "1718:'Pessoa Física'",
+            "1719:'Pessoa Física'"
+          ]
+        },
+        "cnae_descricao": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "cnpj": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "cod_local_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "cod_secretaria": {
+          "coercion_failed": 3,
+          "converted_ok": 198082,
+          "empty_in": 1,
+          "samples": [
+            "198084:'Fonte de dados: SIMPAS (Sistema Integrado de Material, Patrimônio e Serviços)'",
+            "198085:'Data Consulta: 12/01/2026'",
+            "198086:'Critérios: Registro das compras e contratações realizado pelos órgãos e entidades do Poder Executuvo do Estado da Bahia no ano de 2025'"
+          ]
+        },
+        "codigo": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "contrato_emergencial_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 71175,
+          "empty_in": 126911,
+          "samples": []
+        },
+        "contratos_pncp": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "data_fim_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 94133,
+          "empty_in": 103953,
+          "samples": []
+        },
+        "data_geracao_afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "delegacao_automatica": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "digitalizacao_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "dotacao": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "endereco_local_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "familia_catalogo": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "forma_contratacao": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "fornecedor": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "grupo_catalogo": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "grupo_licitacao": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "instrumento": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "item": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "liberacao_covid": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "liberacao_vacina_covid": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "lid_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 111161,
+          "empty_in": 86925,
+          "samples": []
+        },
+        "marcacao_covid": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "marcacao_vacina_covid": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "mes_geracao_afm_aps": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "modulo_servicos_terceirizados": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "municipio_local_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "n_contrato": {
+          "coercion_failed": 0,
+          "converted_ok": 68756,
+          "empty_in": 129330,
+          "samples": []
+        },
+        "n_licitacao": {
+          "coercion_failed": 0,
+          "converted_ok": 95584,
+          "empty_in": 102502,
+          "samples": []
+        },
+        "n_processo": {
+          "coercion_failed": 0,
+          "converted_ok": 198012,
+          "empty_in": 74,
+          "samples": []
+        },
+        "nome_basico": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "nome_fantasia": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "orgao_gerenciador_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 85129,
+          "empty_in": 112957,
+          "samples": []
+        },
+        "orgao_gerenciador_rp": {
+          "coercion_failed": 0,
+          "converted_ok": 85129,
+          "empty_in": 112957,
+          "samples": []
+        },
+        "pce_pedido_cotacao": {
+          "coercion_failed": 0,
+          "converted_ok": 29559,
+          "empty_in": 168527,
+          "samples": []
+        },
+        "prazo_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "qtd_contratada": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "razao_social": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "regiao_local_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "regiao_principal_municipio": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "regiao_registro_precos": {
+          "coercion_failed": 0,
+          "converted_ok": 85129,
+          "empty_in": 112957,
+          "samples": []
+        },
+        "requisicao_rm_rs": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "ressuprimento": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "secretaria": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "situacao_contrato_cgst": {
+          "coercion_failed": 0,
+          "converted_ok": 558,
+          "empty_in": 197528,
+          "samples": []
+        },
+        "situacao_fornecedor": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "situacao_fornecedor_lid": {
+          "coercion_failed": 0,
+          "converted_ok": 372,
+          "empty_in": 197714,
+          "samples": []
+        },
+        "srd_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 111160,
+          "empty_in": 86926,
+          "samples": []
+        },
+        "tipo_calculo": {
+          "coercion_failed": 0,
+          "converted_ok": 56065,
+          "empty_in": 142021,
+          "samples": []
+        },
+        "tipo_da_requisicao": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "tipo_do_item": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "tipo_fornecimento": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "tipo_item_especifico_comum": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "uf_fornecedor": {
+          "coercion_failed": 0,
+          "converted_ok": 198039,
+          "empty_in": 47,
+          "samples": []
+        },
+        "uf_local_entrega": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "uf_receita": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "ug_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 116158,
+          "empty_in": 81928,
+          "samples": []
+        },
+        "um": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "unidade": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "unidade_licitante": {
+          "coercion_failed": 0,
+          "converted_ok": 95584,
+          "empty_in": 102502,
+          "samples": []
+        },
+        "uo_fiplan": {
+          "coercion_failed": 0,
+          "converted_ok": 116158,
+          "empty_in": 81928,
+          "samples": []
+        },
+        "valor_detalhe": {
+          "coercion_failed": 0,
+          "converted_ok": 56065,
+          "empty_in": 142021,
+          "samples": []
+        },
+        "valor_estimado": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "valor_total": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        },
+        "valor_unitario": {
+          "coercion_failed": 0,
+          "converted_ok": 198082,
+          "empty_in": 4,
+          "samples": []
+        }
+      },
+      "dropped_columns": [],
+      "file": "SIMPAS_VOLUME_DE_COMPRAS_ANO_2025 1 (1).xlsx",
+      "n_cols_mapped": 77,
+      "n_cols_source": 77,
+      "n_rows": 198086,
+      "output": "data\\_meta\\staging\\raw_2025.parquet",
+      "resolution": [
+        {
+          "canonical": "cod_secretaria",
+          "index": 0,
+          "raw_label": "COD. SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "secretaria",
+          "index": 1,
+          "raw_label": "SECRETARIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade",
+          "index": 2,
+          "raw_label": "UNIDADE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uo_fiplan",
+          "index": 3,
+          "raw_label": "UO FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ug_fiplan",
+          "index": 4,
+          "raw_label": "UG FIPLAN",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_fornecimento",
+          "index": 5,
+          "raw_label": "TIPO FORNECIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_licitacao",
+          "index": 6,
+          "raw_label": "GRUPO LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "grupo_catalogo",
+          "index": 7,
+          "raw_label": "GRUPO CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "familia_catalogo",
+          "index": 8,
+          "raw_label": "FAMILIA CATÁLOGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "codigo",
+          "index": 9,
+          "raw_label": "CÓDIGO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_basico",
+          "index": 10,
+          "raw_label": "Nome Básico",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "item",
+          "index": 11,
+          "raw_label": "ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_item_especifico_comum",
+          "index": 12,
+          "raw_label": "TIPO ITEM (ESPECIFICO/COMUM)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "um",
+          "index": 13,
+          "raw_label": "UM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_do_item",
+          "index": 14,
+          "raw_label": "TIPO DO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "qtd_contratada",
+          "index": 15,
+          "raw_label": "QTD CONTRATADA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_calculo",
+          "index": 16,
+          "raw_label": "Tipo_Calculo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_detalhe",
+          "index": 17,
+          "raw_label": "VALOR DETALHE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_unitario",
+          "index": 18,
+          "raw_label": "VALOR UNITÁRIO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_total",
+          "index": 19,
+          "raw_label": "VALOR TOTAL",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnpj",
+          "index": 20,
+          "raw_label": "CNPJ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_codigo",
+          "index": 21,
+          "raw_label": "cnae_codigo",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cnae_descricao",
+          "index": 22,
+          "raw_label": "cnae_descricao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_receita",
+          "index": 23,
+          "raw_label": "uf_receita",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "razao_social",
+          "index": 24,
+          "raw_label": "razao_social",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "nome_fantasia",
+          "index": 25,
+          "raw_label": "nome_fantasia",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "fornecedor",
+          "index": 26,
+          "raw_label": "FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "categoria",
+          "index": 27,
+          "raw_label": "CATEGORIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor",
+          "index": 28,
+          "raw_label": "SITUAÇÃO FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_fornecedor",
+          "index": 29,
+          "raw_label": "UF FORNECEDOR",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "forma_contratacao",
+          "index": 30,
+          "raw_label": "FORMA DE CONTRATAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_licitacao",
+          "index": 31,
+          "raw_label": "Nº LICITAÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "requisicao_rm_rs",
+          "index": 32,
+          "raw_label": "Requisição de Material - RM/Requisição de Serviços -RS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "dotacao",
+          "index": 33,
+          "raw_label": "Dotacao",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps",
+          "index": 34,
+          "raw_label": "AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "afm_aps_tipo_item",
+          "index": 35,
+          "raw_label": "AFM/APS_TIPO ITEM",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_geracao_afm_aps",
+          "index": 36,
+          "raw_label": "DATA GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "assinatura_afm_aps",
+          "index": 37,
+          "raw_label": "Assinatura da AFM/APS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "cod_local_entrega",
+          "index": 38,
+          "raw_label": "Código Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "endereco_local_entrega",
+          "index": 39,
+          "raw_label": "Endereço Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "bairro_local_entrega",
+          "index": 40,
+          "raw_label": "Bairro Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "municipio_local_entrega",
+          "index": 41,
+          "raw_label": "Município Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "uf_local_entrega",
+          "index": 42,
+          "raw_label": "UF Local de Entrega/Execução da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "srd_fiplan",
+          "index": 43,
+          "raw_label": "SRD (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "lid_fiplan",
+          "index": 44,
+          "raw_label": "LID (FIPLAN)",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "pce_pedido_cotacao",
+          "index": 45,
+          "raw_label": "PCE - Pedido de Cotação Eletrônica",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "valor_estimado",
+          "index": 46,
+          "raw_label": "VALOR ESTIMADO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_principal_municipio",
+          "index": 47,
+          "raw_label": "Regiao_Principal_Município",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "digitalizacao_contrato",
+          "index": 48,
+          "raw_label": "Digitalização de Contrato",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "classificacao_familia",
+          "index": 49,
+          "raw_label": "CLASSIFICAÇÃO FAMÍLIA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_registro_precos",
+          "index": 50,
+          "raw_label": "REGIAO_Registro_Precos",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_covid",
+          "index": 51,
+          "raw_label": "MARCAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_covid",
+          "index": 52,
+          "raw_label": "LIBERAÇÃO COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "marcacao_vacina_covid",
+          "index": 53,
+          "raw_label": "MARCAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "liberacao_vacina_covid",
+          "index": 54,
+          "raw_label": "LIBERAÇÃO VACINA COVID-19",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_fornecedor_lid",
+          "index": 55,
+          "raw_label": "Situação do Fornecedor na Geração LID",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "modulo_servicos_terceirizados",
+          "index": 56,
+          "raw_label": "MODULO SERVIÇOS TERCEIRIZADOS",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "instrumento",
+          "index": 57,
+          "raw_label": "INSTRUMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contrato_emergencial_cgst",
+          "index": 58,
+          "raw_label": "Contrato_Emergencial_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "situacao_contrato_cgst",
+          "index": 59,
+          "raw_label": "Situacao_Contrato_Cgst",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "unidade_licitante",
+          "index": 60,
+          "raw_label": "UNIDADE LICITANTE",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "tipo_da_requisicao",
+          "index": 61,
+          "raw_label": "TIPO DA REQUISIÇÃO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "delegacao_automatica",
+          "index": 62,
+          "raw_label": "DELEGAÇÃO AUTOMATICA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_geracao_afm_aps",
+          "index": 63,
+          "raw_label": "ANO GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "mes_geracao_afm_aps",
+          "index": 64,
+          "raw_label": "MES GERAÇÃO da AFM/APS ",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "regiao_local_entrega",
+          "index": 65,
+          "raw_label": "Região do Local de Entrega",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_processo",
+          "index": 66,
+          "raw_label": "Nº  PROCESSO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "n_contrato",
+          "index": 67,
+          "raw_label": "Nº CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "prazo_entrega",
+          "index": 68,
+          "raw_label": "PRAZO DE ENTREGA",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_registro_precos",
+          "index": 69,
+          "raw_label": "ORGAO GERENCIADOR DO Registro de Preços",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ressuprimento",
+          "index": 70,
+          "raw_label": "RESSUPRIMENTO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "orgao_gerenciador_rp",
+          "index": 71,
+          "raw_label": "ORGAO GERENCIADOR DO RP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "data_fim_contrato",
+          "index": 72,
+          "raw_label": "DATA FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ano_fim_contrato",
+          "index": 73,
+          "raw_label": "ANO FIM CONTRATO",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "aviso_edital_pncp",
+          "index": 74,
+          "raw_label": "Aviso/Edital PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "ata_rp_pncp",
+          "index": 75,
+          "raw_label": "Ata RP PNCP",
+          "resolved_by": "alias"
+        },
+        {
+          "canonical": "contratos_pncp",
+          "index": 76,
+          "raw_label": "Contratos PNCP",
+          "resolved_by": "alias"
+        }
+      ],
+      "sha256": "7adaae3cce187b7bcdbf44cee3862b4d92cc8fcda8be8ec193d2435b704d8b79",
+      "sheet": "VOLUME_DE_COMPRAS_GERAL20260112",
+      "size_mb": 14.73,
+      "year": 2025
+    }
+  ],
+  "generated_at": "2026-11-12T17:46:21.099334+00:00",
+  "schema": [
+    {
+      "name": "_src_file",
+      "type": "string"
+    },
+    {
+      "name": "_src_sheet",
+      "type": "string"
+    },
+    {
+      "name": "_src_row",
+      "type": "int32"
+    },
+    {
+      "name": "_src_year",
+      "type": "int16"
+    },
+    {
+      "name": "cod_secretaria",
+      "type": "int32"
+    },
+    {
+      "name": "secretaria",
+      "type": "string"
+    },
+    {
+      "name": "unidade",
+      "type": "string"
+    },
+    {
+      "name": "uo_fiplan",
+      "type": "string"
+    },
+    {
+      "name": "ug_fiplan",
+      "type": "string"
+    },
+    {
+      "name": "tipo_fornecimento",
+      "type": "string"
+    },
+    {
+      "name": "grupo_licitacao",
+      "type": "string"
+    },
+    {
+      "name": "grupo_catalogo",
+      "type": "string"
+    },
+    {
+      "name": "familia_catalogo",
+      "type": "string"
+    },
+    {
+      "name": "codigo",
+      "type": "string"
+    },
+    {
+      "name": "nome_basico",
+      "type": "string"
+    },
+    {
+      "name": "item",
+      "type": "string"
+    },
+    {
+      "name": "tipo_item_especifico_comum",
+      "type": "string"
+    },
+    {
+      "name": "um",
+      "type": "string"
+    },
+    {
+      "name": "tipo_do_item",
+      "type": "string"
+    },
+    {
+      "name": "qtd_contratada",
+      "type": "double"
+    },
+    {
+      "name": "tipo_calculo",
+      "type": "string"
+    },
+    {
+      "name": "valor_detalhe",
+      "type": "double"
+    },
+    {
+      "name": "valor_unitario",
+      "type": "double"
+    },
+    {
+      "name": "valor_total",
+      "type": "double"
+    },
+    {
+      "name": "cnpj",
+      "type": "string"
+    },
+    {
+      "name": "cnae_codigo",
+      "type": "int32"
+    },
+    {
+      "name": "cnae_descricao",
+      "type": "string"
+    },
+    {
+      "name": "uf_receita",
+      "type": "string"
+    },
+    {
+      "name": "razao_social",
+      "type": "string"
+    },
+    {
+      "name": "nome_fantasia",
+      "type": "string"
+    },
+    {
+      "name": "fornecedor",
+      "type": "string"
+    },
+    {
+      "name": "categoria",
+      "type": "string"
+    },
+    {
+      "name": "situacao_fornecedor",
+      "type": "string"
+    },
+    {
+      "name": "uf_fornecedor",
+      "type": "string"
+    },
+    {
+      "name": "forma_contratacao",
+      "type": "string"
+    },
+    {
+      "name": "n_licitacao",
+      "type": "string"
+    },
+    {
+      "name": "requisicao_rm_rs",
+      "type": "string"
+    },
+    {
+      "name": "dotacao",
+      "type": "string"
+    },
+    {
+      "name": "afm_aps",
+      "type": "string"
+    },
+    {
+      "name": "afm_aps_tipo_item",
+      "type": "string"
+    },
+    {
+      "name": "data_geracao_afm_aps",
+      "type": "date32[day]"
+    },
+    {
+      "name": "assinatura_afm_aps",
+      "type": "date32[day]"
+    },
+    {
+      "name": "cod_local_entrega",
+      "type": "string"
+    },
+    {
+      "name": "endereco_local_entrega",
+      "type": "string"
+    },
+    {
+      "name": "bairro_local_entrega",
+      "type": "string"
+    },
+    {
+      "name": "municipio_local_entrega",
+      "type": "string"
+    },
+    {
+      "name": "uf_local_entrega",
+      "type": "string"
+    },
+    {
+      "name": "srd_fiplan",
+      "type": "string"
+    },
+    {
+      "name": "lid_fiplan",
+      "type": "string"
+    },
+    {
+      "name": "pce_pedido_cotacao",
+      "type": "string"
+    },
+    {
+      "name": "valor_estimado",
+      "type": "double"
+    },
+    {
+      "name": "regiao_principal_municipio",
+      "type": "string"
+    },
+    {
+      "name": "digitalizacao_contrato",
+      "type": "string"
+    },
+    {
+      "name": "classificacao_familia",
+      "type": "string"
+    },
+    {
+      "name": "regiao_registro_precos",
+      "type": "string"
+    },
+    {
+      "name": "marcacao_covid",
+      "type": "string"
+    },
+    {
+      "name": "liberacao_covid",
+      "type": "string"
+    },
+    {
+      "name": "marcacao_vacina_covid",
+      "type": "string"
+    },
+    {
+      "name": "liberacao_vacina_covid",
+      "type": "string"
+    },
+    {
+      "name": "situacao_fornecedor_lid",
+      "type": "string"
+    },
+    {
+      "name": "modulo_servicos_terceirizados",
+      "type": "string"
+    },
+    {
+      "name": "instrumento",
+      "type": "string"
+    },
+    {
+      "name": "contrato_emergencial_cgst",
+      "type": "string"
+    },
+    {
+      "name": "situacao_contrato_cgst",
+      "type": "string"
+    },
+    {
+      "name": "unidade_licitante",
+      "type": "string"
+    },
+    {
+      "name": "tipo_da_requisicao",
+      "type": "string"
+    },
+    {
+      "name": "delegacao_automatica",
+      "type": "string"
+    },
+    {
+      "name": "ano_geracao_afm_aps",
+      "type": "int32"
+    },
+    {
+      "name": "mes_geracao_afm_aps",
+      "type": "int32"
+    },
+    {
+      "name": "regiao_local_entrega",
+      "type": "string"
+    },
+    {
+      "name": "n_processo",
+      "type": "string"
+    },
+    {
+      "name": "n_contrato",
+      "type": "string"
+    },
+    {
+      "name": "prazo_entrega",
+      "type": "string"
+    },
+    {
+      "name": "orgao_gerenciador_registro_precos",
+      "type": "string"
+    },
+    {
+      "name": "ressuprimento",
+      "type": "string"
+    },
+    {
+      "name": "orgao_gerenciador_rp",
+      "type": "string"
+    },
+    {
+      "name": "data_fim_contrato",
+      "type": "date32[day]"
+    },
+    {
+      "name": "ano_fim_contrato",
+      "type": "int32"
+    },
+    {
+      "name": "aviso_edital_pncp",
+      "type": "string"
+    },
+    {
+      "name": "ata_rp_pncp",
+      "type": "string"
+    },
+    {
+      "name": "contratos_pncp",
+      "type": "string"
+    }
+  ],
+  "total_rows": 872257
+}

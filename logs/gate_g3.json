@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "descricao": "linhas no escopo tratado",
+      "esperado": 560934,
+      "id": "C01",
+      "obtido": 560934,
+      "status": "OK"
+    },
+    {
+      "descricao": "reconciliação Σ valor (bruto material vs tratado)",
+      "esperado": "<= 0.10%",
+      "id": "C02",
+      "obtido": "0.000000%",
+      "status": "OK"
+    },
+    {
+      "descricao": "linha_id única",
+      "esperado": "0 duplicatas",
+      "id": "C03",
+      "obtido": 0,
+      "status": "OK"
+    },
+    {
+      "descricao": "nulos estruturais",
+      "esperado": "0 em data/familia/item_key/valor",
+      "id": "C04",
+      "obtido": {
+        "data": 0,
+        "familia": 0,
+        "item_key": 0,
+        "valor": 0
+      },
+      "status": "OK"
+    },
+    {
+      "descricao": "deflator por ano = config",
+      "esperado": {
+        "2021": 1.33135,
+        "2022": 1.209658,
+        "2023": 1.143452,
+        "2024": 1.092958,
+        "2025": 1.0426
+      },
+      "id": "C05",
+      "obtido": {
+        "2021": 1.33135,
+        "2022": 1.209658,
+        "2023": 1.143452,
+        "2024": 1.092958,
+        "2025": 1.0426
+      },
+      "status": "OK"
+    },
+    {
+      "descricao": "Σ valor nominal do tratado",
+      "esperado": "12597609650.96",
+      "id": "C06",
+      "obtido": "12597609650.96",
+      "status": "OK"
+    },
+    {
+      "descricao": "famílias reguladas 100% marcadas",
+      "esperado": "100%",
+      "id": "C07",
+      "obtido": "197643/197643",
+      "status": "OK"
+    },
+    {
+      "descricao": "saúde-oportunidade não majoritariamente regulada",
+      "esperado": "< 50% do valor",
+      "id": "C08",
+      "obtido": "máx 0.00%",
+      "status": "OK"
+    },
+    {
+      "descricao": "rótulos de canal reconhecidos",
+      "esperado": "0 não mapeados",
+      "id": "C09",
+      "obtido": 0,
+      "status": "OK"
+    },
+    {
+      "descricao": "cobertura temporal (5 anos / 60 meses)",
+      "esperado": "5 / 60",
+      "id": "C10",
+      "obtido": "5 / 60",
+      "status": "OK"
+    },
+    {
+      "descricao": "pytest (contrato pandera + regras)",
+      "esperado": "exit 0",
+      "id": "C11",
+      "obtido": "exit 0: 42 passed in 7.13s",
+      "status": "OK"
+    },
+    {
+      "descricao": "sha256 do parquet registrado",
+      "esperado": "97697cc7e9b9052c",
+      "id": "C12",
+      "obtido": "97697cc7e9b9052c",
+      "status": "OK"
+    }
+  ],
+  "gate": "G3",
+  "gerado_em": "2026-11-12T19:57:12.382782+00:00",
+  "parquet": {
+    "caminho": "data\\treated\\compras_tratadas.parquet",
+    "linhas": 560934,
+    "sha256": "97697cc7e9b9052c2f360f0421f5a0604ef9a3ae72ad2c1405c77cc2ba6c49e1",
+    "tamanho_mb": 68.65
+  },
+  "pytest": {
+    "exit_code": 0,
+    "log": "logs\\pytest_f3.log",
+    "resumo": "42 passed in 7.13s"
+  },
+  "status": "VERDE"
+}

@@ -1,0 +1,144 @@
+{
+  "agregados": {
+    "agg_canal_familia": {
+      "arquivo": "agg_canal_familia.parquet",
+      "kb": 132.3,
+      "linhas": 4932,
+      "sha256": "10a83fb12f281f57b8b1982b72b88f7268511def44a16facf8a7a4e3b3fd49cb"
+    },
+    "agg_concorrencia": {
+      "arquivo": "agg_concorrencia.parquet",
+      "kb": 42.7,
+      "linhas": 1486,
+      "sha256": "4041c1919c878f64549885e1f4e2faa068b746da46f552cfa8f4c6ad4384b47c"
+    },
+    "agg_desconto": {
+      "arquivo": "agg_desconto.parquet",
+      "kb": 20.9,
+      "linhas": 1490,
+      "sha256": "a7fc3f81c8c135a638de2962c131bb0507cf50dbd2d30a886f9ff93248576931"
+    },
+    "agg_entrantes": {
+      "arquivo": "agg_entrantes.parquet",
+      "kb": 21.0,
+      "linhas": 1486,
+      "sha256": "5657011c8572a351ac6a34c41ff126c0bbdd126f79892290c4a6f9514ba54d45"
+    },
+    "agg_familia_ano": {
+      "arquivo": "agg_familia_ano.parquet",
+      "kb": 60.6,
+      "linhas": 1490,
+      "sha256": "9acb03672adb4d7376091cb89c5d838164d3da4fd693bd4ac94279d6190f2b9f"
+    },
+    "agg_familia_metricas": {
+      "arquivo": "agg_familia_metricas.parquet",
+      "kb": 139.7,
+      "linhas": 348,
+      "sha256": "d635aaaa6af00053d11dbc26bf9008cc1433d1f2fcef2b52f54160c4fbb421f5"
+    },
+    "agg_familia_periodo": {
+      "arquivo": "agg_familia_periodo.parquet",
+      "kb": 35.1,
+      "linhas": 348,
+      "sha256": "469c36faed88a3ed2a689225cf6f5d02f316c4fccee359884b4a780249ec14ce"
+    },
+    "agg_familia_tendencia": {
+      "arquivo": "agg_familia_tendencia.parquet",
+      "kb": 51.7,
+      "linhas": 348,
+      "sha256": "d93e54ddcdfff97af10e3633a8523ccf5609460f4cf92dbd87063b051a813615"
+    },
+    "agg_fornecedor_familia": {
+      "arquivo": "agg_fornecedor_familia.parquet",
+      "kb": 631.4,
+      "linhas": 37230,
+      "sha256": "cdac367e67decf0af273b9819a8776818503907730c7be86ae289e9a5f314153"
+    },
+    "agg_municipio": {
+      "arquivo": "agg_municipio.parquet",
+      "kb": 90.8,
+      "linhas": 6693,
+      "sha256": "4e229eabda65bff52fb69b7ce87034766902400d15ed2a1411245848d3eaddf2"
+    },
+    "agg_orgao_familia": {
+      "arquivo": "agg_orgao_familia.parquet",
+      "kb": 384.0,
+      "linhas": 14817,
+      "sha256": "0cf8e7a1ac5642edaa49cba0c622689694bf002108f5d849780cf78d3148f96c"
+    },
+    "agg_pandemia": {
+      "arquivo": "agg_pandemia.parquet",
+      "kb": 34.1,
+      "linhas": 1941,
+      "sha256": "03afa2fd1b021cbe19b608ad2bc6f1ce00da2aba103fa6a497f5883f9c6a5e37"
+    },
+    "agg_prazo": {
+      "arquivo": "agg_prazo.parquet",
+      "kb": 17.2,
+      "linhas": 348,
+      "sha256": "13935a4fc1e5a01799e91b215a710a29295dbc5732f9a55c02bd1ca20ef17f89"
+    },
+    "agg_preco_dispersao": {
+      "arquivo": "agg_preco_dispersao.parquet",
+      "kb": 29.0,
+      "linhas": 348,
+      "sha256": "1155636f5f4a87e4c38ce1b2c3332b79c0f18f92e4821ec3d7ffa223a136c4e3"
+    },
+    "agg_preco_item": {
+      "arquivo": "agg_preco_item.parquet",
+      "kb": 857.6,
+      "linhas": 15963,
+      "sha256": "84392b3373661e3f71fa836e22006cd80044ae2e1b5cc27ca2ecebc909384d65"
+    },
+    "agg_qualidade": {
+      "arquivo": "agg_qualidade.parquet",
+      "kb": 4.9,
+      "linhas": 5,
+      "sha256": "123f443ae610da917149ccfb9b0bc8c4eab749f42fe836e40dbf97811d5d09a5"
+    },
+    "agg_recorrencia": {
+      "arquivo": "agg_recorrencia.parquet",
+      "kb": 15.1,
+      "linhas": 348,
+      "sha256": "f9045a91328dd74d96a5ec44d71bfe0aaf230bde96c9f1d247aeee8a1b4ed753"
+    },
+    "agg_regiao_familia": {
+      "arquivo": "agg_regiao_familia.parquet",
+      "kb": 190.3,
+      "linhas": 10627,
+      "sha256": "981b4c38b60f2e5c85d007ce525ca3ed050f379076b4e713c400fded7b0391b2"
+    },
+    "agg_regulados": {
+      "arquivo": "agg_regulados.parquet",
+      "kb": 6.8,
+      "linhas": 20,
+      "sha256": "ebf0f9e3aeb6e457379382320b9e54469846a86e1a6126bc9dac39f14111b3c0"
+    },
+    "agg_sazonalidade": {
+      "arquivo": "agg_sazonalidade.parquet",
+      "kb": 44.0,
+      "linhas": 3250,
+      "sha256": "20365192528b3557cf6c75e6f3fd808e5f3b44b5bae8c82ddcb3eea9130c4898"
+    },
+    "agg_ticket_afm": {
+      "arquivo": "agg_ticket_afm.parquet",
+      "kb": 28.9,
+      "linhas": 348,
+      "sha256": "5caa62d3c61d2828a4300c5e0b290e4cab6ce200b398736a78478a383b9ababb"
+    },
+    "agg_ug_periodo": {
+      "arquivo": "agg_ug_periodo.parquet",
+      "kb": 555.0,
+      "linhas": 26301,
+      "sha256": "cbe9f4a8cf293234e20386fd5291093d580e3908ab36799615cb60452c950347"
+    }
+  },
+  "escopo_analitico": {
+    "familias": 348,
+    "fornecedores": 4923,
+    "linhas": 352537,
+    "valor_real": 10156216788.91
+  },
+  "gerado_em": "2026-11-12T19:57:12.467752+00:00",
+  "total_agregados": 22
+}

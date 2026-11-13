@@ -1,0 +1,253 @@
+# =====================================================================================
+# config.yaml — parâmetros editáveis do projeto nicho-bahia
+# Tudo que é decisão de negócio (não fato dos dados) vive aqui.
+# Versão 1.0 (F2) — decisões do Gate G1 incorporadas. Alterar aqui e reexecutar o pipeline.
+# =====================================================================================
+
+meta:
+  versao: "1.0"
+  atualizado_em: "2026-11-12"
+  aprovado_em: "2026-11-12 (Gate G1)"
+  moeda_referencia: "BRL"
+  ano_base_deflacao: 2025
+
+# -------------------------------------------------------------------------------------
+# Contexto de negócio
+# -------------------------------------------------------------------------------------
+negocio:
+  sede:
+    municipio: "Feira de Santana"
+    uf: "BA"
+  raio_logistico_km: 200
+  capex_limitado: true
+  possui_atestados_tecnicos: false
+  perfil: "startup de 3 sócios, materiais de uso recorrente"
+
+# -------------------------------------------------------------------------------------
+# Tempo
+# -------------------------------------------------------------------------------------
+tempo:
+  coluna_primaria: "data_geracao_afm_aps"
+  colunas_fallback: ["ano_geracao_afm_aps", "mes_geracao_afm_aps"]
+  anos_analise: [2021, 2022, 2023, 2024, 2025]
+  meses_por_ano: 12
+  meses_totais: 60
+
+chave:
+  candidata: ["afm_aps", "codigo", "item"]
+  # 99,9439% observado em F1; excedentes têm valores diferentes e são mantidos
+  tolerancia_unicidade: 0.999
+  chave_tecnica: ["_src_year", "_src_row"]
+
+# -------------------------------------------------------------------------------------
+# Deflação — IPCA anual (IBGE/SIDRA)
+# -------------------------------------------------------------------------------------
+deflacao:
+  fonte: "IBGE — IPCA (SIDRA), acumulado anual"
+  status: "PREMISSA (granularidade anual)"
+  convencao: "inicio_ano"   # inicio_ano | meio_ano | fim_ano  (ver SPEC.md §4)
+  ipca_ano_pct:
+    2021: 10.06
+    2022: 5.79
+    2023: 4.62
+    2024: 4.83
+    2025: 4.26
+
+# -------------------------------------------------------------------------------------
+# Escopo: material vs serviço (decisão G1/Q1)
+# -------------------------------------------------------------------------------------
+escopo:
+  usar_coluna: "tipo_do_item"
+  valores_material: ["Material", "MATERIAL", "material"]
+  valores_servico: ["Serviço", "Servico", "SERVICO"]
+  # tipos de fornecimento correspondentes (apenas para validação de coerência)
+  tipo_fornecimento_material: ["AFM"]
+  tipo_fornecimento_servico: ["APS"]
+  manter_apenas_material: true
+  remover_linhas_sem_afm: true          # rodapé de observações (4 linhas, 2025)
+  exigir_data: true
+
+pandemia:
+  colunas_flag: ["marcacao_covid", "liberacao_covid", "marcacao_vacina_covid", "liberacao_vacina_covid"]
+  coluna_emergencial: "contrato_emergencial_cgst"
+  valores_positivos: ["Sim", "SIM", "S", "sim"]
+  limiar_dependencia_pandemia: 0.30     # > 30% do valor => penalidade
+
+# -------------------------------------------------------------------------------------
+# Regulados (lista EVITAR) — decisão G1/Q3
+# -------------------------------------------------------------------------------------
+regulados:
+  status: "APROVADO no Gate G1; keywords restritas a família + nome básico (auditoria F3)"
+  # família inteira marcada como regulada (prefixo do rótulo, comparado sem acento/caixa)
+  familias:
+    - "65.01"   # medicamentos para ação judicial
+    - "65.02"   # medicamentos e correlatos
+    - "65.05"   # drogas, produtos biológicos e reagentes
+    - "65.50"   # OPME
+    - "13.05"   # munições e explosivos
+    - "91.30"   # combustíveis propelentes líquidos a base de petróleo
+  # keywords aplicadas APENAS a familia_catalogo e nome_basico (vocabulário controlado).
+  # Aplicar à descrição livre (ITEM) gerava falso positivo: "VEICULO ... a combustível",
+  # "REFRIGERADOR ... para carne". Auditoria em logs/gate_g3.json.
+  keywords:
+    - "MEDICAMENTO"
+    - "VACINA"
+    - "HEMODERIVADO"
+    - "HEMOTERAPICO"
+    - "IMUNOBIOLOGICO"
+    - "REAGENTE BIOLOGICO"
+    - "MUNICAO"
+    - "EXPLOSIVO"
+    - "COMBUSTIVEL"
+    - "GASOLINA"
+    - "OLEO DIESEL"
+    - "ETANOL"
+    - "QUEROSENE"
+    - "PERECIVEL"
+    - "HORTIFRUTI"
+    - "CARNE"
+    - "LEITE"
+    - "PAO"
+    - "REFEICAO"
+    - "AGUA MINERAL"
+    - "OXIGENIO MEDICINAL"
+  # famílias de saúde MANTIDAS como oportunidade, com barreira sinalizada como risco
+  saude_oportunidade:
+    - "65.15"   # instrumentos, equipamentos e suprimentos médicos
+    - "65.30"   # mobiliário e utensílios hospitalares
+    - "65.32"   # vestuário hospitalar e cirúrgico
+    - "66.40"   # materiais e equipamentos de laboratório
+  limiar_valor_regulado: 0.50   # >= 50% do valor da família em linhas reguladas => EVITAR
+
+# -------------------------------------------------------------------------------------
+# Canal de compra (decisão G1: PCE = cotação eletrônica; 'Registro de Preços' = via ata)
+# -------------------------------------------------------------------------------------
+dispensa:
+  coluna_modalidade: "forma_contratacao"
+  coluna_pce: "pce_pedido_cotacao"
+  teto_2026: 65492.11
+  fonte_teto: "Lei 14.133/2021 art. 75, II; Decreto 12.807/2025"
+  tetos_nominais_por_ano:        # métrica secundária (comparação nominal dentro do ano)
+    2021: 50000.00
+    2022: 50000.00
+    2023: 50000.00
+    2024: 59906.02
+    2025: 62725.59
+  observacao_tetos: >-
+    Em 2021-2023 havia convivência entre a Lei 8.666/93 (art. 24, II: R$ 17.600,00) e a
+    Lei 14.133/2021 (art. 75, II: R$ 50.000,00). Adotou-se a série da Lei 14.133; a
+    ambiguidade é declarada como limitação.
+  mapa_canal:
+    "E - Dispensa Eletrônica": "dispensa_eletronica"
+    "D - Dispensa Tradicional": "dispensa_tradicional"
+    "Registro de Preços": "registro_precos"
+    "W - Adesão Registro de Preços": "adesao_rp"
+    "C - Licitação": "licitacao"
+    "Y - Licitação Lei Fed 13.303/16": "licitacao"
+    "F - RDC": "licitacao"
+    "I - Inexigibilidade": "contratacao_direta"
+    "Q - Contratação Direta": "contratacao_direta"
+    "P - Comparação de Preço": "contratacao_direta"
+    "N - Credenciamento": "credenciamento"
+    "T - Termo Aditivo": "alteracao"
+    "U - Apostila": "alteracao"
+    "L - Alteração de Fornecedor": "alteracao"
+    "B - Seleção Baseada na Qualidade e Custo (SBQC)": "outros"
+    "G - Seleção de Consultores Individuais (SCI)": "outros"
+    "H - Seleção Baseada na Qualidade (SBQ)": "outros"
+    "J - Seleção com Orçamento Fixo (SOF)": "outros"
+    "M - Manifestação de Interesse": "outros"
+    "O - Seleção Baseada nas Qualificações do Consultor (SQC)": "outros"
+    "R - Concurso": "outros"
+    "S - Shopping": "outros"
+    "V - Convênio": "outros"
+  canais_dispensa: ["dispensa_eletronica", "dispensa_tradicional"]
+  share_minimo_dispensa: 0.30
+
+# -------------------------------------------------------------------------------------
+# Logística (decisão G1/Q4)
+# -------------------------------------------------------------------------------------
+logistica:
+  # rótulos ORIGINAIS da base; o código normaliza (sem acento, caixa alta) ao carregar
+  regioes_dentro_raio:
+    - "Região Metropolitana de Salvador"
+    - "Região Feira de Santana"
+    - "Região Alagoinhas e Serrinha"
+    - "Região SAJesus, Amargosa,Valença,SAmaro"
+  regioes_indefinidas:
+    - "Região SAEB/SAC Interior"
+    - "Região Merenda Escolar (Inativo)"
+    - "Região Centro Oeste do Brasil"
+  prazo_maximo_valido_dias: 365
+  prazo_entrega_max_dias: 30
+  uf_entrega_esperada: "BA"
+
+# -------------------------------------------------------------------------------------
+# Métricas — thresholds
+# -------------------------------------------------------------------------------------
+metricas:
+  minimo_afm_para_ranking: 30
+  minimo_valor_real_para_ranking: 1000000.0
+  min_linhas_para_cv: 20
+  outlier_winsor: [0.01, 0.99]
+  hhi_buckets:
+    fragmentado_max: 1500
+    moderado_max: 2500
+  novos_entrantes_ano_inicial: 2022   # decisão G1/Q7 (truncamento à esquerda)
+  preco_min_valido: 0.01
+  ticket_mediana_min: 1000.0
+  top_itens_por_familia: 10
+  top_orgaos: 15
+  top_fornecedores: 10
+
+# -------------------------------------------------------------------------------------
+# Score
+# -------------------------------------------------------------------------------------
+score:
+  pesos:
+    demanda: 20
+    crescimento: 15
+    recorrencia: 15
+    fit_dispensa: 15
+    fragmentacao: 15
+    estabilidade_preco: 10
+    logistica: 10
+  composicao:
+    fit_dispensa:
+      peso_pct_ate_teto: 0.6
+      peso_share_dispensa: 0.4
+    fragmentacao:
+      peso_inverso_hhi: 0.7
+      peso_log_fornecedores: 0.3
+  penalidades:
+    barreira_regulatoria: 100      # zera o score e move para EVITAR
+    dependencia_pandemia: 20
+    queda_2_ultimos_anos: 15
+  sensibilidade_delta: 0.20
+  top_n: 10
+  normalizacao: "percentil"
+  epsilon: 1.0e-9
+
+# -------------------------------------------------------------------------------------
+# Painel
+# -------------------------------------------------------------------------------------
+painel:
+  arquivo: "output/painel_decisao.html"
+  tamanho_maximo_mb: 15
+  json_maximo_mb: 8
+  offline: true
+  toggles: ["nominal", "real"]
+  filtros_globais: ["ano", "secretaria", "regiao", "familia"]
+  abas: 8
+  min_graficos: 12
+  top_familias_linhas: 10
+
+# -------------------------------------------------------------------------------------
+# Execução
+# -------------------------------------------------------------------------------------
+execucao:
+  seed: 42
+  chunksize: 200000
+  decimais_arredondamento: 2
+  tolerancia_reconciliacao: 0.001     # 0,1%
+  threads_duckdb: 4
