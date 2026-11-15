@@ -241,6 +241,12 @@ painel:
   abas: 8
   min_graficos: 12
   top_familias_linhas: 10
+  # Publicação no GitHub Pages (branch main / pasta docs).
+  # O site publica SOMENTE o conteúdo desta pasta — por isso o painel é copiado
+  # para docs/index.html em vez de publicar a raiz do repositório (que tem data/ e src/).
+  publicacao:
+    diretorio: "docs"
+    arquivo: "index.html"
 
 # -------------------------------------------------------------------------------------
 # Execução

@@ -68,6 +68,20 @@ def run(log: RunLog) -> dict[str, Any]:
     if mb > max_mb:
         raise RuntimeError(f"painel com {mb:.2f} MB excede o limite de {max_mb} MB")
 
+    # ---------------------------------------------------------------- GitHub Pages
+    # Publica SOMENTE a pasta de publicação (padrão: docs/), com o painel como index.html.
+    # Escolher /(root) no Pages exporia data/, logs/, src/ e tmp/ — por isso a cópia.
+    pub_dir = str(cfg.get("painel.publicacao.diretorio", "docs"))
+    pub_arq = str(cfg.get("painel.publicacao.arquivo", "index.html"))
+    docs = paths.WORKSPACE / pub_dir
+    docs.mkdir(parents=True, exist_ok=True)
+    (docs / pub_arq).write_text(html, encoding="utf-8")
+    # .nojekyll evita o processamento do Jekyll em arquivos que começam com "_" ou "#"
+    (docs / ".nojekyll").write_text("", encoding="utf-8")
+    tamanho_pub = (docs / pub_arq).stat().st_size / 1024 / 1024
+    log(f"  [ok] {paths.relative(docs / pub_arq)} ({tamanho_pub:.2f} MB, cópia para GitHub Pages)")
+    log(f"  [ok] {paths.relative(docs / '.nojekyll')}")
+
     # inventário dos gráficos para o QA conferir (A7)
     graficos = {
         "c_sens": "A13", "c_serie": "A01", "c_treemap": "A02", "c_cagr": "A03",
@@ -86,6 +100,9 @@ def run(log: RunLog) -> dict[str, Any]:
                        "familias": len(dados["familias"]), "n_elegiveis": dados["meta"]["n_elegiveis"]},
         "html": {"arquivo": paths.relative(destino), "mb": round(mb, 2),
                  "echarts_kb": round(len(echarts_js) / 1024, 0)},
+        "publicacao": {"diretorio": pub_dir, "arquivo": pub_arq,
+                       "mb": round(tamanho_pub, 2),
+                       "url_esperada": "https://<usuario>.github.io/<repo>/"},
         "graficos": graficos,
         "abas": 8,
         "n_graficos": len(graficos),

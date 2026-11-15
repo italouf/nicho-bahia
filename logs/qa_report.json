@@ -14,6 +14,12 @@
       "status": "OK"
     },
     {
+      "descricao": "cabeçalho com contador preenchido",
+      "evidencia": "hdr_n='155'",
+      "id": "A7e",
+      "status": "OK"
+    },
+    {
       "descricao": "todo gráfico tem dados (nenhum vazio)",
       "evidencia": "sem dados: nenhum",
       "id": "A7c",
@@ -75,7 +81,7 @@
     }
   ],
   "console": [],
-  "gerado_em": "2026-11-13T12:22:47.827680+00:00",
+  "gerado_em": "2026-11-15T16:19:22.261820+00:00",
   "metodo": {
     "assump": 33,
     "dict": 31,

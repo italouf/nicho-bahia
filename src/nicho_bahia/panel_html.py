@@ -571,6 +571,7 @@ function initFilters(){
   el('btn_nom').onclick = () => { state.real=false; el('btn_nom').classList.add('on'); el('btn_real').classList.remove('on'); renderTab(); };
   el('btn_reset').onclick = () => { state.ano=state.sec=state.regiao=state.familia=null;
     el('f_ano').value=''; el('f_sec').value=''; el('f_reg').value=''; el('f_fam').value=''; renderTab(); };
+  el('hdr_n').textContent = DATA.meta.n_elegiveis;
   document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => {
     state.tab = +b.dataset.tab;
     document.querySelectorAll('#tabs button').forEach(x=>x.classList.toggle('on', x===b));

@@ -108,6 +108,14 @@ def run(log: RunLog) -> dict[str, Any]:
         if len(abas) != len(ABAS):
             raise RuntimeError(f"esperava {len(ABAS)} abas, encontrei {len(abas)}")
 
+        # cabeçalho: o contador de nichos não pode ficar vazio (quebra na reescrita do JS)
+        cabecalho = pagina.evaluate(
+            """() => ({n: (document.getElementById('hdr_n')||{}).textContent || '',
+                       sub: (document.querySelector('.sub')||{}).textContent || ''})"""
+        )
+        cabecalho_ok = bool(cabecalho["n"].strip()) and "nichos ranqueados" in cabecalho["sub"]
+        log(f"cabeçalho: {cabecalho['n']!r} nichos")
+
         # ---------- A7: todos os gráficos renderizam ao percorrer as abas ----------
         base = _snapshot_todas_abas(pagina, abas)
         graficos_com_canvas = pagina.evaluate(
@@ -228,6 +236,8 @@ def run(log: RunLog) -> dict[str, Any]:
     add("A6", "zero erros de console", not erros_console and not erros,
         f"{len(erros_console)} erros de console, {len(erros)} pageerror")
     add("A7", "≥ 12 gráficos renderizam", graficos_com_canvas >= 12, f"{graficos_com_canvas} gráficos com canvas")
+    add("A7e", "cabeçalho com contador preenchido", cabecalho_ok,
+        f"hdr_n={cabecalho['n']!r}")
     add("A7c", "todo gráfico tem dados (nenhum vazio)", not sem_dados,
         f"sem dados: {sem_dados or 'nenhum'}")
     add("A7d", "secretaria e região são exclusivas", exclusivo,

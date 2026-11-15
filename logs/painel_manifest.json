@@ -4,7 +4,7 @@
     "G3": "VERDE",
     "G4": "VERDE"
   },
-  "gerado_em": "2026-11-12T20:01:54.931705+00:00",
+  "gerado_em": "2026-11-15T16:17:36.785484+00:00",
   "graficos": {
     "c_cagr": "A03",
     "c_cal": "A05",
@@ -37,5 +37,11 @@
     "familias": 348,
     "mb": 1.65,
     "n_elegiveis": 155
+  },
+  "publicacao": {
+    "arquivo": "index.html",
+    "diretorio": "docs",
+    "mb": 2.69,
+    "url_esperada": "https://<usuario>.github.io/<repo>/"
   }
 }
