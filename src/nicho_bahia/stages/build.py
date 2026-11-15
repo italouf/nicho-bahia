@@ -89,6 +89,7 @@ def run(log: RunLog) -> dict[str, Any]:
         "c_ticket": "A08", "c_conc": "A11", "c_ent": "A14", "c_forn": "A15",
         "c_preco": "A16", "c_cv": "A17", "c_desc": "A18", "c_regiao": "A19",
         "c_prazo": "A20", "c_mun": "A21",
+        "c_dossie_cal": "A05", "c_dossie_preco": "A16",
     }
     if len(graficos) < int(cfg.get("painel.min_graficos")):
         raise RuntimeError(f"apenas {len(graficos)} gráficos; mínimo {cfg.get('painel.min_graficos')}")
@@ -104,7 +105,7 @@ def run(log: RunLog) -> dict[str, Any]:
                        "mb": round(tamanho_pub, 2),
                        "url_esperada": "https://<usuario>.github.io/<repo>/"},
         "graficos": graficos,
-        "abas": 8,
+        "abas": 9,
         "n_graficos": len(graficos),
         "offline": True,
     }

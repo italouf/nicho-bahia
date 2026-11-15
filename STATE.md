@@ -10,8 +10,13 @@
 - Sessão: 2026-11-12 (America/Sao_Paulo)
 
 ## Fase atual
-**CONCLUÍDO** (com correção pós-entrega em 12/11: filtros do painel e gráfico de prazos).
-F0 → F7 executadas; gates G1, G2, G3, G4 e QA (G5) verdes; A1 revalidado após a correção.
+**RETROFIT UI/UX concluído — aguardando aprovação no gate R4** (branch `retrofit-uiux`).
+- R0 auditoria medida → R1 spec aprovado (Q11a, Q12) → R2 plano aprovado (P1–P3) → R3 tarefas →
+  R4 execução completa: V1 a V10.
+- 67 testes verdes (42 do projeto + 25 do retrofit), QA 13/13, G3/G4 verdes, **paridade de números
+  18/18 gráficos + CSV**.
+- Painel: 9 abas, 20 gráficos, 2,73 MB, 0 requisição externa, axe 0 critical/serious nos 3 viewports.
+- Relatório: `RELATORIO_RETROFIT.md`. Antes/depois: `logs/retrofit/audit.json` vs `audit_r4.json`.
 
 ## Ferramentas da sessão (verificado em 2026-11-12)
 | Ferramenta | Disponível | Fallback adotado |
@@ -64,7 +69,12 @@ playwright 1.65.1, jinja2 3.1.6, rapidfuzz 3.14.6.
 | `data/_meta/staging/raw_{2021..2025}.parquet` | ✅ |
 | `data/treated/compras_tratadas.parquet` (560.934 linhas, 68,6 MB) | ✅ |
 | `data/aggregates/*.parquet` (25) + `panel_data.json` (1,28 MB) + `teses/*.md` (10) | ✅ |
-| `output/painel_decisao.html` (2,31 MB, 8 abas, 18 gráficos) | ✅ |
+| `output/painel_decisao.html` (2,73 MB, 9 abas, 20 gráficos) | ✅ |
+| `docs/index.html` + `docs/.nojekyll` (cópia para GitHub Pages, gerada pelo `build`) | ✅ |
+| `src/nicho_bahia/panel/` (tokens_css, body, js_core, js_charts, __init__) | ✅ |
+| `SPEC_RETROFIT.md`, `PLAN_RETROFIT.md`, `TASKS_RETROFIT.md`, `RELATORIO_RETROFIT.md` | ✅ |
+| `tests/retrofit/` (golden + paridade + 22 critérios de aceitação) | ✅ |
+| `logs/retrofit/` (R0 auditoria, audit_r4, screenshots, prints) | ✅ |
 | `nicho_score.csv`, `top_itens.csv`, `orgaos_alvo.csv` | ✅ |
 | `logs/`: run, conservacao, reconciliacao, pytest_f3, gate_g3, gate_g4, painel_manifest, qa_report | ✅ |
 

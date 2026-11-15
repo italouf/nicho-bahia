@@ -1,0 +1,187 @@
+{
+ "viewports": {
+  "mobile": {
+   "overflow_x": false,
+   "scroll_w": 360,
+   "client_w": 360,
+   "fora_da_tela": 68,
+   "textos_abaixo_12": 0,
+   "exemplos_texto": [],
+   "alvos_abaixo_44": 0,
+   "exemplos_alvo": [],
+   "charts": 20,
+   "charts_ini": 1,
+   "linhas_dom": 25,
+   "tem_busca": true,
+   "tem_paginacao": true,
+   "tem_chips": true,
+   "tem_veredito": true,
+   "tem_dossie": true,
+   "tem_estado_vazio": true,
+   "veredito_antes_de_canvas": true,
+   "axe": {
+    "decisao": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    },
+    "dossie": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    },
+    "precos": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    }
+   },
+   "erros": [],
+   "carga_ms": 15000
+  },
+  "tablet": {
+   "overflow_x": false,
+   "scroll_w": 768,
+   "client_w": 768,
+   "fora_da_tela": 185,
+   "textos_abaixo_12": 0,
+   "exemplos_texto": [],
+   "alvos_abaixo_44": 0,
+   "exemplos_alvo": [],
+   "charts": 20,
+   "charts_ini": 1,
+   "linhas_dom": 25,
+   "tem_busca": true,
+   "tem_paginacao": true,
+   "tem_chips": true,
+   "tem_veredito": true,
+   "tem_dossie": true,
+   "tem_estado_vazio": true,
+   "veredito_antes_de_canvas": true,
+   "axe": {
+    "decisao": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    },
+    "dossie": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    },
+    "precos": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    }
+   },
+   "erros": [],
+   "carga_ms": 15951
+  },
+  "desktop": {
+   "overflow_x": false,
+   "scroll_w": 1440,
+   "client_w": 1440,
+   "fora_da_tela": 0,
+   "textos_abaixo_12": 0,
+   "exemplos_texto": [],
+   "alvos_abaixo_44": 0,
+   "exemplos_alvo": [],
+   "charts": 20,
+   "charts_ini": 1,
+   "linhas_dom": 25,
+   "tem_busca": true,
+   "tem_paginacao": true,
+   "tem_chips": true,
+   "tem_veredito": true,
+   "tem_dossie": true,
+   "tem_estado_vazio": true,
+   "veredito_antes_de_canvas": true,
+   "axe": {
+    "decisao": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    },
+    "dossie": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    },
+    "precos": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "total": 0,
+     "regras": []
+    }
+   },
+   "erros": [],
+   "carga_ms": 16433
+  }
+ },
+ "estrutura": {
+  "score_px": 36,
+  "nome_px": 17,
+  "codigo_px": 12,
+  "razao_score_nome": 2.12,
+  "tem_faixa_rank": true,
+  "tem_estabilidade": true,
+  "tem_tese": true,
+  "n_riscos": 2,
+  "tem_cta": true,
+  "cards": 3,
+  "url_tem_estado": false,
+  "raios": 2,
+  "fontes": 2,
+  "print_css": true
+ },
+ "performance": {
+  "mobile": {
+   "fcp_ms": 264,
+   "dom_ms": 789,
+   "heap_mb": 13,
+   "troca_aba_p95": 90,
+   "troca_aba_med": 78,
+   "troca_aba_primeira_med": 76,
+   "filtro_p95": 67,
+   "filtro_med": 62
+  },
+  "tablet": {
+   "fcp_ms": 236,
+   "dom_ms": 763,
+   "heap_mb": 13,
+   "troca_aba_p95": 96,
+   "troca_aba_med": 73,
+   "troca_aba_primeira_med": 76,
+   "filtro_p95": 75,
+   "filtro_med": 67
+  },
+  "desktop": {
+   "fcp_ms": 252,
+   "dom_ms": 794,
+   "heap_mb": 13,
+   "troca_aba_p95": 85,
+   "troca_aba_med": 71,
+   "troca_aba_primeira_med": 80,
+   "filtro_p95": 76,
+   "filtro_med": 72
+  }
+ }
+}

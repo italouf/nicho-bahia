@@ -21,7 +21,8 @@ from typing import Any
 from .. import paths
 from ..logging_utils import RunLog, write_json
 
-ABAS = ("Decisão", "Mercado", "Sazonalidade", "Compradores", "Concorrência", "Preços", "Logística", "Método")
+ABAS = ("Decisão", "Dossiê", "Mercado", "Sazonalidade", "Compradores",
+        "Concorrência", "Preços", "Logística", "Método")
 
 # filtros globais: (nome, seletor, valor de teste)
 FILTROS = (
@@ -58,8 +59,8 @@ def _snapshot(pg) -> dict[str, str]:  # noqa: ANN001
                 });
             });
             out['__cards'] = (document.getElementById('cards') || {}).textContent || '';
-            out['__tabela'] = (document.getElementById('t_score') || {}).textContent || '';
-            out['__escopo'] = (document.getElementById('escopo') || {}).textContent || '';
+            out['__tabela'] = (document.getElementById('tabela') || {}).textContent || '';
+            out['__escopo'] = (document.getElementById('chips') || {}).textContent || '';
             return out;
         }"""
     )
@@ -103,7 +104,7 @@ def run(log: RunLog) -> dict[str, Any]:
         erros_console = [c for c in console if c["tipo"] == "error"]
         log(f"console: {len(console)} mensagens ({len(erros_console)} de erro), {len(erros)} pageerror")
 
-        abas = pagina.query_selector_all("#tabs button")
+        abas = pagina.query_selector_all("#tabs [role=tab]")
         log(f"abas encontradas: {len(abas)}")
         if len(abas) != len(ABAS):
             raise RuntimeError(f"esperava {len(ABAS)} abas, encontrei {len(abas)}")
@@ -111,7 +112,7 @@ def run(log: RunLog) -> dict[str, Any]:
         # cabeçalho: o contador de nichos não pode ficar vazio (quebra na reescrita do JS)
         cabecalho = pagina.evaluate(
             """() => ({n: (document.getElementById('hdr_n')||{}).textContent || '',
-                       sub: (document.querySelector('.sub')||{}).textContent || ''})"""
+                       sub: (document.querySelector('.topo__sub')||{}).textContent || ''})"""
         )
         cabecalho_ok = bool(cabecalho["n"].strip()) and "nichos ranqueados" in cabecalho["sub"]
         log(f"cabeçalho: {cabecalho['n']!r} nichos")
@@ -185,7 +186,7 @@ def run(log: RunLog) -> dict[str, Any]:
         pagina.select_option("#f_reg", "")
         pagina.wait_for_timeout(300)
 
-        pagina.query_selector_all("#tabs button")[1].click()
+        pagina.get_by_role("tab", name="Mercado", exact=False).first.click()
         pagina.wait_for_timeout(500)
         real_antes = pagina.evaluate(
             """() => echarts.getInstanceByDom(document.getElementById('c_serie')).getOption().series[0].data.slice()"""
@@ -207,7 +208,7 @@ def run(log: RunLog) -> dict[str, Any]:
         log(f"toggle nominal/real alterou valores: {toggle_ok} (confere com o agregado: {real_confere})")
 
         # ---------- A9: aba Método ----------
-        pagina.query_selector_all("#tabs button")[7].click()
+        pagina.get_by_role("tab", name="Método", exact=False).first.click()
         pagina.wait_for_timeout(700)
         metodo = pagina.evaluate(
             """() => ({

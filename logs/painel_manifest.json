@@ -1,10 +1,10 @@
 {
-  "abas": 8,
+  "abas": 9,
   "gates": {
     "G3": "VERDE",
     "G4": "VERDE"
   },
-  "gerado_em": "2026-11-15T16:17:36.785484+00:00",
+  "gerado_em": "2026-11-15T18:42:02.395806+00:00",
   "graficos": {
     "c_cagr": "A03",
     "c_cal": "A05",
@@ -12,6 +12,8 @@
     "c_conc": "A11",
     "c_cv": "A17",
     "c_desc": "A18",
+    "c_dossie_cal": "A05",
+    "c_dossie_preco": "A16",
     "c_ent": "A14",
     "c_forn": "A15",
     "c_heat": "A05",
@@ -28,9 +30,9 @@
   "html": {
     "arquivo": "output\\painel_decisao.html",
     "echarts_kb": 1006.0,
-    "mb": 2.69
+    "mb": 2.73
   },
-  "n_graficos": 18,
+  "n_graficos": 20,
   "offline": true,
   "panel_data": {
     "arquivo": "data\\aggregates\\panel_data.json",
@@ -41,7 +43,7 @@
   "publicacao": {
     "arquivo": "index.html",
     "diretorio": "docs",
-    "mb": 2.69,
+    "mb": 2.73,
     "url_esperada": "https://<usuario>.github.io/<repo>/"
   }
 }

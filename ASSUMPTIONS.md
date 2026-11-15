@@ -71,3 +71,5 @@
 | A31 | Histórico não é previsão: nenhuma projeção será apresentada como expectativa | **PREMISSA** | requisito do projeto |
 | A32 | A base é **estadual** (Poder Executivo da BA), sem compras municipais | **PREMISSA** | nota de rodapé da própria planilha de 2025: "órgãos e entidades do Poder Executivo do Estado da Bahia" |
 | A33 | Não há dados de pagamento/adimplência | **PREMISSA** | limitação da base, declarada no painel |
+| A34 | Retrofit: texto de interface ≥ 12px; rótulos de eixo de gráfico ≥ 11px | **A VALIDAR** | ver Q12 no gate R1; eixos a 12px reduzem a área plotada em 360px |
+| A35 | Retrofit: o destaque dos "3 nichos recomendados" segue a lista do relatório executivo, não o top-3 do score | **A VALIDAR** | ver Q11 no gate R1 — é decisão comercial, não de apresentação |

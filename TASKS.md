@@ -68,6 +68,14 @@
 - [x] **T37** Fechamento: `STATE.md` final, `BLOCKERS.md` sem item aberto (B5 resolvido),
   **A1 conferido: 30/30 hashes idênticos em duas execuções**.
 
+## F8 — Publicação do painel (GitHub Pages)
+- [x] **T45** Estágio `build` passa a gravar `docs/index.html` + `docs/.nojekyll`
+  (pasta de publicação configurável em `config.yaml → painel.publicacao`), para o Pages
+  publicar **somente o painel** e não a raiz do repositório (que tem `data/`, `src/`, `logs/`).
+- [x] **T46** Verificação em HTTP (mesmo caminho do Pages): status 200, 18 gráficos, 8 abas,
+  0 erro de console, 0 requisição externa, filtro operante.
+- [x] **T47** QA com A7e (cabeçalho com contador preenchido) — 13/13.
+
 ## Backlog (não bloqueante)
 - Enriquecimento por PNCP (links já na base).
 - Deflação mensal via SIDRA.

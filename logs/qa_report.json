@@ -9,7 +9,7 @@
     },
     {
       "descricao": "≥ 12 gráficos renderizam",
-      "evidencia": "18 gráficos com canvas",
+      "evidencia": "20 gráficos com canvas",
       "id": "A7",
       "status": "OK"
     },
@@ -33,25 +33,25 @@
     },
     {
       "descricao": "filtro 'ano' é funcional",
-      "evidencia": "20 itens / 17 gráficos alterados",
+      "evidencia": "22 itens / 19 gráficos alterados",
       "id": "A7b-ano",
       "status": "OK"
     },
     {
       "descricao": "filtro 'secretaria' é funcional",
-      "evidencia": "12 itens / 9 gráficos alterados",
+      "evidencia": "11 itens / 9 gráficos alterados",
       "id": "A7b-secretaria",
       "status": "OK"
     },
     {
       "descricao": "filtro 'região' é funcional",
-      "evidencia": "9 itens / 6 gráficos alterados",
+      "evidencia": "8 itens / 6 gráficos alterados",
       "id": "A7b-região",
       "status": "OK"
     },
     {
       "descricao": "filtro 'família' é funcional",
-      "evidencia": "16 itens / 13 gráficos alterados",
+      "evidencia": "15 itens / 13 gráficos alterados",
       "id": "A7b-família",
       "status": "OK"
     },
@@ -63,7 +63,7 @@
     },
     {
       "descricao": "aba Método completa",
-      "evidencia": "33 premissas / 5 filtros",
+      "evidencia": "35 premissas / 5 filtros",
       "id": "A9",
       "status": "OK"
     },
@@ -75,20 +75,20 @@
     },
     {
       "descricao": "arquivo ≤ 15 MB",
-      "evidencia": "2.69 MB",
+      "evidencia": "2.73 MB",
       "id": "A10b",
       "status": "OK"
     }
   ],
   "console": [],
-  "gerado_em": "2026-11-15T16:19:22.261820+00:00",
+  "gerado_em": "2026-11-15T18:49:02.300716+00:00",
   "metodo": {
-    "assump": 33,
+    "assump": 35,
     "dict": 31,
     "filtros": 5,
-    "recon": "Reconciliação: bruto material R$ 12.597.609.651 ·\n    tratado R$ 12.597.609.651 · diferença R$ 0\n    (0,000000%, tolerância 0,10%)\n    OK\n    Deflação: convenção inicio_ano — 2021: 1.3314 · 2022: 1.2097 · 2023: 1.1435 · 2024: 1.0930 · 2025: 1.0426"
+    "recon": "Reconciliação: bruto material R$ 12.597.609.651 ·\n    tratado R$ 12.597.609.651 · diferença R$ 0\n    (0,000000%, tolerância 0,10%)\n    ✓OK\n    Deflação: convenção inicio_ano — 2021: 1.3314 · 2022: 1.2097 · 2023: 1.1435 · 2024: 1.0930 · 2025: 1.0426"
   },
-  "n_graficos": 18,
+  "n_graficos": 20,
   "pageerrors": [],
   "reatividade_filtros": {
     "ano": {
@@ -99,6 +99,8 @@
         "c_conc",
         "c_cv",
         "c_desc",
+        "c_dossie_cal",
+        "c_dossie_preco",
         "c_ent",
         "c_forn",
         "c_heat",
@@ -111,7 +113,7 @@
         "c_ticket",
         "c_treemap"
       ],
-      "itens": 20
+      "itens": 22
     },
     "família": {
       "graficos": [
@@ -129,7 +131,7 @@
         "c_serie",
         "c_treemap"
       ],
-      "itens": 16
+      "itens": 15
     },
     "região": {
       "graficos": [
@@ -140,7 +142,7 @@
         "c_serie",
         "c_treemap"
       ],
-      "itens": 9
+      "itens": 8
     },
     "secretaria": {
       "graficos": [
@@ -154,7 +156,7 @@
         "c_serie",
         "c_treemap"
       ],
-      "itens": 12
+      "itens": 11
     }
   },
   "requisicoes": {
@@ -162,5 +164,5 @@
     "total": 1
   },
   "status": "VERDE",
-  "tamanho_mb": 2.69
+  "tamanho_mb": 2.73
 }
