@@ -1,4 +1,4 @@
-# nicho-bahia — execução 2026-11-15T16:18:12.879227+00:00
+# nicho-bahia — execução 2026-11-15T18:47:59.873519+00:00
 # workspace: C:\Users\Micro\source\repos\PL\nicho-bahia
 
 ==============================================================================
@@ -10,31 +10,31 @@ F6 — QA DO PAINEL (headless)
 ==============================================================================
 abrindo file:///C:/Users/Micro/source/repos/PL/nicho-bahia/output/painel_decisao.html
 console: 0 mensagens (0 de erro), 0 pageerror
-abas encontradas: 8
+abas encontradas: 9
 cabeçalho: '155' nichos
-gráficos na página: 18; com canvas: 18; sem dados: []
-  filtro ano        : 20 itens, 17 gráficos -> ['c_cagr', 'c_cal', 'c_canal', 'c_conc', 'c_cv', 'c_desc', 'c_ent', 'c_forn', 'c_heat', 'c_mun', 'c_orgaos', 'c_prazo', 'c_preco', 'c_regiao', 'c_serie', 'c_ticket', 'c_treemap']
-  filtro secretaria : 12 itens,  9 gráficos -> ['c_cagr', 'c_canal', 'c_conc', 'c_ent', 'c_orgaos', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
-  filtro região     :  9 itens,  6 gráficos -> ['c_cagr', 'c_orgaos', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
-  filtro família    : 16 itens, 13 gráficos -> ['c_cagr', 'c_cal', 'c_canal', 'c_ent', 'c_forn', 'c_heat', 'c_mun', 'c_orgaos', 'c_preco', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
+gráficos na página: 20; com canvas: 20; sem dados: []
+  filtro ano        : 22 itens, 19 gráficos -> ['c_cagr', 'c_cal', 'c_canal', 'c_conc', 'c_cv', 'c_desc', 'c_dossie_cal', 'c_dossie_preco', 'c_ent', 'c_forn', 'c_heat', 'c_mun', 'c_orgaos', 'c_prazo', 'c_preco', 'c_regiao', 'c_serie', 'c_ticket', 'c_treemap']
+  filtro secretaria : 11 itens,  9 gráficos -> ['c_cagr', 'c_canal', 'c_conc', 'c_ent', 'c_orgaos', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
+  filtro região     :  8 itens,  6 gráficos -> ['c_cagr', 'c_orgaos', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
+  filtro família    : 15 itens, 13 gráficos -> ['c_cagr', 'c_cal', 'c_canal', 'c_ent', 'c_forn', 'c_heat', 'c_mun', 'c_orgaos', 'c_preco', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
 recortes mutuamente exclusivos: True (sec='', reg='2')
 toggle nominal/real alterou valores: True (confere com o agregado: True)
-aba método: 33 premissas, 5 filtros, 31 itens
-requisições: 1 (externas: 0); arquivo 2.69 MB
+aba método: 35 premissas, 5 filtros, 31 itens
+requisições: 1 (externas: 0); arquivo 2.73 MB
 
   [OK   ] A6             zero erros de console                  0 erros de console, 0 pageerror
-  [OK   ] A7             ≥ 12 gráficos renderizam               18 gráficos com canvas
+  [OK   ] A7             ≥ 12 gráficos renderizam               20 gráficos com canvas
   [OK   ] A7e            cabeçalho com contador preenchido      hdr_n='155'
   [OK   ] A7c            todo gráfico tem dados (nenhum vazio)  sem dados: nenhum
   [OK   ] A7d            secretaria e região são exclusivas     sec='' reg='2'
-  [OK   ] A7b-ano        filtro 'ano' é funcional               20 itens / 17 gráficos alterados
-  [OK   ] A7b-secretaria filtro 'secretaria' é funcional        12 itens / 9 gráficos alterados
-  [OK   ] A7b-região     filtro 'região' é funcional            9 itens / 6 gráficos alterados
-  [OK   ] A7b-família    filtro 'família' é funcional           16 itens / 13 gráficos alterados
+  [OK   ] A7b-ano        filtro 'ano' é funcional               22 itens / 19 gráficos alterados
+  [OK   ] A7b-secretaria filtro 'secretaria' é funcional        11 itens / 9 gráficos alterados
+  [OK   ] A7b-região     filtro 'região' é funcional            8 itens / 6 gráficos alterados
+  [OK   ] A7b-família    filtro 'família' é funcional           15 itens / 13 gráficos alterados
   [OK   ] A8             toggle nominal/real altera valores     real=[1190135, 2749154] nom=[893931, 2272670]
-  [OK   ] A9             aba Método completa                    33 premissas / 5 filtros
+  [OK   ] A9             aba Método completa                    35 premissas / 5 filtros
   [OK   ] A10            zero requisições externas              0 externas
-  [OK   ] A10b           arquivo ≤ 15 MB                        2.69 MB
+  [OK   ] A10b           arquivo ≤ 15 MB                        2.73 MB
 [VERDE] QA — 13/13 verificações OK
 [ok] logs\qa_report.json
 
@@ -42,6 +42,6 @@ requisições: 1 (externas: 0); arquivo 2.69 MB
 RESUMO
 ==============================================================================
 estágios executados: qa
-início: 2026-11-15T16:18:12.879227+00:00
-fim:    2026-11-15T16:19:22.269661+00:00
-duracao_s: 69.4
+início: 2026-11-15T18:47:59.873519+00:00
+fim:    2026-11-15T18:49:02.305633+00:00
+duracao_s: 62.4

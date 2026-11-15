@@ -2,6 +2,8 @@
  "filtros": {
   "ano": {
    "0": [
+    "c_dossie_cal",
+    "c_dossie_preco",
     "c_serie",
     "c_treemap",
     "c_cagr",
@@ -26,6 +28,7 @@
    "1": [
     "c_serie",
     "c_treemap",
+    "c_cagr",
     "c_heat",
     "c_cal",
     "c_orgaos",
@@ -47,6 +50,8 @@
    "2": [
     "c_serie",
     "c_treemap",
+    "c_heat",
+    "c_cal",
     "c_orgaos",
     "c_canal",
     "c_ticket",
@@ -68,6 +73,7 @@
     "c_treemap",
     "c_orgaos",
     "c_canal",
+    "c_ticket",
     "c_conc",
     "c_ent",
     "c_forn",
@@ -88,6 +94,7 @@
     "c_canal",
     "c_conc",
     "c_ent",
+    "c_forn",
     "c_preco",
     "c_cv",
     "c_desc",
@@ -105,6 +112,9 @@
     "c_canal",
     "c_conc",
     "c_ent",
+    "c_preco",
+    "c_cv",
+    "c_desc",
     "c_regiao",
     "c_prazo",
     "c_mun",
@@ -120,11 +130,25 @@
     "c_conc",
     "c_ent",
     "c_regiao",
+    "c_prazo",
+    "c_mun",
     "__cards",
     "__tabela",
     "__escopo"
    ],
    "7": [
+    "c_serie",
+    "c_treemap",
+    "c_orgaos",
+    "c_canal",
+    "c_conc",
+    "c_ent",
+    "c_regiao",
+    "__cards",
+    "__tabela",
+    "__escopo"
+   ],
+   "8": [
     "c_serie",
     "c_treemap",
     "c_orgaos",
@@ -147,7 +171,6 @@
     "c_conc",
     "c_ent",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -155,13 +178,11 @@
     "c_sens",
     "c_serie",
     "c_treemap",
-    "c_cagr",
     "c_orgaos",
     "c_canal",
     "c_conc",
     "c_ent",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -175,7 +196,6 @@
     "c_conc",
     "c_ent",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -185,10 +205,10 @@
     "c_treemap",
     "c_cagr",
     "c_orgaos",
+    "c_canal",
     "c_conc",
     "c_ent",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -198,8 +218,9 @@
     "c_treemap",
     "c_cagr",
     "c_orgaos",
+    "c_conc",
+    "c_ent",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -210,7 +231,6 @@
     "c_cagr",
     "c_orgaos",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -220,7 +240,7 @@
     "c_treemap",
     "c_cagr",
     "c_orgaos",
-    "__cards",
+    "c_regiao",
     "__tabela",
     "__escopo"
    ],
@@ -230,7 +250,15 @@
     "c_treemap",
     "c_cagr",
     "c_orgaos",
-    "__cards",
+    "__tabela",
+    "__escopo"
+   ],
+   "8": [
+    "c_sens",
+    "c_serie",
+    "c_treemap",
+    "c_cagr",
+    "c_orgaos",
     "__tabela",
     "__escopo"
    ]
@@ -242,7 +270,6 @@
     "c_treemap",
     "c_cagr",
     "c_orgaos",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -252,7 +279,6 @@
     "c_treemap",
     "c_cagr",
     "c_orgaos",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -262,7 +288,6 @@
     "c_treemap",
     "c_cagr",
     "c_orgaos",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -271,7 +296,7 @@
     "c_serie",
     "c_treemap",
     "c_cagr",
-    "__cards",
+    "c_orgaos",
     "__tabela",
     "__escopo"
    ],
@@ -280,7 +305,6 @@
     "c_serie",
     "c_treemap",
     "c_cagr",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -289,7 +313,6 @@
     "c_serie",
     "c_treemap",
     "c_cagr",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -298,8 +321,6 @@
     "c_serie",
     "c_treemap",
     "c_cagr",
-    "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -309,7 +330,15 @@
     "c_treemap",
     "c_cagr",
     "c_regiao",
-    "__cards",
+    "__tabela",
+    "__escopo"
+   ],
+   "8": [
+    "c_sens",
+    "c_serie",
+    "c_treemap",
+    "c_cagr",
+    "c_regiao",
     "__tabela",
     "__escopo"
    ]
@@ -321,25 +350,22 @@
     "c_treemap",
     "c_cagr",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
    "1": [
     "c_sens",
     "c_serie",
+    "c_treemap",
+    "c_cagr",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
    "2": [
     "c_sens",
     "c_serie",
-    "c_heat",
-    "c_cal",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -348,10 +374,7 @@
     "c_serie",
     "c_heat",
     "c_cal",
-    "c_orgaos",
-    "c_canal",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -362,10 +385,7 @@
     "c_cal",
     "c_orgaos",
     "c_canal",
-    "c_ent",
-    "c_forn",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -378,9 +398,7 @@
     "c_canal",
     "c_ent",
     "c_forn",
-    "c_preco",
     "c_regiao",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -395,8 +413,6 @@
     "c_forn",
     "c_preco",
     "c_regiao",
-    "c_mun",
-    "__cards",
     "__tabela",
     "__escopo"
    ],
@@ -412,7 +428,21 @@
     "c_preco",
     "c_regiao",
     "c_mun",
-    "__cards",
+    "__tabela",
+    "__escopo"
+   ],
+   "8": [
+    "c_sens",
+    "c_serie",
+    "c_heat",
+    "c_cal",
+    "c_orgaos",
+    "c_canal",
+    "c_ent",
+    "c_forn",
+    "c_preco",
+    "c_regiao",
+    "c_mun",
     "__tabela",
     "__escopo"
    ]
@@ -420,7 +450,7 @@
  },
  "resumo": {
   "ano": {
-   "itens": 20,
+   "itens": 22,
    "graficos": [
     "c_cagr",
     "c_cal",
@@ -428,6 +458,8 @@
     "c_conc",
     "c_cv",
     "c_desc",
+    "c_dossie_cal",
+    "c_dossie_preco",
     "c_ent",
     "c_forn",
     "c_heat",
@@ -442,7 +474,7 @@
    ]
   },
   "secretaria": {
-   "itens": 12,
+   "itens": 11,
    "graficos": [
     "c_cagr",
     "c_canal",
@@ -456,7 +488,7 @@
    ]
   },
   "região": {
-   "itens": 9,
+   "itens": 8,
    "graficos": [
     "c_cagr",
     "c_orgaos",
@@ -467,7 +499,7 @@
    ]
   },
   "família": {
-   "itens": 16,
+   "itens": 15,
    "graficos": [
     "c_cagr",
     "c_cal",

@@ -1,0 +1,233 @@
+{
+ "alvo": "file:///C:/Users/Micro/source/repos/PL/nicho-bahia/docs/index.html",
+ "viewports": {
+  "mobile": {
+   "viewport": "360x800",
+   "carga_ms": 3958,
+   "overflow_x": true,
+   "scroll_w": 564,
+   "client_w": 360,
+   "elementos_fora_da_tela": 1632,
+   "textos_abaixo_de_12px": 389,
+   "exemplos_texto_pequeno": [
+    "sub 11.5px \"Base SIMPAS/FIPLAN · escopo:\"",
+    "SPAN 11.5px \"155\"",
+    "LABEL 11px \"Ano\"",
+    "LABEL 11px \"Secretaria\"",
+    "LABEL 11px \"Região de entrega\"",
+    "LABEL 11px \"Família\""
+   ],
+   "alvos_toque_abaixo_44": 29,
+   "exemplos_alvo_pequeno": [
+    "SELECT 28px \"todos20212022202320242\"",
+    "SELECT 28px \"todasASSEMBLEIA LEGISL\"",
+    "SELECT 28px \"todasREGIAO ALAGOINHAS\"",
+    "SELECT 28px \"todas#1 89.55 · CAFE, \"",
+    "BUTTON 27px \"R$ reais (dez/2025)\"",
+    "BUTTON 27px \"R$ nominais\""
+   ],
+   "charts_no_dom": 18,
+   "charts_inicializados": 1,
+   "linhas_tabela": 155,
+   "tem_busca": false,
+   "tem_paginacao": false,
+   "tem_chips_filtro": false,
+   "tem_resumo_executivo": false,
+   "tem_dossie": false,
+   "tem_estado_vazio": false,
+   "erros_console": [],
+   "axe": {
+    "decisao": {
+     "critical": 0,
+     "serious": 1,
+     "moderate": 0,
+     "minor": 0,
+     "total": 1,
+     "regras": [
+      "scrollable-region-focusable [serious] x1"
+     ],
+     "nodes": 1
+    },
+    "precos": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "minor": 0,
+     "total": 0,
+     "regras": [],
+     "nodes": 0
+    }
+   }
+  },
+  "tablet": {
+   "viewport": "768x1024",
+   "carga_ms": 3087,
+   "overflow_x": false,
+   "scroll_w": 768,
+   "client_w": 768,
+   "elementos_fora_da_tela": 784,
+   "textos_abaixo_de_12px": 389,
+   "exemplos_texto_pequeno": [
+    "sub 11.5px \"Base SIMPAS/FIPLAN · escopo:\"",
+    "SPAN 11.5px \"155\"",
+    "LABEL 11px \"Ano\"",
+    "LABEL 11px \"Secretaria\"",
+    "LABEL 11px \"Região de entrega\"",
+    "LABEL 11px \"Família\""
+   ],
+   "alvos_toque_abaixo_44": 29,
+   "exemplos_alvo_pequeno": [
+    "SELECT 28px \"todos20212022202320242\"",
+    "SELECT 28px \"todasASSEMBLEIA LEGISL\"",
+    "SELECT 28px \"todasREGIAO ALAGOINHAS\"",
+    "SELECT 28px \"todas#1 89.55 · CAFE, \"",
+    "BUTTON 27px \"R$ reais (dez/2025)\"",
+    "BUTTON 27px \"R$ nominais\""
+   ],
+   "charts_no_dom": 18,
+   "charts_inicializados": 1,
+   "linhas_tabela": 155,
+   "tem_busca": false,
+   "tem_paginacao": false,
+   "tem_chips_filtro": false,
+   "tem_resumo_executivo": false,
+   "tem_dossie": false,
+   "tem_estado_vazio": false,
+   "erros_console": [],
+   "axe": {
+    "decisao": {
+     "critical": 0,
+     "serious": 1,
+     "moderate": 0,
+     "minor": 0,
+     "total": 1,
+     "regras": [
+      "scrollable-region-focusable [serious] x1"
+     ],
+     "nodes": 1
+    },
+    "precos": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "minor": 0,
+     "total": 0,
+     "regras": [],
+     "nodes": 0
+    }
+   }
+  },
+  "desktop": {
+   "viewport": "1440x900",
+   "carga_ms": 3086,
+   "overflow_x": false,
+   "scroll_w": 1440,
+   "client_w": 1440,
+   "elementos_fora_da_tela": 0,
+   "textos_abaixo_de_12px": 389,
+   "exemplos_texto_pequeno": [
+    "sub 11.5px \"Base SIMPAS/FIPLAN · escopo:\"",
+    "SPAN 11.5px \"155\"",
+    "LABEL 11px \"Ano\"",
+    "LABEL 11px \"Secretaria\"",
+    "LABEL 11px \"Região de entrega\"",
+    "LABEL 11px \"Família\""
+   ],
+   "alvos_toque_abaixo_44": 29,
+   "exemplos_alvo_pequeno": [
+    "SELECT 28px \"todos20212022202320242\"",
+    "SELECT 28px \"todasASSEMBLEIA LEGISL\"",
+    "SELECT 28px \"todasREGIAO ALAGOINHAS\"",
+    "SELECT 28px \"todas#1 89.55 · CAFE, \"",
+    "BUTTON 27px \"R$ reais (dez/2025)\"",
+    "BUTTON 27px \"R$ nominais\""
+   ],
+   "charts_no_dom": 18,
+   "charts_inicializados": 1,
+   "linhas_tabela": 155,
+   "tem_busca": false,
+   "tem_paginacao": false,
+   "tem_chips_filtro": false,
+   "tem_resumo_executivo": false,
+   "tem_dossie": false,
+   "tem_estado_vazio": false,
+   "erros_console": [],
+   "axe": {
+    "decisao": {
+     "critical": 0,
+     "serious": 1,
+     "moderate": 0,
+     "minor": 0,
+     "total": 1,
+     "regras": [
+      "scrollable-region-focusable [serious] x1"
+     ],
+     "nodes": 1
+    },
+    "precos": {
+     "critical": 0,
+     "serious": 0,
+     "moderate": 0,
+     "minor": 0,
+     "total": 0,
+     "regras": [],
+     "nodes": 0
+    }
+   }
+  }
+ },
+ "estrutura": {
+  "score_font_px": 26,
+  "familia_font_px": 13.5,
+  "razao_score_familia": 1.93,
+  "familia_texto": "89.55 · CAFE, CHA E CHOCOLATE",
+  "rotulos_em_caixa_alta": 0,
+  "exemplos_caixa_alta": [],
+  "card_tem_faixa_rank": false,
+  "card_tem_cta": false,
+  "filtros_chips": 0,
+  "url_tem_estado": false,
+  "aba_decisao_primeiro_elemento": "Quais nichos atacar primeiro?",
+  "abas": [
+   "0 · Decisão",
+   "1 · Mercado",
+   "2 · Sazonalidade",
+   "3 · Compradores & canal",
+   "4 · Concorrência",
+   "5 · Preços",
+   "6 · Logística",
+   "7 · Método"
+  ],
+  "graficos": 18,
+  "fontes_distintas": 2,
+  "raios_distintos": 7,
+  "espacos_distintos": 8,
+  "tem_print_css": false
+ },
+ "performance": {
+  "mobile": {
+   "fcp_ms": 588,
+   "dom_ready_ms": 1613,
+   "load_ms": 1714,
+   "js_heap_mb": 14,
+   "troca_aba_ms": 332,
+   "filtro_ms": 150
+  },
+  "tablet": {
+   "fcp_ms": 468,
+   "dom_ready_ms": 797,
+   "load_ms": 862,
+   "js_heap_mb": 14,
+   "troca_aba_ms": 418,
+   "filtro_ms": 95
+  },
+  "desktop": {
+   "fcp_ms": 516,
+   "dom_ready_ms": 808,
+   "load_ms": 873,
+   "js_heap_mb": 14,
+   "troca_aba_ms": 207,
+   "filtro_ms": 144
+  }
+ }
+}
