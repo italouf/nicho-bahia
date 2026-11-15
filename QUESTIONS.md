@@ -87,6 +87,33 @@
   usar como filtro. Links do PNCP ficam reservados para uma fase de enriquecimento.
 - **Impacto**: nenhum no ranking; melhora a rastreabilidade.
 
+## Q11 [R1] — Quais nichos a camada de decisão do painel deve destacar?
+
+- **Contexto**: o `RELATORIO_EXECUTIVO.md` recomenda **89.55 café/chá/chocolate, 75.10 artigos de
+  escritório e 85.40 papel para higiene**. Mas o *ranking do score* é outro: 1º 89.55 (75,0),
+  2º **41.10 equipamentos para refrigeração** (72,8) e 3º 75.10 (72,7). Ou seja, a recomendação do
+  relatório aplica um juízo de negócio — descartar bens duráveis (que exigem instalação e pós-venda)
+  — que **não está codificado em lugar nenhum** e que o painel hoje não conhece.
+- **Por que bloqueia**: o retrofit vai criar a camada "3 nichos recomendados". Se ela for gerada
+  pelo score puro, mostrará um bem durável como 2º recomendado — contradizendo o relatório. Se for
+  gerada pela lista do relatório, o painel passa a exibir uma decisão comercial que precisa ser
+  sua, não minha.
+- **Opções**:
+  (a) **destacar os 3 do relatório** (89.55, 75.10, 85.40), com a lista em `config.yaml`
+  (`recomendados`) — recomendado; o painel passa a refletir a decisão já publicada no relatório;
+  (b) destacar os **top-3 do score** (89.55, 41.10, 75.10) e apenas rotular o perfil de uso;
+  (c) destacar os **top-5 do score** e usar a regra "consumo recorrente" como selo de recomendação.
+- **Impacto de mudar**: (a) concorda com o relatório executivo; (b) e (c) podem levar a sócia a
+  atacar um nicho de equipamento que o relatório desaconselha.
+
+## Q12 [R1] — Tipografia mínima: interface 12px e eixos de gráfico 11px?
+
+- **Contexto**: a auditoria mediu 389 elementos abaixo de 12px, incluindo rótulos de eixo (10px) e
+  microtexto de tabela (10,5–11px).
+- **Recomendação**: **texto de interface ≥ 12px** (inclui tabela, hints, badges) e **rótulos de eixo
+  ≥ 11px** como exceção declarada — eixos a 12px reduzem a área plotada em telas de 360px.
+- **Impacto**: se a regra for 12px para tudo, os gráficos no mobile perdem ~8% de área útil.
+
 ## Q10 — A base é só do Poder Executivo estadual?
 
 - **Contexto**: a própria planilha de 2025 traz a nota "Critérios: Registro das compras e contratações

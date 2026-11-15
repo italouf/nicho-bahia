@@ -309,6 +309,7 @@ def construir(version: str = "1.0") -> dict[str, Any]:
             "ids": IDS,
             "hashes": hashes,
             "pesos": cfg.pesos,
+            "recomendados": [str(c) for c in (cfg.get("negocio.recomendados", []) or [])],
             "limiares": {
                 "min_afm": int(cfg.get("metricas.minimo_afm_para_ranking")),
                 "min_valor": float(cfg.get("metricas.minimo_valor_real_para_ranking")),

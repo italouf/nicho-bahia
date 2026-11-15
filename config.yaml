@@ -22,6 +22,10 @@ negocio:
   capex_limitado: true
   possui_atestados_tecnicos: false
   perfil: "startup de 3 sócios, materiais de uso recorrente"
+  # Decisão do gate R1/Q11: nichos destacados na camada de decisão do painel (código da família).
+  # A lista é do negócio, não do score: exclui bens duráveis que o relatório desaconselha.
+  # Vazio => o painel cai no top-3 do ranking de score.
+  recomendados: ["89.55", "75.10", "85.40"]
 
 # -------------------------------------------------------------------------------------
 # Tempo
