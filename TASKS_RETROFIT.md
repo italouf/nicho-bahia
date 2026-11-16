@@ -61,3 +61,13 @@ Legenda: `[x]` pronto e verificado · **PR** = critério de pronto.
 
 ## Fora desta lista (Won't do spec)
 Framework JS, backend, novas fontes, mudança de pesos/thresholds, i18n.
+
+---
+
+## Correção pós-R4 (16/11) — filtros inertes
+- [x] **T11.1** Diagnóstico por aba (`tools/retrofit/diag_filtros_por_aba.py`): Dossiê e Método inertes.
+- [x] **T11.2** Dossiê honra família e ano; secretaria/região declaradas com aviso âmbar.
+- [x] **T11.3** Nicho padrão do dossiê usa ranking global (não contradiz o aviso).
+- [x] **T11.4** Método com declaração permanente de que filtros não se aplicam.
+- [x] **T11.5** `marca()` reaproveita o elemento de aviso do HTML (sem duplicar).
+- [x] **T11.6** QA por aba com escopo no painel visível: A7f/A7g/A7h — 15/15.

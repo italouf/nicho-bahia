@@ -127,12 +127,19 @@ function marca(id, texto, tipo){
   if(!texto && tipo === undefined){ MARCAS[id] = {alerta:'', neutra:''}; }
   else { MARCAS[id][tipo || 'alerta'] = texto || ''; }
   const card = node.closest('.card') || node.parentElement;
-  let box = card.querySelector('.marca[data-alvo="'+id+'"]');
-  if(!box){
-    box = document.createElement('div');
-    box.className = 'marca'; box.dataset.alvo = id;
-    const hint = card.querySelector('.card__hint');
-    if(hint) hint.after(box); else card.insertBefore(box, node);
+  let box;
+  if(node.classList.contains('marca') && !node.dataset.alvo){
+    // o próprio elemento já é o aviso (ex.: #dossie-aviso, #metodo-aviso)
+    box = node;
+    box.dataset.alvo = id;
+  } else {
+    box = card.querySelector('.marca[data-alvo="'+id+'"]');
+    if(!box){
+      box = document.createElement('div');
+      box.className = 'marca'; box.dataset.alvo = id;
+      const hint = card.querySelector('.card__hint');
+      if(hint) hint.after(box); else card.insertBefore(box, node);
+    }
   }
   const linhas = [];
   if(MARCAS[id].alerta) linhas.push(MARCAS[id].alerta);
@@ -569,10 +576,26 @@ function initDossie(){
 }
 function renderDossie(){
   const sel = el('dossie-select'); if(!sel) return;
-  const i = (state.dossie != null && F[state.dossie]) ? state.dossie : familiaAtual();
+  // a família filtrada manda no dossiê; sem ela, vale o nicho escolhido ou o líder GLOBAL
+  // (não usar familiasVisiveis aqui: sob recorte ela mudaria o nicho e contradiria o aviso)
+  const i = (state.familia != null) ? state.familia
+          : ((state.dossie != null && F[state.dossie]) ? state.dossie : familiaAtualGlobal());
   state.dossie = i;
   sel.value = String(i);
   const f = F[i], m = M[i], s = SENS[i] || [];
+  const anoIdx = state.ano != null ? ANOS.indexOf(state.ano) : null;
+
+  // regra "filtra ou declara": o dossiê consolida o nicho no estado inteiro
+  if(emRecorte()){
+    marca('dossie-aviso',
+      '⚠ O dossiê consolida o nicho em todo o estado (2021–2025): o recorte por ' +
+      (state.sec != null ? 'secretaria' : 'região') + ' não se aplica aqui. ' +
+      'Para ver esse recorte, use as abas Compradores (secretaria) e Logística (região).', 'alerta');
+  } else if(state.familia != null){
+    marca('dossie-aviso', 'Mostrando o nicho escolhido no filtro de família.', 'neutra');
+  } else {
+    marca('dossie-aviso', '', 'neutra');
+  }
 
   el('dossie-resumo').innerHTML =
     `<b>${sentencaCase(f.n)}</b> · score <b>${dec1(f.s)}</b> · faixa ${s.length?s[0]+'–'+s[1]:'—'} em 14 cenários ·
@@ -581,6 +604,9 @@ function renderDossie(){
   // calendário
   const s12 = SAZ[i] || [];
   const mes = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  if(state.ano != null){
+    marca('c_dossie_cal', 'Índice mensal médio de 2021–2025; o filtro de ano não se aplica aqui.', 'neutra');
+  } else marca('c_dossie_cal', '', 'neutra');
   draw('c_dossie_cal', {
     grid:{...BASE_GRID, top:14, bottom:18},
     tooltip:{formatter:p=>`${mes[p.dataIndex]}: índice ${s12[p.dataIndex]}`},
@@ -617,7 +643,11 @@ function renderDossie(){
 
   // órgãos
   const acc = new Map();
-  ORG.forEach(r => { if(r[0]!==i) return; acc.set(r[1], (acc.get(r[1])||0) + r[3]); });
+  ORG.forEach(r => {
+    if(r[0]!==i) return;
+    if(state.ano != null && r[2] !== state.ano) return;
+    acc.set(r[1], (acc.get(r[1])||0) + r[3]);
+  });
   const org = [...acc.entries()].map(([sec,v])=>({sec,v})).sort((a,b)=>b.v-a.v).slice(0,6);
   const totOrg = org.reduce((a,b)=>a+b.v,0) || 1;
   el('t_dossie_orgaos').tHead.innerHTML = '<tr><th scope="col">Secretaria</th><th scope="col" class="num">R$</th><th scope="col" class="num">%</th></tr>';
@@ -626,15 +656,19 @@ function renderDossie(){
      <td class="num">${pct(o.v/totOrg,0)}</td></tr>`).join('') ||
     '<tr><td colspan="3">sem compras no recorte</td></tr>';
 
-  // itens
+  // itens (preço do ano selecionado, quando houver)
+  const kAno = anoIdx != null ? anoIdx : 4;
+  const rotuloAno = anoIdx != null ? `Preço em ${state.ano}` : 'Preço mediano (2025)';
   el('t_dossie_itens').tHead.innerHTML =
-    '<tr><th scope="col">Item</th><th scope="col">UM</th><th scope="col" class="num">Preço mediano</th><th scope="col" class="num">p25–p75</th><th scope="col" class="num">Nº</th></tr>';
+    `<tr><th scope="col">Item</th><th scope="col">UM</th><th scope="col" class="num">${rotuloAno}</th>` +
+    '<th scope="col" class="num">p25–p75</th><th scope="col" class="num">Nº</th></tr>';
   el('t_dossie_itens').tBodies[0].innerHTML = itens.map(it => {
     const p50 = state.real ? it[3] : it[7], p25 = state.real ? it[2] : it[6], p75 = state.real ? it[4] : it[8];
     const lin = (it[5]||[]).reduce((a,b)=>a+b,0);
-    const v = k => p50[k] == null ? '—' : brl(p50[k]);
+    const eh = x => x == null ? '—' : brl(x);
     return `<tr><td>${String(it[0]).slice(0,26)}</td><td>${it[1]||'—'}</td>
-      <td class="num">${v(4)}</td><td class="num">${p25[4]==null?'—':brl(p25[4])+' – '+brl(p75[4])}</td>
+      <td class="num">${eh(p50[kAno])}</td>
+      <td class="num">${p25[kAno]==null?'—':brl(p25[kAno])+' – '+brl(p75[kAno])}</td>
       <td class="num">${num(lin)}</td></tr>`;
   }).join('') || '<tr><td colspan="5">sem itens no recorte</td></tr>';
 

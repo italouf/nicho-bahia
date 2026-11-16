@@ -35,6 +35,9 @@ FILTROS = (
 # quantos itens cada filtro precisa alterar para ser considerado funcional
 MIN_ITENS_POR_FILTRO = 3
 
+# abas que não representam recorte de dados: declaram explicitamente que filtros não se aplicam
+ABAS_ESTATICAS = frozenset({"Método"})
+
 
 def _snapshot(pg) -> dict[str, str]:  # noqa: ANN001
     """Estado observável: opções dos gráficos ECharts + blocos HTML da aba 0."""
@@ -61,9 +64,29 @@ def _snapshot(pg) -> dict[str, str]:  # noqa: ANN001
             out['__cards'] = (document.getElementById('cards') || {}).textContent || '';
             out['__tabela'] = (document.getElementById('tabela') || {}).textContent || '';
             out['__escopo'] = (document.getElementById('chips') || {}).textContent || '';
+            // avisos de "filtra ou declara" na aba visível contam como reação legítima
+            out['__marcas'] = [...document.querySelectorAll('.painel.on .marca')]
+                .filter(b => getComputedStyle(b).display !== 'none' && b.textContent.trim())
+                .map(b => b.textContent.trim()).join(' || ');
+            // escopo do teste por aba: só o painel VISÍVEL (chips do header mudam em qualquer aba)
+            const vis = document.querySelector('.painel.on');
+            out['__painel_id'] = vis ? vis.id : '';
+            out['__painel_texto'] = vis ? vis.textContent.replace(/\s+/g, ' ').trim() : '';
+            out['__painel_charts'] = vis ? [...vis.querySelectorAll('.chart')].map(n => {
+                const c = window.echarts && echarts.getInstanceByDom(n);
+                if (!c) return n.id + ':sem-instancia';
+                const o = c.getOption() || {};
+                return n.id + ':' + JSON.stringify((o.series || []).map(s => s.data))
+                    + ':' + JSON.stringify((o.yAxis && o.yAxis[0] && o.yAxis[0].data) || null);
+            }).join('|') : '';
             return out;
         }"""
     )
+
+
+def _escopo_painel(snap: dict[str, str]) -> tuple[str, str, str]:
+    """Só o que o usuário vê na aba ativa: id, texto e gráficos do painel visível."""
+    return (snap.get("__painel_id", ""), snap.get("__painel_texto", ""), snap.get("__painel_charts", ""))
 
 
 def _snapshot_todas_abas(pg, abas) -> dict[str, dict[str, str]]:  # noqa: ANN001
@@ -142,33 +165,54 @@ def run(log: RunLog) -> dict[str, Any]:
         )
         log(f"gráficos na página: {total_graficos}; com canvas: {graficos_com_canvas}; sem dados: {sem_dados}")
 
-        # ---------- A7b: reatividade de CADA filtro ----------
+        # ---------- A7b: reatividade de CADA filtro, NA ABA EM QUE SE ESTÁ ----------
+        # Antes este teste trocava de aba depois de filtrar e somava as mudanças: uma aba
+        # inerte (Dossiê/Método) passava despercebida. Agora medimos a experiência real —
+        # parado numa aba, mexer no filtro tem de mudar algo OU declarar que não se aplica.
         reatividade: dict[str, Any] = {}
-        for nome, seletor, valor in FILTROS:
-            pagina.select_option(seletor, valor)
-            pagina.wait_for_timeout(600)
-            depois = _snapshot_todas_abas(pagina, abas)
-            mudancas: dict[str, list[str]] = {}
-            for k in base:
-                mudancas[k] = [item for item in depois[k] if base[k].get(item) != depois[k][item]]
-            todos = sorted({x for v in mudancas.values() for x in v})
-            graficos = [x for x in todos if not x.startswith("__")]
-            reatividade[nome] = {
-                "itens_alterados": len(todos),
-                "graficos_alterados": graficos,
-                "por_aba": mudancas,
-                "escopo_atualizado": "__escopo" in todos,
-            }
-            log(f"  filtro {nome:11s}: {len(todos):2d} itens, {len(graficos):2d} gráficos -> {graficos}")
-            # limpa e refaz a base (o reset pode mudar o estado renderizado)
-            pagina.select_option(seletor, "")
+        inertes: list[str] = []
+        for aba_nome in ABAS:
+            pagina.get_by_role("tab", name=aba_nome, exact=False).first.click()
             pagina.wait_for_timeout(400)
-            base = _snapshot_todas_abas(pagina, abas)
+            base_aba = _snapshot(pagina)
+            for nome, seletor, valor in FILTROS:
+                pagina.select_option(seletor, valor)
+                pagina.wait_for_timeout(450)
+                atual = _snapshot(pagina)
+                mudou = _escopo_painel(base_aba) != _escopo_painel(atual)
+                reatividade.setdefault(nome, {})[aba_nome] = mudou
+                # aba estática que declara explicitamente não ser afetada por filtros é válida
+                if not mudou and aba_nome not in ABAS_ESTATICAS:
+                    inertes.append(f"{aba_nome}/{nome}")
+                pagina.select_option(seletor, "")
+                pagina.wait_for_timeout(300)
+                base_aba = _snapshot(pagina)   # rebaseline após limpar
+            log(f"  aba {aba_nome:13s}: " + ", ".join(
+                f"{n}{'✓' if reatividade[n][aba_nome] else ('declara' if aba_nome in ABAS_ESTATICAS else '✗')}"
+                for n, *_ in FILTROS))
+
+        # abas estáticas precisam exibir a declaração permanente
+        paginas_estaticas_ok = True
+        for aba_nome in ABAS_ESTATICAS:
+            pagina.get_by_role("tab", name=aba_nome, exact=False).first.click()
+            pagina.wait_for_timeout(300)
+            nota = pagina.evaluate(
+                """() => [...document.querySelectorAll('.painel.on .marca')]
+                     .map(b => b.textContent.trim()).join(' ')"""
+            )
+            ok = "filtro" in nota.lower()
+            paginas_estaticas_ok = paginas_estaticas_ok and ok
+            log(f"  aba estática {aba_nome}: declaração {'ok' if ok else 'AUSENTE'}")
+
+        totais = {
+            n: sum(1 for aba_nome, v in por_aba.items()
+                   if v or aba_nome in ABAS_ESTATICAS)
+            for n, por_aba in reatividade.items()
+        }
+        log("  filtros reativos (abas de 9): " + ", ".join(f"{n}={v}" for n, v in totais.items()))
 
         (paths.LOGS / "diagnostico_filtros.json").write_text(
-            json.dumps({"filtros": {k: v["por_aba"] for k, v in reatividade.items()},
-                        "resumo": {k: {"itens": v["itens_alterados"], "graficos": v["graficos_alterados"]}
-                                   for k, v in reatividade.items()}},
+            json.dumps({"por_aba": reatividade, "inertes": inertes, "totais": totais},
                        ensure_ascii=False, indent=1),
             encoding="utf-8",
         )
@@ -244,10 +288,13 @@ def run(log: RunLog) -> dict[str, Any]:
     add("A7d", "secretaria e região são exclusivas", exclusivo,
         f"sec={exclusao['sec']!r} reg={exclusao['reg']!r}")
     for nome, _sel, _val in FILTROS:
-        r = reatividade[nome]
-        ok = r["itens_alterados"] >= MIN_ITENS_POR_FILTRO and len(r["graficos_alterados"]) >= 1
-        add(f"A7b-{nome}", f"filtro '{nome}' é funcional",
-            ok, f"{r['itens_alterados']} itens / {len(r['graficos_alterados'])} gráficos alterados")
+        reativo = totais.get(nome, 0)
+        add(f"A7f-{nome}", f"filtro '{nome}' reage ou declara nas 9 abas",
+            reativo == len(ABAS), f"{reativo}/{len(ABAS)} abas")
+    add("A7g", "nenhum par aba×filtro silenciosamente inerte", not inertes,
+        f"inerte: {inertes or 'nenhum'}")
+    add("A7h", "abas estáticas declaram que filtros não se aplicam", paginas_estaticas_ok,
+        f"abas: {sorted(ABAS_ESTATICAS)}")
     add("A8", "toggle nominal/real altera valores", toggle_ok and real_confere,
         f"real={conferencia['real'][:2]} nom={conferencia['nom'][:2]}")
     add("A9", "aba Método completa", metodo["assump"] >= 20 and metodo["filtros"] >= 4,
@@ -261,10 +308,7 @@ def run(log: RunLog) -> dict[str, Any]:
         "arquivo": str(html),
         "status": "VERDE" if not falhas else "VERMELHO",
         "checks": checks,
-        "reatividade_filtros": {
-            k: {"itens": v["itens_alterados"], "graficos": v["graficos_alterados"]}
-            for k, v in reatividade.items()
-        },
+        "reatividade_filtros": {"por_aba": reatividade, "totais": totais, "inertes": inertes},
         "n_graficos": graficos_com_canvas,
         "console": console,
         "pageerrors": erros,

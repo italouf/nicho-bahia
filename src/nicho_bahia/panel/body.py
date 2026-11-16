@@ -137,6 +137,7 @@ BODY = r"""
       <p class="card__hint" id="dossie-resumo" style="margin:0;flex:1 1 320px"></p>
       <button class="btn" id="btn_imprimir">Imprimir / PDF</button>
     </div>
+    <div class="marca" id="dossie-aviso" role="status"></div>
 
     <div class="dossie__grid">
       <article class="card" data-dossie-secao="calendario">
@@ -344,6 +345,9 @@ BODY = r"""
   <section class="painel" id="tab-metodo" role="tabpanel" aria-labelledby="tabbtn-metodo" tabindex="0">
     <div class="grid">
       <div class="card full">
+        <div class="marca neutra" id="metodo-aviso" role="status" style="display:block">
+          Esta aba descreve o método e a origem dos dados — ela não é afetada pelos filtros.
+        </div>
         <h2>O que foi filtrado e qual o efeito?</h2>
         <p class="card__hint">Pipeline de exclusão com contagens e reconciliação de valor.</p>
         <div class="rolagem" tabindex="0" role="region" aria-label="Tabela com rolagem horizontal"><table id="t_filtros"><thead></thead><tbody></tbody></table></div>

@@ -32,27 +32,39 @@
       "status": "OK"
     },
     {
-      "descricao": "filtro 'ano' é funcional",
-      "evidencia": "22 itens / 19 gráficos alterados",
-      "id": "A7b-ano",
+      "descricao": "filtro 'ano' reage ou declara nas 9 abas",
+      "evidencia": "9/9 abas",
+      "id": "A7f-ano",
       "status": "OK"
     },
     {
-      "descricao": "filtro 'secretaria' é funcional",
-      "evidencia": "11 itens / 9 gráficos alterados",
-      "id": "A7b-secretaria",
+      "descricao": "filtro 'secretaria' reage ou declara nas 9 abas",
+      "evidencia": "9/9 abas",
+      "id": "A7f-secretaria",
       "status": "OK"
     },
     {
-      "descricao": "filtro 'região' é funcional",
-      "evidencia": "8 itens / 6 gráficos alterados",
-      "id": "A7b-região",
+      "descricao": "filtro 'região' reage ou declara nas 9 abas",
+      "evidencia": "9/9 abas",
+      "id": "A7f-região",
       "status": "OK"
     },
     {
-      "descricao": "filtro 'família' é funcional",
-      "evidencia": "15 itens / 13 gráficos alterados",
-      "id": "A7b-família",
+      "descricao": "filtro 'família' reage ou declara nas 9 abas",
+      "evidencia": "9/9 abas",
+      "id": "A7f-família",
+      "status": "OK"
+    },
+    {
+      "descricao": "nenhum par aba×filtro silenciosamente inerte",
+      "evidencia": "inerte: nenhum",
+      "id": "A7g",
+      "status": "OK"
+    },
+    {
+      "descricao": "abas estáticas declaram que filtros não se aplicam",
+      "evidencia": "abas: ['Método']",
+      "id": "A7h",
       "status": "OK"
     },
     {
@@ -81,7 +93,7 @@
     }
   ],
   "console": [],
-  "gerado_em": "2026-11-15T18:49:02.300716+00:00",
+  "gerado_em": "2026-11-16T14:26:42.897296+00:00",
   "metodo": {
     "assump": 35,
     "dict": 31,
@@ -91,72 +103,58 @@
   "n_graficos": 20,
   "pageerrors": [],
   "reatividade_filtros": {
-    "ano": {
-      "graficos": [
-        "c_cagr",
-        "c_cal",
-        "c_canal",
-        "c_conc",
-        "c_cv",
-        "c_desc",
-        "c_dossie_cal",
-        "c_dossie_preco",
-        "c_ent",
-        "c_forn",
-        "c_heat",
-        "c_mun",
-        "c_orgaos",
-        "c_prazo",
-        "c_preco",
-        "c_regiao",
-        "c_serie",
-        "c_ticket",
-        "c_treemap"
-      ],
-      "itens": 22
+    "inertes": [],
+    "por_aba": {
+      "ano": {
+        "Compradores": true,
+        "Concorrência": true,
+        "Decisão": true,
+        "Dossiê": true,
+        "Logística": true,
+        "Mercado": true,
+        "Método": false,
+        "Preços": true,
+        "Sazonalidade": true
+      },
+      "família": {
+        "Compradores": true,
+        "Concorrência": true,
+        "Decisão": true,
+        "Dossiê": true,
+        "Logística": true,
+        "Mercado": true,
+        "Método": false,
+        "Preços": true,
+        "Sazonalidade": true
+      },
+      "região": {
+        "Compradores": true,
+        "Concorrência": true,
+        "Decisão": true,
+        "Dossiê": true,
+        "Logística": true,
+        "Mercado": true,
+        "Método": false,
+        "Preços": true,
+        "Sazonalidade": true
+      },
+      "secretaria": {
+        "Compradores": true,
+        "Concorrência": true,
+        "Decisão": true,
+        "Dossiê": true,
+        "Logística": true,
+        "Mercado": true,
+        "Método": false,
+        "Preços": true,
+        "Sazonalidade": true
+      }
     },
-    "família": {
-      "graficos": [
-        "c_cagr",
-        "c_cal",
-        "c_canal",
-        "c_ent",
-        "c_forn",
-        "c_heat",
-        "c_mun",
-        "c_orgaos",
-        "c_preco",
-        "c_regiao",
-        "c_sens",
-        "c_serie",
-        "c_treemap"
-      ],
-      "itens": 15
-    },
-    "região": {
-      "graficos": [
-        "c_cagr",
-        "c_orgaos",
-        "c_regiao",
-        "c_sens",
-        "c_serie",
-        "c_treemap"
-      ],
-      "itens": 8
-    },
-    "secretaria": {
-      "graficos": [
-        "c_cagr",
-        "c_canal",
-        "c_conc",
-        "c_ent",
-        "c_orgaos",
-        "c_regiao",
-        "c_sens",
-        "c_serie",
-        "c_treemap"
-      ],
-      "itens": 11
+    "totais": {
+      "ano": 9,
+      "família": 9,
+      "região": 9,
+      "secretaria": 9
     }
   },
   "requisicoes": {

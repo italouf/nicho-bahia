@@ -1,0 +1,231 @@
+{
+ "por_aba": {
+  "Decisão": {
+   "ano": {
+    "abas_que_mudaram": [
+     "tab-decisao"
+    ],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [
+     "tab-decisao"
+    ],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [
+     "tab-decisao"
+    ],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [
+     "tab-decisao"
+    ],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  },
+  "Dossiê": {
+   "ano": {
+    "abas_que_mudaram": [
+     "tab-dossie"
+    ],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [
+     "tab-dossie"
+    ],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [
+     "tab-dossie"
+    ],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [
+     "tab-dossie"
+    ],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  },
+  "Mercado": {
+   "ano": {
+    "abas_que_mudaram": [
+     "tab-mercado"
+    ],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [
+     "tab-mercado"
+    ],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [
+     "tab-mercado"
+    ],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [
+     "tab-mercado"
+    ],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  },
+  "Sazonalidade": {
+   "ano": {
+    "abas_que_mudaram": [
+     "tab-sazonalidade"
+    ],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [
+     "tab-sazonalidade"
+    ],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [
+     "tab-sazonalidade"
+    ],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [
+     "tab-sazonalidade"
+    ],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  },
+  "Compradores": {
+   "ano": {
+    "abas_que_mudaram": [
+     "tab-compradores"
+    ],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [
+     "tab-compradores"
+    ],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [
+     "tab-compradores"
+    ],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [
+     "tab-compradores"
+    ],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  },
+  "Concorrência": {
+   "ano": {
+    "abas_que_mudaram": [
+     "tab-concorrencia"
+    ],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [
+     "tab-concorrencia"
+    ],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [
+     "tab-concorrencia"
+    ],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [
+     "tab-concorrencia"
+    ],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  },
+  "Preços": {
+   "ano": {
+    "abas_que_mudaram": [
+     "tab-precos"
+    ],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [
+     "tab-precos"
+    ],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [
+     "tab-precos"
+    ],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [
+     "tab-precos"
+    ],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  },
+  "Logística": {
+   "ano": {
+    "abas_que_mudaram": [
+     "tab-logistica"
+    ],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [
+     "tab-logistica"
+    ],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [
+     "tab-logistica"
+    ],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [
+     "tab-logistica"
+    ],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  },
+  "Método": {
+   "ano": {
+    "abas_que_mudaram": [],
+    "chips": "2023\n         ×limpar tudo"
+   },
+   "secretaria": {
+    "abas_que_mudaram": [],
+    "chips": "TRIBUNAL DE CONTAS DO ESTADO\n         ×limpar tudo"
+   },
+   "região": {
+    "abas_que_mudaram": [],
+    "chips": "REGIAO B. JESUS LAPA E MACAUBAS\n         ×limpar tudo"
+   },
+   "família": {
+    "abas_que_mudaram": [],
+    "chips": "Artigos de escritorio\n         ×limpar tudo"
+   }
+  }
+ },
+ "erros": []
+}

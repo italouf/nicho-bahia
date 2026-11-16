@@ -10,13 +10,12 @@
 - Sessão: 2026-11-12 (America/Sao_Paulo)
 
 ## Fase atual
-**RETROFIT UI/UX concluído — aguardando aprovação no gate R4** (branch `retrofit-uiux`).
-- R0 auditoria medida → R1 spec aprovado (Q11a, Q12) → R2 plano aprovado (P1–P3) → R3 tarefas →
-  R4 execução completa: V1 a V10.
-- 67 testes verdes (42 do projeto + 25 do retrofit), QA 13/13, G3/G4 verdes, **paridade de números
-  18/18 gráficos + CSV**.
+**RETROFIT UI/UX concluído e publicado** (branch `retrofit-uiux`, merge em `main`, push em 15/11).
+**Correção pós-R4 em 16/11:** filtros inertes no Dossiê e no Método — corrigido e coberto por teste
+(A7f/A7g/A7h). Ver `RELATORIO_RETROFIT.md` §9.
+- 67 testes verdes (42 do projeto + 25 do retrofit), QA 15/15, G3/G4 verdes, paridade de números
+  18/18 gráficos + CSV.
 - Painel: 9 abas, 20 gráficos, 2,73 MB, 0 requisição externa, axe 0 critical/serious nos 3 viewports.
-- Relatório: `RELATORIO_RETROFIT.md`. Antes/depois: `logs/retrofit/audit.json` vs `audit_r4.json`.
 
 ## Ferramentas da sessão (verificado em 2026-11-12)
 | Ferramenta | Disponível | Fallback adotado |

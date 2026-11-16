@@ -120,3 +120,37 @@ git add docs && git commit -m "retrofit(US-04): camada de decisao" && git push
 ```
 
 O GitHub Pages publica `docs/index.html` automaticamente. Nada mudou no fluxo de publicação.
+
+## 9. Correção pós-R4 (16/11) — filtros inertes em duas abas
+
+**Sintoma relatado:** "os filtros novamente estão sem funcionar".
+
+**Diagnóstico (`tools/retrofit/diag_filtros_por_aba.py`):** o teste A7b anterior aplicava o filtro e
+**depois trocava de aba**, somando mudanças de abas que o usuário não estava vendo. Medindo a aba em
+que se está, apareceu o buraco:
+
+| Aba | ano | secretaria | região | família |
+|---|---|---|---|---|
+| Decisão, Mercado, Sazonalidade, Compradores, Concorrência, Preços, Logística | ✓ | ✓ | ✓ | ✓ |
+| **Dossiê** | ✓ | **✗** | **✗** | **✗** |
+| **Método** | **✗** | **✗** | **✗** | **✗** |
+
+**Causa raiz dupla:** (a) a aba Dossiê (nova no retrofit) lia apenas o próprio seletor de nicho e
+ignorava os filtros globais — e não declarava isso, violando a regra "filtra ou declara" (I5);
+(b) a aba Método é estática por natureza e também não dizia ao usuário.
+
+**Correções:**
+1. **Dossiê honra o filtro de família** (o nicho exibido passa a ser o filtrado; o seletor sincroniza)
+   e o **filtro de ano** (tabelas de órgãos, itens e regiões).
+2. **Secretaria/região no Dossiê são declaradas**: aviso âmbar explica que o dossiê consolida o
+   estado inteiro e indica as abas onde o recorte vale.
+3. O nicho padrão do dossiê passou a usar o **ranking global**, não o do recorte — antes o aviso dizia
+   "não se aplica" enquanto o nicho mudava por causa do recorte (contradição).
+4. **Método** ganhou declaração permanente: "esta aba não é afetada pelos filtros".
+5. `marca()` passou a reaproveitar o elemento de aviso existente no HTML, em vez de criar um duplicado.
+
+**Teste que faltava (endurecido):** A7b agora mede **por aba** com escopo no painel visível (os chips
+do header mudam em qualquer aba e mascaravam o resultado) e exige, para cada par aba×filtro, **reagir
+ou declarar**. Novos checks: A7f (9/9 abas por filtro), A7g (nenhum par inerte), A7h (abas estáticas
+declaram). QA: 13 → **15 verificações**.
+

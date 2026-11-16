@@ -1,4 +1,4 @@
-# nicho-bahia — execução 2026-11-15T18:47:59.873519+00:00
+# nicho-bahia — execução 2026-11-16T14:25:25.967651+00:00
 # workspace: C:\Users\Micro\source\repos\PL\nicho-bahia
 
 ==============================================================================
@@ -13,10 +13,17 @@ console: 0 mensagens (0 de erro), 0 pageerror
 abas encontradas: 9
 cabeçalho: '155' nichos
 gráficos na página: 20; com canvas: 20; sem dados: []
-  filtro ano        : 22 itens, 19 gráficos -> ['c_cagr', 'c_cal', 'c_canal', 'c_conc', 'c_cv', 'c_desc', 'c_dossie_cal', 'c_dossie_preco', 'c_ent', 'c_forn', 'c_heat', 'c_mun', 'c_orgaos', 'c_prazo', 'c_preco', 'c_regiao', 'c_serie', 'c_ticket', 'c_treemap']
-  filtro secretaria : 11 itens,  9 gráficos -> ['c_cagr', 'c_canal', 'c_conc', 'c_ent', 'c_orgaos', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
-  filtro região     :  8 itens,  6 gráficos -> ['c_cagr', 'c_orgaos', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
-  filtro família    : 15 itens, 13 gráficos -> ['c_cagr', 'c_cal', 'c_canal', 'c_ent', 'c_forn', 'c_heat', 'c_mun', 'c_orgaos', 'c_preco', 'c_regiao', 'c_sens', 'c_serie', 'c_treemap']
+  aba Decisão      : ano✓, secretaria✓, região✓, família✓
+  aba Dossiê       : ano✓, secretaria✓, região✓, família✓
+  aba Mercado      : ano✓, secretaria✓, região✓, família✓
+  aba Sazonalidade : ano✓, secretaria✓, região✓, família✓
+  aba Compradores  : ano✓, secretaria✓, região✓, família✓
+  aba Concorrência : ano✓, secretaria✓, região✓, família✓
+  aba Preços       : ano✓, secretaria✓, região✓, família✓
+  aba Logística    : ano✓, secretaria✓, região✓, família✓
+  aba Método       : anodeclara, secretariadeclara, regiãodeclara, famíliadeclara
+  aba estática Método: declaração ok
+  filtros reativos (abas de 9): ano=9, secretaria=9, região=9, família=9
 recortes mutuamente exclusivos: True (sec='', reg='2')
 toggle nominal/real alterou valores: True (confere com o agregado: True)
 aba método: 35 premissas, 5 filtros, 31 itens
@@ -27,21 +34,23 @@ requisições: 1 (externas: 0); arquivo 2.73 MB
   [OK   ] A7e            cabeçalho com contador preenchido      hdr_n='155'
   [OK   ] A7c            todo gráfico tem dados (nenhum vazio)  sem dados: nenhum
   [OK   ] A7d            secretaria e região são exclusivas     sec='' reg='2'
-  [OK   ] A7b-ano        filtro 'ano' é funcional               22 itens / 19 gráficos alterados
-  [OK   ] A7b-secretaria filtro 'secretaria' é funcional        11 itens / 9 gráficos alterados
-  [OK   ] A7b-região     filtro 'região' é funcional            8 itens / 6 gráficos alterados
-  [OK   ] A7b-família    filtro 'família' é funcional           15 itens / 13 gráficos alterados
+  [OK   ] A7f-ano        filtro 'ano' reage ou declara nas 9 abas 9/9 abas
+  [OK   ] A7f-secretaria filtro 'secretaria' reage ou declara nas 9 abas 9/9 abas
+  [OK   ] A7f-região     filtro 'região' reage ou declara nas 9 abas 9/9 abas
+  [OK   ] A7f-família    filtro 'família' reage ou declara nas 9 abas 9/9 abas
+  [OK   ] A7g            nenhum par aba×filtro silenciosamente inerte inerte: nenhum
+  [OK   ] A7h            abas estáticas declaram que filtros não se aplicam abas: ['Método']
   [OK   ] A8             toggle nominal/real altera valores     real=[1190135, 2749154] nom=[893931, 2272670]
   [OK   ] A9             aba Método completa                    35 premissas / 5 filtros
   [OK   ] A10            zero requisições externas              0 externas
   [OK   ] A10b           arquivo ≤ 15 MB                        2.73 MB
-[VERDE] QA — 13/13 verificações OK
+[VERDE] QA — 15/15 verificações OK
 [ok] logs\qa_report.json
 
 ==============================================================================
 RESUMO
 ==============================================================================
 estágios executados: qa
-início: 2026-11-15T18:47:59.873519+00:00
-fim:    2026-11-15T18:49:02.305633+00:00
-duracao_s: 62.4
+início: 2026-11-16T14:25:25.967651+00:00
+fim:    2026-11-16T14:26:42.901105+00:00
+duracao_s: 76.9
